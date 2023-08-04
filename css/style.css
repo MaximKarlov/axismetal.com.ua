@@ -5,12 +5,13 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import '../css/cart_product.css';
 @import '../css/details.css';
 @import '../css/simplebar.css';
 @import '../css/modal.css';
 @import '../css/order.css';
 @import '../css/vidget.css';
-@import '../css/cart_product.css';
+
 
 :root {
 	--blue: #007bff;
