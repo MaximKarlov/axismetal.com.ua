@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: Googlebot-Mobile
+Disallow:
+
+Sitemap: https://axismetal.com.ua/sitemap.xml
+Host: https://axismetal.com.ua/
+

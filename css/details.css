@@ -1,0 +1,95 @@
+.price_tab {
+	width: 100%;
+	border: 1px solid black;
+	text-align: center;
+	margin: 30px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+.price_tab td:first-child {
+	width: 50%;
+	background: red;
+	color: var(--gray);
+}
+
+.characteristics_table {
+	text-align: center;
+}
+
+.size_in_table,
+.size_in_table2 {
+	width: 100%;
+	margin: 30px 0;
+}
+
+.size_in_table tbody {
+	display: flex;
+	width: 100%;
+}
+
+.size_in_table2 tbody {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+.size_in_table2 th {
+	width: 100%;
+	color: var(--gray-dark);
+	background-color: var(--red2);
+	text-align: center;
+}
+
+.size_in_table tr {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.size_in_table2 tr {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid black;
+	/* column-count: 3; */
+}
+
+.size_in_table td {
+	border: 1px solid grey;
+}
+
+.size_in_table2 td {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	font-weight: bold;
+	font-size: 16px;
+	color: var(--gray);
+	height: 300px;
+}
+
+.size_in_table td:hover,
+.size_in_table2 tr:hover,
+.characteristics_table tr:hover {
+	background: #ddd;
+}
+.accordion-body {
+	display: flex;
+	flex-direction: column;
+}
+.accordion-body img {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.accordion-header button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.accordion-button::after {
+	position: absolute;
+	right: 20px;
+}

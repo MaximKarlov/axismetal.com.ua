@@ -1,0 +1,5406 @@
+/* ÐŸÐ›ÐÐ¡Ð¢Ð˜ÐšÐžÐ’Ð«Ð• ÐžÐšÐÐ */
+
+ #poisk{border: 1px solid #aaa; background-origin:padding-box;background-repeat:no-repeat;background-size:280px auto;margin:14px auto 0;min-height:46px;padding:0;width:100%;position:relative;}
+input.who{width: 95%; background-color:transparent;border:medium none;color:#000;line-height:20px;margin:20px;outline:medium none;padding:0;text-transform:lowercase;}
+#livesearch{background-color:#e6e6e6;border-bottom-left-radius:6px;border-bottom-right-radius:6px;color:#f00;font-size:18px;max-height:300px;overflow-y:auto;padding:0 8px;position:relative;}
+#livesearch p{margin:0 0 4px;padding:0;text-align:center;}
+#livesearch a{background-color:#fff;background-image:url("https://axismetal.com.ua/img/icons/right.png");background-position:left center;background-repeat:no-repeat;background-size:20px 20px;box-shadow:0 1px 4px #666;color:#297e29;display:block;font-family:arial;font-size:13px;font-weight:normal;line-height:14px;margin:6px 0;padding:15px 15px 15px 20px;text-decoration:none;text-shadow:0 0 0 #666;transition:all 0.7s ease 0s;}
+#livesearch a:hover{background-image:url("https://axismetal.com.ua/img/icons/right-2.png");background-position:left center;background-repeat:no-repeat;background-size:20px 20px;color:#900000;transition:all 0.7s ease 0s;}
+
+
+.block-osteklenie-po-tipu-doma > div > div > a {
+	text-decoration: none;
+	font-size: 16pt;
+	color: #333;
+}
+
+.head-text a {
+	font-weight: 400;
+}
+.block-osteklenie-po-tipu-doma > div > div > a > img {
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.block-osteklenie-po-tipu-doma > div > div > a:hover > img {
+    transform: scale(1.05);
+}
+
+
+.block-osteklenie-po-tipu-doma > div > div > a:hover > span {
+	text-decoration: underline;
+}
+
+.page-plastic-windows {
+	margin-top:30px;
+}
+
+.page-plastic-windows > .block-items-wrapper > div > div > div {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    min-height: 390px;
+    background: rgba(0, 0, 0, 0);
+    transition: all .5s;
+    cursor: pointer;
+}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div {
+   /* padding: 0;*/
+}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div > div {
+	background-size: cover;
+}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-4 {padding-left:10px;}
+.page-plastic-windows-1 > div {background-image:url(https://axismetal.com.ua/images/pages/plastic-windows-standart-bg.jpg)}
+.page-plastic-windows-2 > div {background-image:url(https://axismetal.com.ua/images/pages/plastic-windows-comfort-bg.jpg)}
+.page-plastic-windows-3 > div {background-image:url(https://axismetal.com.ua/images/pages/plastic-windows-design-bg.jpg)}
+.page-plastic-windows-4 > div {background-image:url(https://axismetal.com.ua/images/pages/plastic-windows-prestije-bg.jpg)}
+.page-plastic-windows-5 > div {background-image:url(https://axismetal.com.ua/images/bgs/doors-vekaslide-bg.jpg)}
+
+.page-plastic-windows {color:#fff}
+.page-plastic-windows.button-square{color:#fff}
+
+.background-mobile-pages {
+	background-size: cover;
+}
+
+@media all and (max-width:420px) {
+	 #poisk{
+	 	margin: 5%;
+	 	width: auto;
+	 }
+
+	 } 
+
+	.background-mobile-pages {
+		background-size: contain;
+	}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div {
+		width:100%;
+	}
+	
+	.page-plastic-windows.block-3-items > .block-items-wrapper > div > div {
+		width:100%;
+	}
+}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-2 {padding-left:10px;}
+.page-alum-windows-1 > div {background-image:url(https://axismetal.com.ua/images/pages/alum-windows-cool-bg.jpg)}
+.page-alum-windows-2 > div {background-image:url(https://axismetal.com.ua/images/pages/alum-windows-hot-bg.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-4 {padding-left:10px;}
+.page-derevo-windows-1 > div {background-image:url(https://axismetal.com.ua/images/pages/derevo-windows-sosna-bg.jpg)}
+.page-derevo-windows-2 > div {background-image:url(https://axismetal.com.ua/images/pages/derevo-windows-listvennica-bg.jpg)}
+.page-derevo-windows-3 > div {background-image:url(https://axismetal.com.ua/images/pages/derevo-windows-dub-bg.jpg)}
+.page-derevo-windows-4 > div {background-image:url(https://axismetal.com.ua/images/pages/derevo-windows-aluminii-bg.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-4 {padding-left:10px;}
+.page-balconies-otdelka-1 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-otdelka-econom-bg.jpg)}
+.page-balconies-otdelka-2 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-otdelka-standart-bg.jpg)}
+.page-balconies-otdelka-3 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-otdelka-prestije-bg.jpg)}
+.page-balconies-otdelka-4 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-otdelka-elit-bg.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n4 {padding-left:10px;}
+.page-balkon-otdelka-n1 > div {background-image:url(https://axismetal.com.ua/images/pages/otdelka-n1.jpg)}
+.page-balkon-otdelka-n2 > div {background-image:url(https://axismetal.com.ua/images/pages/otdelka-n2.jpg)}
+.page-balkon-otdelka-n3 > div {background-image:url(https://axismetal.com.ua/images/pages/otdelka-n3.jpg)}
+.page-balkon-otdelka-n4 > div {background-image:url(https://axismetal.com.ua/images/pages/otdelka-n4.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div > div > div > div > span {
+	display: inline-block;
+	margin-bottom:5px;
+	font-size: 10pt;
+}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div > span {
+	display: block;
+	clear: left;
+}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div .block-2-items {
+	color:#eee;
+}
+
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div > div > div > div {
+	padding-left:0;
+}
+
+@media all and (max-width:420px) {
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-plastic-windows-4 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-options-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-options-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-options-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-options-4 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calc-options-1 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calc-options-2{padding-left:0px;}
+
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-2 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-derevo-windows-4 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-otdelka-4 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balkon-otdelka-n4 {padding-left:0px;}
+	
+	.page-plastic-windows.block-3-items > .block-items-wrapper > div.page-doors-plastic-3 {padding-left:0px;}
+	.page-plastic-windows.block-3-items > .block-items-wrapper > div.page-doors-plastic-4 {padding-right:0px;}
+	.page-plastic-windows.block-3-items > .block-items-wrapper > div.page-doors-plastic-5 {padding-right:0px;}
+
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div {
+		padding-top:20px;
+		margin-bottom:10px;
+	}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-1 > div > div, .page-plastic-windows.block-2-items > .block-items-wrapper > div.page-alum-windows-2 > div > div {
+		min-height: 490px;
+	}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div {
+		width:auto;
+		margin-left: 20px;
+		float:left;
+	}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div > .text-size-27 {
+		font-size: 22pt;
+	}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div > div > .text-size-22 {
+		font-size: 20pt;
+	}
+	
+	.page-plastic-windows-small > div > div {
+		min-height: 150px;
+	}
+	
+	.page-plastic-windows-small > div > div > div > br {
+		font-size: 2px;
+	}
+	
+	.page-plastic-windows-small > div > div span {
+		
+	}
+	
+}
+
+
+.input-inline-submit {
+	font-size: 20pt;
+	text-align: center;
+}
+
+
+.block-background-top {
+	min-height: 500px;
+	position: relative;
+}
+
+.block-background-page {
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+
+.block-background-top h1 {
+	font-size: 25pt;
+}
+
+
+.bg-form-calculate { background: url(https://axismetal.com.ua/images/bgs/bg-form-calculate.jpg) center center; 	background-size: cover; }
+.bg-form-zamer { background: url(https://axismetal.com.ua/images/bgs/bg-form-zamer.jpg) center center; 	background-size: cover; }
+.bg-winter-montazh { background: url(https://axismetal.com.ua/images/bgs/bg-winter-montazh.jpg) center center; 	background-size: cover; }
+
+@media all and (max-width:420px) {
+	.block-background-page {
+		padding:0px;
+	}
+	
+	.block-background-top {
+		min-height: auto;
+	}
+	
+	.block-background-top h1 {
+		font-size: 14pt;
+	}
+	
+	.block-background-page > div > div {
+		padding:20px;
+	}
+	
+	.block-background-plastic-windows-top > div > div {
+		background: rgba(255, 255, 255, 0.45);
+		padding:20px 10px;
+	}
+	
+	.block-background-furnitura > div > div {
+		background: rgba(255, 255, 255, 0.63);
+		float: left;
+	}
+	
+	
+	.block-profile-info {
+		padding:10px;
+	}
+	
+	.page-plastic-windows-furnitura.block-3-items > .block-items-wrapper > div {
+		padding-left:80px;
+		padding-top:0;
+	}
+	
+	.page-plastic-windows-furnitura > div > div > img {
+		/*margin-left:-60px;
+		margin-top:40px;
+		float:left;*/
+	}
+	
+	.page-plastic-windows-furnitura > div > div > .text-size-16 {
+		font-size: 16pt;
+		font-weight: bold;
+	}
+	
+	.block-price-kvartira  .margin-right-100 + .block-left {
+		 clear: both;
+		 
+	 }
+	 
+	 .block-price-kvartira {
+		 padding-left:5px;
+		 padding-right:5px;
+	 }
+	 
+	 .block-price-kvartira  .margin-right-100 .margin-top-20 {
+		 margin-top:10px;
+	 }
+}
+
+.block-background-plastic-windows-small-art > div {	background: url(https://axismetal.com.ua/images/pages/plastic-windows-art-bg.jpg) center center;	background-size: cover; }
+.block-background-plastic-windows-small-classic > div {	background: url(https://axismetal.com.ua/images/pages/plastic-windows-classic-bg.jpg) center center;	background-size: cover; }
+.block-background-plastic-windows-small-ideal > div {	background: url(https://axismetal.com.ua/images/pages/plastic-windows-ideal-bg.jpg) center center;	background-size: cover; }
+.block-background-plastic-windows-small-mira > div {	background: url(https://axismetal.com.ua/images/pages/plastic-windows-mira-bg.jpg) center center;	background-size: cover; }
+
+.page-plastic-windows > div > div {
+	cursor: pointer;
+}
+
+.page-plastic-windows-small > div > div > div {
+	padding:30px 20px;
+	min-height: 250px;
+}
+
+.block-4-items.page-plastic-windows-small > .block-items-wrapper > div:first-child {
+	padding-left:0;
+}
+
+.block-4-items.page-plastic-windows-small > .block-items-wrapper > div:last-child {
+	padding-right:0;
+}
+
+.page-block-windows-options.block-4-items > .block-items-wrapper > div img {
+    /*max-width: 70%;*/
+}
+.page-block-windows-options.block-4-items > div > div {
+	font-size: 11pt;
+	margin-bottom:20px;
+	padding:10px 20px;
+}
+.page-block-windows-options.block-4-items a {
+	font-weight: bold;
+	font-size: 16pt;
+	text-decoration: none;
+}
+.page-block-windows-options.block-4-items p > a {
+	font-size: 11pt;
+	font-weight: normal;
+}
+.page-block-windows-options.block-5-items a {
+	/*font-weight: bold;*/
+	font-size: 14pt;
+	text-decoration: none;
+}
+.page-block-windows-options div > .h5 > a, .page-block-windows-options .text-bold > span{
+	color: #333;
+}
+
+@media all and (max-width:420px) {
+.page-block-windows-options.block-5-items a {
+	font-size: 12pt;
+}
+}
+.page-block-windows-options.block-5-items > .block-items-wrapper > div img {max-width:80%; margin-bottom:10px;}
+
+@media all and (max-width:420px) {
+	.page-block-windows-options.block-4-items a {font-size: 12pt;}
+}
+
+.page-block-windows-options.block-4-items > a:after {
+	content:"";
+	display: block;
+	margin-bottom:5px;
+}
+
+
+
+.block-window-ribbon {
+	position: relative;
+	overflow: hidden;
+}
+
+.block-window-ribbon:after {
+	content:"";
+	display: block;
+	position: absolute;
+	/*background: url('/img/design2015/top-ribbon.png');*/
+	background-size: cover;
+	width:149px;
+	height: 41px;
+	right:22px;
+	right:-200px;
+	opacity:0;
+	transition: all 1s ease-in-out;
+	transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.23);
+	top:95px;
+}
+
+.block-window-ribbon-show:after {
+	opacity:1;
+	right:22px;
+}
+
+
+@media all and (max-width:420px) {
+	.block-window-ribbon:after {
+		display: none;
+	}
+}
+
+/* Ð›ÐÐœÐ˜ÐÐÐ¢ÐžÐ  */
+
+.full-width-laminator {background: url('https://axismetal.com.ua/img/design2017/laminator-bg.jpg') no-repeat; background-size: cover; min-height: 446px; margin-top:50px;}	
+.full-width-laminator + .full-width {
+	margin-bottom:50px;
+}
+.laminator { position: relative; min-height: 446px; overflow: hidden; width:100%;}
+.laminator_fg {background: url('https://axismetal.com.ua/img/laminator/laminator_fg.png');width:670px;height:446px;left:600px;}
+.laminator > div  {position: absolute;}	
+.laminator_texture {left: 728px;width:300px;height:446px;background:#27170a;background-size: cover;transition:all .5s;background-image: url(https://axismetal.com.ua/img/laminator/textures/10.jpg);}
+.laminator_text { left :20px; width:450px; top: 100px;}	
+.laminator_handle {width: 126px;height:286px;background: url(https://axismetal.com.ua/img/laminator/ruchki/rt2_o.png) no-repeat 0 0 / cover;top: 80px;transition:all .5s;}	
+.laminator_handle_1 {left:750px;}
+.laminator_handle_2 {left:905px;}
+
+.laminator_colors, .laminator_ruchki { }
+.laminator_color, .laminator_ruchka {float:left;width:10%;text-align: center;cursor: pointer;padding-bottom:5px;padding-top:5px;}
+.laminator_ruchka {width:12%}
+.laminator_color:hover .laminator_color_view, .laminator_ruchka:hover .laminator_ruchka_view {box-shadow: 0px 0px 0px 5px #bd2b2b;opacity: .9;}
+.laminator_color_view, .laminator_ruchka_view {display: inline-block;width:100px;height:100px;margin-bottom:15px;background-size:auto;border:1px solid white;cursor: pointer;transition:all .5s;border-radius: 100%;}
+.laminator_ruchka_view {width:120px;height:120px;background-position: -0px -60px;border-radius: 100px;}
+.laminator_ruchka_active .laminator_ruchka_view, .laminator_color_active .laminator_color_view {box-shadow: 0px 0px 0px 5px #bd2b2b;}
+
+@media all and (max-width:1300px) {
+	.laminator_fg {left:400px;}
+	.laminator_texture {left: 528px;}
+	.laminator_text { left :20px; width:450px; top: 100px;}	
+	.laminator_handle_1 {left:550px;}
+	.laminator_handle_2 {left:705px;}
+	
+
+	.laminator_color_view, .laminator_ruchka_view {width:80px;height:80px;}
+	.laminator_ruchka_view {width:100px;height:100px;background-position: -0px -60px;}
+}
+
+@media all and (max-width:420px) {
+	.full-width-laminator {
+		width:100%;
+		overflow: hidden;
+		min-height: 326px;
+	}
+	
+	
+	.laminator {
+		min-height: 326px;
+	}
+	
+	.laminator_texture {left: 218px;width:300px;height:446px;background:#27170a;background-size: cover;transition:all .5s;background-image: url(https://axismetal.com.ua/img/laminator/textures/10.jpg);}
+	.laminator_text { left :10px; width:200px; top: 50px;}	
+	.laminator_text .text-thin { font-size: 10pt; }
+	.laminator_handle {width: 126px;height:286px;top: 10px;transition:all .5s;}	
+	.laminator_handle_1 {left:240px;}
+	.laminator_handle_2 {left:395px;}
+
+	
+	.laminator_fg {width:670px;height:446px;left:90px;}
+	
+	.laminator_color, .laminator_ruchka {
+		width:20%;
+		font-size: 10pt;
+		min-height: 120px;
+	}
+	
+	
+	
+	.laminator_color_view, .laminator_ruchka_view {
+		width:60px;
+		height:60px;
+		margin-bottom:5px;
+	}
+	
+	.laminator_ruchka {width:25%}
+	.laminator_ruchka_view {
+		width:70px;
+		height:70px;
+		background-position: -0px -80px;
+	}
+}
+
+.main-page-preimushestva img {
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+.main-page-preimushestva b {
+	font-size: 14pt;
+}
+
+.main-page-preimushestva a {
+	font-weight: 400;
+}
+/* Ð¡Ð¢Ð ÐÐÐ˜Ð¦Ð ÐŸÐ ÐžÐ¤Ð˜Ð›Ð¯ */
+
+.block-profile-page-whs60 { background: url(https://axismetal.com.ua/images/bgs/profile-bg-whs60.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-whs72 { background: url(https://axismetal.com.ua/images/bgs/profile-bg-whs72.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-softline { background: url(https://axismetal.com.ua/images/bgs/profile-bg-softline.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-softline82 { background: url(https://axismetal.com.ua/images/bgs/profile-bg-softline82.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-euroline { background: url(https://axismetal.com.ua/images/bgs/profile-bg-euroline.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-artline { background: url(https://axismetal.com.ua/images/bgs/profile-bg-artline.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-swingline { background: url(https://axismetal.com.ua/images/bgs/profile-bg-swingline.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+.block-profile-page-mira { background: url(https://axismetal.com.ua/images/bgs/profile-bg-mira.jpg) no-repeat center center;	 min-height: 700px; padding-top:100px;	 min-width: 1260px; }
+
+.block-profile-properties {
+	width:100%;
+}
+
+.block-profile-properties td {
+	width:48%;
+	border-bottom:1px dotted #ccc;
+	padding:15px 0;
+}
+
+.block-profile-properties td:nth-child(2){
+	width:4%;
+	border-bottom: 0;
+}
+
+.block-profile-properties td span {
+	float: left;
+}
+
+.block-profile-properties td span:nth-child(2){
+	font-weight: bold;
+	float: right;
+}
+
+.profile-info-text {
+	position: absolute;
+	background: url(https://axismetal.com.ua/images/bgs/profile-bg-lines.png) no-repeat center center;
+	height:700px;
+	width:903px;
+	top:0;
+	width:100%;
+	 pointer-events: none;
+}
+
+.profile-info-text > .content {
+	position: relative;
+}
+
+.profile-info-text > .content > div {
+	position: absolute;
+	font-size: 10pt;
+	width:140px;
+}
+
+.profile-info-text > .content > .profile-info-text-1 {
+	left:37px;
+	top:120px;
+}
+
+.profile-info-text > .content > .profile-info-text-2 {
+	left:37px;
+	top:245px;
+}
+
+.profile-info-text > .content > .profile-info-text-3 {
+	left:37px;
+	top:385px;
+}
+
+.profile-info-text > .content > .profile-info-text-4 {
+	left:560px;
+	top:145px;
+	text-align: right;
+}
+
+.profile-info-text > .content > .profile-info-text-5 {
+	left:560px;
+	top:380px;
+	text-align: right;
+}
+
+.block-profile-page-whs60 .button-square, .block-profile-page-whs72 .button-square, .block-profile-page-softline .button-square, .block-profile-page-softline82 .button-square, .block-profile-page-euroline .button-square, .block-profile-page-artline .button-square, .block-profile-page-swingline .button-square, .block-profile-page-mira .button-square {
+	padding:10px 15px;
+}
+
+.profile-info-text > .content > .profile-info-text-6 {
+	left:475px;
+	top:575px;
+	text-align: right;
+}
+
+@media all and (max-width:420px) {
+	.block-profile-page-whs60, .block-profile-page-whs72, .block-profile-page-softline, .block-profile-page-softline82, .block-profile-page-euroline, .block-profile-page-artline, .block-profile-page-swingline, .block-profile-page-mira {
+		min-width: 100%;
+		background-position: left -50px top;
+		background-size: 200%;
+		padding-top:360px;
+	}
+	
+	.profile-info-text {
+		display: none;
+	}
+	
+	.profile-info-text + .content {
+		padding:10px;
+		margin-bottom:10px;
+	}
+	
+	.block-background-profile-text {
+		margin-top:10px;
+		clear: both;
+	}
+	
+	.block-profile-properties td {
+		display: block;
+		width:100%;
+		padding:8px 15px;
+		float: left;
+	}
+	
+	.block-profile-properties td:nth-child(2){
+		display: none;
+	}
+}
+/* ÐžÐ¡Ð¢Ð•ÐšÐ›Ð•ÐÐ˜Ð• Ð‘ÐÐ›ÐšÐžÐÐžÐ’ */
+
+.block-background-balconies-top { background: url(https://axismetal.com.ua/images/bgs/balconies-top-bg.jpg) center center; 	background-size: cover; }
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-4 {padding-left:10px;}
+
+.page-balconies-windows-1 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-osteklenie-bg.jpg)}
+.page-balconies-windows-2 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-otdelka-bg.jpg)}
+.page-balconies-windows-3 > div {background-image:url(https://axismetal.com.ua/images/pages/balcon-osteklenie-hot-bg.jpg)}
+.page-balconies-windows-4 > div {background-image:url(https://axismetal.com.ua/images/pages/balcon-osteklenie-cold-bg.jpg)}
+
+.block-loggia-price-size {
+	width: 100%;
+	text-align: center;
+	font-size: 11pt;
+	color:#999;
+	padding-right: 40px;
+	margin-top:10px;
+}
+
+
+
+@media all and (max-width:420px) { 
+	.block-items-wrapper {
+		width: 100%!important;
+	}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-3  {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-4  {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-balconies-windows-2 {padding-left:0px;}
+	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div {float:left;margin-bottom:10px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div > div > div { min-height: auto;float:left;}
+}
+
+.block-loggia-price > div > div {
+	margin:30px 0px;
+}
+
+.block-loggia-price-image {
+	margin-bottom:-100px;
+	margin-top:0px;
+}
+
+.block-loggia-price-image-fix {
+	margin-top:-35px;
+	margin-bottom:-110px;
+}
+
+.block-loggia-price-image {
+	max-width: none;
+	}
+
+.block-loggia-price-list {
+	padding-right:80px;
+	padding-left:15px;
+	list-style: none;
+	display: block;
+	position: relative;
+}
+
+.block-loggia-price-list.padding-side-15 {
+	padding-right:15px;
+	padding-left:15px;
+}
+
+.block-loggia-price-list li > a {
+	text-decoration: none;
+}
+
+.block-loggia-price-list li > a > b {
+	color:#333;
+}
+
+.block-loggia-price-list li > a > .text-bold {
+	color:#222;
+	text-decoration:none;
+	border-bottom:1px solid #ccc;
+}
+
+.block-loggia-price-list li > a > span {
+	text-decoration: none;
+	display: inline-block;
+	margin-top:10px;
+	color:#999;
+}
+.block-loggia-price-list li {
+	display: block;
+	font-size: 16pt;
+	padding:10px 0px;
+	border-bottom:1px solid #eee;
+}
+
+.block-loggia-price-list li > span {
+	display: block;
+	float:right;
+	width:auto;
+	text-align: right;
+	color:#888;
+	font-size: 12pt;
+	margin-top:-30px;
+}
+
+.block-loggia-price-list li > span > .text-bold {
+	font-size: 20pt;
+	color:black;
+}
+
+.block-loggia-price-name {
+	position: absolute;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-left:35px;
+}
+
+.block-loggia-price-list > li > span > .button-square {
+	padding:7px 15px;
+	margin-left:10px;
+}
+
+@media all and (max-width:420px) { 
+	
+	.block-loggia-price-image {
+		margin-bottom: -70px;
+	}
+	
+	.block-loggia-price-list {
+		padding-right: 30px;
+		padding-left: 10px;
+	}
+	
+	.block-loggia-price-list li > span {
+		width: 100%;
+		margin-top: 5px;
+		text-align: left;
+	}
+	
+	.block-loggia-price-list li > span > br {
+		display: none;
+	}
+	
+	.block-loggia-price > div > div {
+		margin:20px 0px;
+	}
+	
+	.block-loggia-price > div > div > span.block-loggia-price-name {
+		font-size: 16pt;
+		margin-left:15px;
+	}
+}
+
+
+
+.block-price-slider-left, .block-price-slider-right, .block-kvartira-slider-1, .block-kvartira-slider-2, .block-kvartira-slider-3 {
+	text-decoration: none;
+	border-bottom:1px dashed #c10c0c;
+}
+
+.block-price-slider-active, .block-kvartira-slider-active {
+	text-decoration: none;
+	border-bottom: 0;
+}
+
+/* Ð”Ð²ÐµÑ€Ð¸ */
+
+.block-background-doors-top { background: url(https://axismetal.com.ua/images/bgs/doors-top-bg.jpg) center center; 	background-size: cover; }
+.block-background-doors-vekaslide { background: url(https://axismetal.com.ua/images/bgs/doors-vekaslide-bg.jpg) center center; 	background-size: cover; }
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-tipe-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-tipe-2 {padding-left:10px;}	
+.page-doors-tipe-1 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-tipe-plastic-bg.jpg)}
+.page-doors-tipe-2 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-tipe-alum-bg.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-alum-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-doors-alum-2 {padding-left:10px;}	
+.page-doors-alum-1 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-alum-ofis-bg.jpg)}
+.page-doors-alum-2 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-alum-vhod-bg.jpg)}
+
+.block-items-wrapper > div.page-doors-plastic-1 {padding-right:10px;}
+.block-items-wrapper > div.page-doors-plastic-2 {padding-left:10px;}	
+.block-items-wrapper > div.page-doors-plastic-3 {padding-right:10px;}
+.block-items-wrapper > div.page-doors-plastic-4 {padding-left:10px;}
+.block-items-wrapper > div.page-doors-plastic-5 {padding-left:10px;}
+.page-doors-plastic-1 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-plastic-balkon-bg.jpg)}
+.page-doors-plastic-2 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-plastic-ofis-bg.jpg)}
+.page-doors-plastic-3 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-plastic-vhod-bg.jpg)}
+.page-doors-plastic-4 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-plastic-portal-bg.jpg)}
+.page-doors-plastic-5 > div {background-image:url(https://axismetal.com.ua/images/pages/doors-plastic-portal-bg.jpg)}
+
+@media all and (max-width:420px) { 
+.page-plastic-windows > .block-items-wrapper > div.page-doors-tipe-1 {padding-right:0px;}
+.page-plastic-windows > .block-items-wrapper > div.page-doors-tipe-2 {padding-left:0px;} 
+.page-plastic-windows > .block-items-wrapper > div.page-doors-alum-1 {padding-right:0px;}
+.page-plastic-windows > .block-items-wrapper > div.page-doors-alum-2 {padding-left:0px;} 
+.page-plastic-windows > .block-items-wrapper > div.page-doors-plastic-1 {padding-right:0px;}
+.page-plastic-windows > .block-items-wrapper > div.page-doors-plastic-2 {padding-left:0px;} 
+.page-plastic-windows > .block-items-wrapper > div.page-doors-plastic-3 {padding-right:0px;}
+.page-plastic-windows > .block-items-wrapper > div.page-doors-plastic-4 {padding-left:0px;}
+.page-plastic-windows > .block-items-wrapper > div.page-doors-plastic-5 {padding-left:0px;}
+
+}
+
+
+
+/* ÐšÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ñ‹ */
+
+.block-background-kvartira-besplatno { background: url(https://axismetal.com.ua/images/bgs/kvartira-otdelka-besplatno-bg.jpg) center center; 	background-size: cover; }
+
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-4 {padding-left:10px;}
+.page-kvartira-otdelka-1 > div {background-image:url(https://axismetal.com.ua/images/pages/kvartira-otdelka-kosmetika-bg.jpg)}
+.page-kvartira-otdelka-2 > div {background-image:url(https://axismetal.com.ua/images/pages/kvartira-otdelka-standart-bg.jpg)}
+.page-kvartira-otdelka-3 > div {background-image:url(https://axismetal.com.ua/images/pages/kvartira-otdelka-biznes-bg.jpg)}
+.page-kvartira-otdelka-4 > div {background-image:url(https://axismetal.com.ua/images/pages/kvartira-otdelka-premium-bg.jpg)}
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > .page-kvartira-otdelka-1 > div > div,
+.page-plastic-windows.block-2-items > .block-items-wrapper >  .page-kvartira-otdelka-2 > div > div,
+.page-plastic-windows.block-2-items > .block-items-wrapper >  .page-kvartira-otdelka-3 > div > div,
+.page-plastic-windows.block-2-items > .block-items-wrapper >  .page-kvartira-otdelka-4  > div > div {
+	min-height: 520px;
+}
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-kvartira-otdelka-4 {padding-left:0px;}
+}
+
+
+/* Ð–Ð°Ð»ÑŽÐ·Ð¸ */
+
+.block-background-zhaluzi { background: url(https://axismetal.com.ua/images/bgs/zhaluzi-bg.jpg) center center; 	background-size: cover; }
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-4 {padding-left:10px;}
+.page-zhaluzi-1 > div {background-image:url(https://axismetal.com.ua/images/pages/zhaluzi-vertical-bg.jpg)}
+.page-zhaluzi-2 > div {background-image:url(https://axismetal.com.ua/images/pages/zhaluzi-gorizont-bg.jpg)}
+.page-zhaluzi-3 > div {background-image:url(https://axismetal.com.ua/images/pages/zhaluzi-roller-bg.jpg)}
+.page-zhaluzi-4 > div {background-image:url(https://axismetal.com.ua/images/pages/zhaluzi-plisse-bg.jpg)}
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-zhaluzi-4 {padding-left:0px;}
+}
+
+
+/* Ð Ð¾Ð»ÑŒÑÑ‚Ð°Ð²Ð½Ð¸ */
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-rollety-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-rollety-2 {padding-left:10px;}
+.page-rollety-1 > div {background-image:url(https://axismetal.com.ua/images/pages/rollety-rolling-bg.jpg)}
+.page-rollety-2 > div {background-image:url(https://axismetal.com.ua/images/pages/rollety-extrusion-bg.jpg)}
+
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-rollety-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-rollety-2 {padding-left:0px;}
+}
+
+
+/* ÐÐ°Ñ‚ÑÐ¶Ð½Ð¾Ð¹ Ð¿Ð¾Ñ‚Ð¾Ð»Ð¾Ðº */
+
+.block-background-potolok { background: url(https://axismetal.com.ua/images/bgs/potolok-bg.jpg) center center; 	background-size: cover; }
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-3 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-4 {padding-left:10px;}
+.page-potolok-1 > div {background-image:url(https://axismetal.com.ua/images/pages/potolok-mat-bg.jpg)}
+.page-potolok-2 > div {background-image:url(https://axismetal.com.ua/images/pages/potolok-gloss-bg.jpg)}
+.page-potolok-3 > div {background-image:url(https://axismetal.com.ua/images/pages/potolok-satin-bg.jpg)}
+.page-potolok-4 > div {background-image:url(https://axismetal.com.ua/images/pages/potolok-fabric-bg.jpg)}
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-3 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-potolok-4 {padding-left:0px;}
+}
+
+
+
+/* ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€ */
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-2 {padding-left:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-3 {padding-right:10px;}
+.page-calculator-type-1 > div {background-image:url(https://axismetal.com.ua/images/pages/balconies-osteklenie-bg.jpg)}
+.page-calculator-type-2 > div {background-image:url(https://axismetal.com.ua/images/pages/kvartira-osteklenie-bg.jpg)}
+.page-calculator-type-3 > div {background-image:url(https://axismetal.com.ua/images/pages/okno-osteklenie-bg.jpg)}
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-2 {padding-left:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-calculator-type-3 {padding-right:0px;}
+}
+
+
+/* ÐœÐ¾Ð½Ñ‚Ð°Ð¶ Ð¾ÐºÐ¾Ð½ */
+
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-montazh-type-1 {padding-right:10px;}
+.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-montazh-type-2 {padding-left:10px;}
+.page-montazh-type-1 > div {background-image:url(https://axismetal.com.ua/images/pages/montazh-windows-gost-bg.jpg)}
+.page-montazh-type-2 > div {background-image:url(https://axismetal.com.ua/images/pages/montazh-windows-ideal-bg.jpg)}
+
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-montazh-type-1 {padding-right:0px;}
+	.page-plastic-windows.block-2-items > .block-items-wrapper > div.page-montazh-type-2 {padding-left:0px;}
+}
+
+
+/*ÐžÐŸÐ¦Ð˜Ð˜ */
+
+.block-background-plastic-podokonnik-small-moller > div {	background: url(https://axismetal.com.ua/img/options/podokonnik-moller-bg.jpg) center center;	background-size: cover; }
+
+.block-background-plastic-podokonnik-small-vitrazh > div {	background: url(https://axismetal.com.ua/img/options/podokonnik-vitrazh-bg.jpg) center center;	background-size: cover; }
+
+.block-background-plastic-podokonnik-small-cristalit > div {	background: url(https://axismetal.com.ua/img/options/podokonnik-cristalit-bg.jpg) center center;	background-size: cover; }
+
+
+
+
+.page-plastic-windows-small.block-3-items > .block-items-wrapper > .block-background-plastic-podokonnik-small-vitrazh > div > div,
+.page-plastic-windows-small.block-3-items > .block-items-wrapper > .block-background-plastic-podokonnik-small-cristalit > div > div,
+.page-plastic-windows-small.block-3-items > .block-items-wrapper > .block-background-plastic-podokonnik-small-moller > div > div 
+{
+	min-height: 420px;
+}
+
+@media all and (max-width:420px) {	
+	.page-plastic-windows-small.block-3-items > .block-items-wrapper > div.block-background-plastic-podokonnik-small-vitrazh {padding-right:0px;}
+	.page-plastic-windows-small.block-3-items > .block-items-wrapper > div.block-background-plastic-podokonnik-small-cristalit {padding-left:0px;}
+	.page-plastic-windows-small.block-3-items > .block-items-wrapper > div.block-background-plastic-podokonnik-small-moller {padding-right:0px;}
+}
+
+/* ÐÐžÐ’ÐžÐ¡Ð¢Ð˜ _ ÐÐšÐ¦Ð˜Ð˜ FIX */
+
+.news-detail h1 {
+	clear:left;
+	margin-top:30px;
+}
+
+div.news-detail img.detail_picture {
+	float:none;
+	margin-bottom:20px;
+}
+
+div.news-detail .info_box.plusi li {
+	width:25%;
+	float:left;
+	text-align: center;
+	font-size: 18pt;
+}
+
+div.news-detail .info_box.plusi li:nth-child(4n+1){
+	clear: left;	
+}
+
+div.news-detail .info_box.plusi li img {
+	display: block;
+	margin: 0px auto;
+	margin-bottom:10px;
+}
+
+div.news-detail .home_box .col-md-4 {
+	width: 25%;
+	float:left;
+}
+
+div.news-detail .home_box {
+	width: 100%;
+	float: left;
+}
+
+div.news-detail .home_box .ok-red-btn-orange {
+	padding:0 20px!important;
+}
+
+
+
+
+.mini-form  {
+    background:#555 url(https://axismetal.com.ua/img/logistic/form2.jpg) center right;
+    background-size: cover;
+}
+
+.block-call-form-bg-dacha {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-dacha.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.block-call-form-bg-balcon {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-balcon.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.block-call-form-bg-alum {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-alum.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.block-call-form-bg-alumin {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-alumin.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+.block-call-form-bg-zavod {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-zavod.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.block-call-form-bg-dveri {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-bg-dveri.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.block-call-form-type-2 {
+    background:#555 url(https://axismetal.com.ua/img/design2017/block-call-form-2-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color:black;
+}
+
+.block-call-form-type-2 > .content {
+	padding-left:700px;
+}
+
+.block-call-form-type-2 input {
+	width:300px;
+}
+
+.block-call-form h2 {
+    margin-bottom:10px!important;
+}
+.block-call-form .text-white {
+    margin-bottom:40px;
+}
+.block-call-form-fields {
+    padding-top: 40px;
+    margin-bottom: 50px;
+    
+}
+.block-call-form-fields input.form-field  {
+    margin-right:20px;
+    border:0;
+}
+
+
+.block-call-form .block-form-conf {
+	margin:0px auto;
+	margin-top:30px;
+	color:white;
+	max-width: 700px;
+	
+	padding:10px;
+}
+
+.block-call-form .block-form-conf a {
+	color:white;
+}
+
+.block-call-form .button-square {
+	padding: 10px 30px 10px;
+}
+
+
+.mini-form .block-call-form-fields {
+    margin-bottom: 30px;
+    padding:20px 40px;
+}
+
+.mini-form .block-call-form-fields input.form-field {
+	
+	padding:10px;
+	margin-bottom:10px;
+}
+
+.mini-form .block-call-form .button-square {
+	padding: inherit;
+}
+
+.mini-form  .block-form-conf {
+	font-size: 10pt;
+}
+
+.mini-form.block-call-form .block-form-conf {
+	padding: 5px;
+}
+
+@media all and (max-width:420px) {
+    .block-call-form-fields {
+        padding-top: 40px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom: 80px;
+    }
+    .block-call-form-fields input.form-field  {
+        width:100%;
+        margin-right:0;
+        float: none;
+        font-size:1em;
+        margin-bottom:20px;
+    }
+    .block-call-form-fields input.button-round  {
+        width:100%;
+        float: none;
+    }
+    
+    .block-call-form-type-2 > .content {
+	    padding-left:20px;
+    }
+    
+    .block-call-form-type-2 input {
+		width:100%;
+		 
+	}
+	
+	.block-call-form-type-2 .block-call-form-fields input.form-field {
+		margin-bottom:0px;
+	}
+	
+	.block-call-form-type-2 .text-size-27 {
+		font-size: 20pt;
+	}
+	
+	.block-call-form-type-2 .text-size-18 {
+		font-size: 14pt;
+	}
+}
+
+
+.main_left {
+    width: 78%;
+    min-height: 280px;
+    padding-right: 33%;
+    font-size: 20px;
+    background: url(https://axismetal.com.ua/images/main-block-quote-bg.png) no-repeat;
+    background-position: top right;
+    background-size: auto 280px;
+}
+
+.block-right .covych {
+    width: 100%;
+    font-family: serif;
+    font-weight: 700;
+    text-align: center;
+    color: #666;
+    font-size: 40px;
+}
+
+.main_left+.block-right {
+    width: 25%;
+	min-height: 300px;
+    padding: 10px 30px;
+    position: absolute;
+    background: white;
+    right: 0;
+    top: 0;
+}
+
+.greyline {
+    background: none repeat scroll 0 0 #f7f7f8;
+}
+
+.greyline > .content {
+	position: relative;
+}
+
+.block-main-numbers-container > div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px 0px;
+    border: 3px solid white;
+    min-height: 200px;
+}
+
+.block-2-items > .block-items-wrapper > div.block-clients-review {
+    padding: 10px 15px;
+    background: #f5f5f5;
+    margin-right:2%;
+    width:48%;
+}
+@media all and (max-width:820px) {
+    .block-2-items > .block-items-wrapper > div.block-clients-review {
+        padding:10px;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+.block-2-items > .block-items-wrapper > div.block-our-personal {
+    padding:  10px 30px;
+}
+.block-clients-review {
+    min-height: 600px;
+}
+.block-clients-review-wrapper, .block-our-personal-wrapper  {
+    width:100%;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.block-clients-review-container, .block-our-personal-container  {
+    position: relative;
+    z-index: 1;
+    width:100%;
+    white-space: nowrap;
+    transition:all 1s;
+    font-size: 0;
+}
+
+
+.block-our-personal-container {
+    transition:all .3s;
+}
+.block-clients-review-container:before, .block-our-personal-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    pointer-events: none;
+}
+.block-clients-review-container > div, .block-our-personal-container > div {
+    width:100%;
+    display: inline-block;
+    float: none;
+    white-space: normal;
+    padding:0px 10px;
+    font-size: 16px;
+    vertical-align: top;
+}
+.block-our-personal {
+    min-height: 600px;
+    background: url(https://axismetal.com.ua/img/design2017/main-block-sotrudniki-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.block-our-personal-wrapper {
+    width:auto;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:100px;
+    padding:0;
+}
+.block-our-personal-container {
+    height: 100%;
+}
+.block-our-personal-container > div {
+    padding-left:50%;
+    padding-top:10%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: left -20% bottom;
+}
+.block-our-personal-container > .block-our-personal-item-1 {    background-image: url(https://axismetal.com.ua/img/design2017/main-block-sotrudniki-1.png); }
+.block-our-personal-container > .block-our-personal-item-2 {    background-image: url(https://axismetal.com.ua/img/design2017/main-block-sotrudniki-2.png); }
+.block-our-personal-container > .block-our-personal-item-3 {    background-image: url(https://axismetal.com.ua/img/design2017/main-block-sotrudniki-3.png); }
+.block-our-personal-container > .block-our-personal-item-4 {    background-image: url(https://axismetal.com.ua/img/design2017/main-block-sotrudniki-4.png); }
+@media all and (max-width:420px) {
+    .block-clients-review {
+        margin-bottom:20px;
+        min-height: auto;
+    }
+    .block-our-personal {
+        min-height: 500px;
+    }
+    .block-our-personal-container > div {
+        background-position: left -90px bottom;
+        background-size: 70%;
+        padding-left:70px;
+        padding-top:10px;
+    }
+    .block-our-personal-container > .block-our-personal-item-1 {    background-position: left -90px bottom; }
+    .block-our-personal-container > .block-our-personal-item-2 {    background-position: left -70px bottom; background-size: 60%; }
+    .block-our-personal-container > .block-our-personal-item-3 {    background-position: left -30px bottom; }
+    .block-our-personal-container > .block-our-personal-item-4 {    background-position: left -50px bottom -70px; }
+    .block-our-personal-container > div > p {
+        margin-left:50px;
+    }
+    .block-our-personal-container > div > p > .text-quote {
+        display: inline-block;
+        margin-left:-20px;
+        margin-right:5px;
+    }
+    .block-our-personal-wrapper {
+        top:70px;
+    }
+    
+    .main_left {
+        width: 100%;
+        height: auto;
+        background: none;
+        padding-right: 0;
+        padding:10px;
+    }
+
+    .block-ded {
+        padding: 30px 0;
+    }
+
+    .proizv {
+        background-position: 27% 10%;
+    }
+    
+    .main_left+.block-right {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.text-quote {
+    font-family: serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ef2214;
+}
+
+/* REVIEWS */
+
+.review .it {
+    background: none repeat scroll 0 0 #f7f7f8;
+    border: 0px solid #eaf0f2;
+    padding: 0 0 0 86px;
+    position: relative;
+    min-height: 100px;
+}
+
+.review .info {
+    margin-top: 5px;
+    padding-left: 86px;
+}
+
+.review .it:before {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-family: Arial;
+    content: "\201C";
+    font-size: 150px;
+    line-height: 120px;
+    color: #212629;
+}
+
+.review .text {
+    padding: 18px 20px 22px 0;
+    line-height: 19px;
+    color: #555555;
+}   
+
+.review .title {
+	text-align: right;
+	padding-right: 0px;
+}
+
+.review .border {
+    width: 37px;
+    height: 36px;
+    background: url(https://axismetal.com.ua/bitrix/templates/oknakomforta/images/bord.png) 0px 0px no-repeat;
+    position: absolute;
+    bottom: -35px;
+    right: 0px;
+    z-index: -1;
+}
+  
+/* Ð¡Ð¢Ð ÐÐÐ˜Ð¦Ð Ð¡ ÐŸÐ ÐžÐ¤Ð˜Ð›Ð¯ÐœÐ˜ */
+
+.block-progress-bar {
+    position: relative;
+    margin:20px 0 60px 0;
+}
+.block-progress-bar-item {
+    text-align: left;
+    margin-bottom: 12px;
+}
+.block-progress-bar-item .text-small {
+    line-height: 28px;
+}
+.block-progress-bar-inner {
+    border:1px solid #e3e3e3;
+    background: rgb(221,221,221);
+    background: -moz-linear-gradient(top,  rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 );
+}
+.block-progress-bar-inner > span {
+    height:12px;
+    display: inline-block;
+    position: relative;
+}
+.block-progress-bar-inner > span.bg-orange {
+    background: #f79263;
+}
+.block-progress-bar-inner > span.bg-green {
+    background: #85d2d6;
+}
+.block-progress-bar-inner > span.bg-yellow {
+    background: #ffc45b;
+}
+.block-progress-bar-inner > span > i {
+    font-style: normal;
+    color:#fff;
+    background: #2d2d2d;
+    border:1px solid #585858;
+    padding:0 2px;
+    position: absolute;
+    right:-11px;
+    top:-22px;
+    font-size:10px;
+}
+.block-progress-bar-inner > span > i:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #2d2d2d transparent transparent transparent;
+    content: '';
+    position: absolute;
+    left:50%;
+    bottom:-5px;
+    margin-left:-3px;
+}
+.block-progress-bar-text {
+    color:#c7443b;
+    position: absolute;
+    left:55%;
+    top:0;
+    border-left:1px solid rgba(204,182,171,0.42);
+    padding-top:155px;
+    padding-left:10px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    font-size:12px;
+    line-height:10px;
+    text-align: left;
+    z-index: 10;
+}
+
+@media all and (max-width:420px) {
+    .block-progress-bar {
+        position: absolute;
+        left:45%;
+        top:25px;
+        width:50%;
+    }
+    .block-progress-bar-text {
+        display: none;
+    }
+    
+    .block-window-all a {
+	    margin-top:-35px;
+    }
+    
+    .block-window-all .clearfix a:first-child {
+        display: none;
+    }
+    .block-window-all-price {
+        float: left;
+        width: 60%;
+        text-align: left;
+        margin-top:5px;
+    }
+
+}
+
+.block-window-all {
+	position: relative;
+}
+
+.block-window-all-container {
+    position: relative;
+    overflow: hidden;
+    padding:20px 0;
+}
+.block-window-description {
+    height: 100px;
+}
+.block-window-description strong {
+    float: left;
+    width: 20%;
+    font-size:25px;
+    line-height: 25px;
+}
+.block-window-description p {
+    float: left;
+    width: 80%;
+    font-size:15px;
+    line-height:25px;
+    margin-top:0!important;
+}
+
+
+
+@media all and (max-width:420px) {
+    .block-window-description {
+        padding:0 20px;
+        height: auto;
+    }
+    .block-window-description br {
+        display: none;
+    }
+    .block-window-description strong {
+        float: none;
+        width: 100%;
+        font-size:18px;
+        line-height: 35px;
+    }
+    .block-window-description p {
+        float: none;
+        width: 100%;
+        font-size:12px;
+        line-height:18px;
+        margin-top:0!important;
+    }
+}
+
+.windows-page .block-items-wrapper > div.block-window-all {
+   text-align: center;
+   padding:20px 40px;
+   margin-top:30px;
+}
+.windows-page .block-items-wrapper > div.block-window-all > .text-small {
+    text-align: left;
+    margin-bottom:10px;
+}
+.page-slider > .block-items-wrapper > div .block-window-description + .block-window-all {
+    padding:0 4.9% 0 0;
+}
+.windows-page .block-items-wrapper > div.block-window-all:last-child {
+  /*  padding:0 0 0 4.9%;*/
+}
+@media all and (max-width:420px) {
+    .windows-page .block-items-wrapper > div.block-window-all, .page-slider > .block-items-wrapper > div .block-window-description + .block-window-all, .windows-page .block-items-wrapper > div.block-window-all:last-child {
+        padding:0 10px 10px 10px;
+        width: 100%;
+        float: none;
+        border-bottom:1px solid #ccc;
+    }
+    .windows-page .block-items-wrapper > div.block-window-all:last-child {
+        border-bottom:0;
+        padding-bottom:0;
+    }
+}
+.windows-page .block-items-wrapper > div.block-window-all .block-window-all-info {
+    background-size: cover;
+    position: relative;
+    margin-bottom:10%;
+}
+
+.windows-page .block-items-wrapper > div.block-window-all .block-window-all-info img {
+    width:100%;
+    height: auto;
+    vertical-align: bottom;
+}
+.block-window-all-price span {
+    margin:0 3px;
+    display: inline-block;
+}
+.block-window-all-info:after {
+    content:'';
+    position: absolute;
+    left:50%;
+    top:100%;
+    margin-left:-13px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 13px 0 13px;
+    border-color: #f1eeeb transparent transparent transparent;
+}
+.block-window-all-window {
+    background: url(https://axismetal.com.ua/img/design2015/win_prlx/prlx-bg-2.jpg) 10% 25px no-repeat;
+}
+.block-window-all:nth-of-type(3n-1) .block-window-all-window {
+    background-position: 50% 25px;
+}
+.block-window-all:nth-of-type(3n) .block-window-all-window {
+    background-position: 90% 25px;
+}
+.block-window-all-window img {
+    width: 100%;
+    height: auto;
+}
+.block-window-all-title {
+    font-weight:700;
+    font-size:19px;
+    line-height: 54px;
+}
+
+@media all and (max-width:420px) {
+.block-window-all-title {
+    font-weight:700;
+    font-size:17px;
+    line-height: 54px;
+}
+}
+.block-window-all-info-line span {
+    display: block;
+    border-bottom:1px solid #f08416;
+    width: 120px;
+    position: absolute;
+    font-size:14px;
+    padding:10px 0;
+    left:17px;
+    top:20px;
+    text-align: left;
+    white-space: nowrap;
+    font-weight: normal;
+}
+.block-window-all-info-line span i {
+    line-height: 22px;
+    font-style:normal;
+    background: rgba(255,255,255,0.8);
+    padding:3px;
+}
+.block-window-all-info-line span:last-child {
+    border-bottom:0;
+    border-top:1px solid #f08416;
+    padding-left:25px;
+    left:108px;
+    top:283px;
+}
+.block-window-all-info-line span:before, .block-window-all-info-line span:after {
+    display: inline-block;
+    width:9px;
+    height:9px;
+    background: #f08416;
+    content: '';
+    border-radius: 5px;
+    position: absolute;
+    bottom:-5px;
+    left:0;
+}
+.block-window-all-info-line span:last-child:before, .block-window-all-info-line span:last-child:after {
+    bottom:auto;
+    top:-5px;
+}
+
+.block-window-all-info-line span:after {
+    left: auto;
+    right:0;
+}
+
+.block-window-all .button-round {
+    font-size: 80%;
+    padding: 8px 20px;
+}
+@media all and (max-width:420px) {
+    .block-window-all-info-line {
+        display: none;
+    }
+    .block-window-all-info:after {
+        display: none;
+    }
+    .windows-page .block-items-wrapper > div.block-window-all .block-window-all-info {
+        padding-right:60%;
+    }
+}
+
+.block-map-point-info {
+	background: white;
+	padding:20px 40px 40px;
+	margin-top:50px;
+	font-size: 14pt;
+	width:450px;
+}
+
+.block-6-items > .block-items-wrapper > div > a  > .text-small {
+	font-size:12pt;
+	color: #666;
+}
+
+@media all and (max-width:420px) {
+	
+	.block-map-point-info {
+		width: 100%;
+		margin-top:300px;
+		
+		position: static;
+	}
+	
+	.block-map-point-text {
+		margin-top:200px;
+	}
+	
+	.block-one-window  .block-width-300 {
+		width:35%;
+		float:left;
+	}
+	
+	.block-one-window .block-2-items .block-2-items.margin-top-30 {
+		width:60%;
+		margin-top:0;
+	}	
+	.block-one-window .block-2-items .block-2-items > div > div {
+		width:50%;
+		float: left;
+	    width: 50%;
+	    font-size: 10pt;
+	    font-weight: normal;
+	    padding: 5px;
+	}
+	
+	.block-one-window .block-2-items .clearfix {
+		margin-top:-50px;
+		padding-top:0;
+	}
+	
+	.block-one-window .block-2-items .clearfix .margin-top-5 {
+		margin-top:-15px;
+	}
+	
+	.block-one-window .block-2-items .clearfix a {
+		width:80%;
+		display: block;
+		margin:20px auto;
+	}
+}
+
+.block-window-price-kvartira {
+	background: #fafafa;
+	border-top:1px solid #f5f5f5;
+}
+.block-window-price-kvartira > div > div > div {
+	height:500px;
+	padding: 0;
+}
+
+.block-window-price-kvartira > div > div > div > div {
+	position: relative;
+	height: 100%;
+}
+
+.block-window-price-kvartira > div > div > div > div > div {
+	position: absolute;
+	bottom:0px;
+	right:10px;
+	padding:20px;
+	background: rgba(255, 255, 255, 0.95);
+}
+
+@media all and (max-width:420px) {
+	.block-window-price-kvartira > div > div > div {
+		background-size: 620px;
+		background-position: center top;
+		height: 370px;
+	}
+	
+	.block-window-price-kvartira > div > div > div > div > div {
+		width: 100%;
+		right:0;
+		padding:5px;
+	}
+	
+	.block-window-price-kvartira h2 {
+		font-size: 12pt;
+	}
+}
+
+/* accordion */
+.accordion-body{padding:14px 15px;border:1px solid #d7dee3;border-top:none;position:relative;}
+.accordion-head{border:1px solid #d7dee3;cursor:pointer;padding:10px 45px 11px 15px;position:relative;}
+.accordion-head:hover,.accordion-head.accordion-open{background:#f8f9fa;}
+.accordion-head.accordion-open{border-bottom:none;}
+.accordion-head.accordion-open a, .accordion-head:hover a{color:#2f383d;}
+.accordion-head.accordion-close{margin-bottom:10px;}
+.accordion-type-1 .item, .accordion-type-2 .item, .accordion-type-1 .item:hover, .accordion-type-2 .item:hover{border-color:#d7dee3 !important;}
+.accordion-type-1 .item .accordion-body, .accordion-type-2 .item .accordion-body, .accordion-type-1 .item .panel-collapse, .accordion-type-2 .item .panel-collapse, .accordion-type-1 .item .accordion-head, .accordion-type-2 .item .accordion-head{border:none !important;}
+.accordion-type-1 .item .accordion-head, .accordion-type-2 .item .accordion-head{margin-bottom:0 !important;}
+.accordion-head.accordion-open .fa:before{content:"\f106";}
+.panel-collapse.in{margin-bottom:10px;}
+.accordion-type-1 .accordion-head{font-size:14px;}
+.accordion-type-1 .accordion-head a{display:inline;text-decoration:none;border-bottom:1px dotted;}
+.accordion-type-1 .accordion-head .fa{position:absolute;top:15px;right:15px;font-size:26px;line-height:11px;height:11px;}
+.bx-firefox .accordion-type-1 .accordion-head .fa{top:14px;}
+.accordion-type-1 .accordion-head.accordion-close .fa, .accordion-type-2 .accordion-head.accordion-close .fa{color:#b9c5cc;}
+.accordion-type-2 .accordion-head{font-size:14px;padding:20px 25px 20px 60px;}
+.accordion-type-2 .accordion-head a{display:inline;line-height:18px;text-decoration:none;border-bottom:1px dotted;font-size:16px;}
+.accordion-type-2 .accordion-head:after{content:"";display:table;clear:both;}
+.accordion-type-2 .accordion-head .fa{border-radius:30px;background:none !important;position:absolute;top:16px;left:15px;font-size:28px;line-height:30px;width:28px;height:28px;text-align:center;}
+.accordion-type-2 .accordion-head.accordion-open .fa{line-height:25px;}
+
+/* VACANCY */
+.vacancy.item-views.accordion .pay{float:right;color:#555555;}
+.vacancy.item-views.accordion .text{padding:0px 0px 15px 45px;}
+.vacancy.item-views.accordion .title{display:none;}
+.vacancy.item-views.list .title{font-size:24px;}
+.vacancy.item-views .btn{margin-top:10px;}
+
+.item-views .item{border:1px solid #e7ebee;margin-bottom:10px;position:relative;z-index:2;}
+.item-views .item:hover{z-index:25;}
+
+.vacancy li {
+	overflow: visible;
+}
+
+.vacancy .accordion-head + div {
+	display: none;
+}
+
+.vacancy .accordion-type-2:first-child .accordion-head + div {
+	display: block;
+}
+
+a.block-stati-list-title {
+	color: #333;	
+	font-weight: 500;
+}
+
+header .header-text .region-name {
+	cursor: pointer;
+}
+
+header .header-text div.region-selector {
+	display: none;
+	position: absolute;
+    margin-left: 30px;
+    background: white;
+    border: 1px solid #036bba;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
+    margin-top: -30px;
+    display: none;
+    z-index: 2;
+    padding-left:0;
+}
+
+header .header-text .region-selector a {
+	display: block;
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 10pt;
+    cursor: pointer;
+    border-bottom: 0;
+    
+}
+
+header .header-text .region-selector a:hover {
+	color:white;
+	background:#2766a9;
+}
+
+#contacts-map {
+	width: 100%;
+	height: 600px;
+}
+
+#contacts-map-footer {
+	width: 100%;
+	height: 460px;
+}
+
+.region-selector-contacts a {
+	margin-right:20px;
+}
+
+.block-form-raschet .form-field {
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	background: none;
+	color:white;
+}
+
+.block-form-raschet .form-field::placeholder {
+	color:rgba(255, 255, 255, 0.72);
+}
+@media all and (max-width:420px) {
+	
+	.block-form-raschet > div > div {
+		background: rgba(0, 0, 0, 0.48);
+		padding:30px 10px 20px 30px;
+	}
+	
+	.block-form-raschet > div > div.margin-top-30, .block-form-raschet > div > div.margin-bottom-30 {
+		margin:0;
+	}
+	
+	.form-field {
+		padding:6px 10px;
+	}
+	
+	.block-form-raschet select.block-width-250 {
+			width:150px;	
+	}
+	
+	.block-form-raschet select.block-right {
+		float:none;
+		margin-left:15px;
+	}
+}
+
+.block-decor .block-items-wrapper > div {
+	padding:0;
+	height: 360px;
+	overflow: hidden;
+}
+
+.block-decor .block-items-wrapper > div > div {
+	padding:40px 50px;
+	padding-top:260px;	
+	transition: all .7s;
+}
+
+.block-decor .block-items-wrapper > div > div > hr, .block-decor .block-items-wrapper > div > div > p, .block-decor .block-items-wrapper > div > div > .button-square  {
+	opacity: 0;
+	transition: all .7s;
+}
+
+.block-decor .block-items-wrapper > div:hover > div {
+	padding-top:40px;	
+	background: rgba(0, 0, 0, 0.63);
+}
+
+.block-decor .block-items-wrapper > div:hover > div > hr, .block-decor .block-items-wrapper > div:hover > div > p, .block-decor .block-items-wrapper > div:hover > div > .button-square  {
+	opacity: 1;
+}
+
+@media all and (max-width:420px) {
+	.block-decor .block-items-wrapper > div {
+		height: 130px;
+		float:left;
+		width: 50%;
+	}
+	
+	.block-decor.block-3-items > .block-items-wrapper > div:nth-child(3n+1) {
+		clear: none
+	}
+	
+	.block-decor.block-3-items > .block-items-wrapper > div:nth-child(2n+1) {
+		clear: left;
+	}
+	
+	.block-decor .block-items-wrapper > div p {
+		display: none;
+	}
+	
+	.block-decor .block-items-wrapper > div > div {
+		padding: 40px 10px 50px 30px;
+		background: rgba(0, 0, 0, 0.23);
+	}
+	
+
+	.block-decor .block-items-wrapper > div > div hr {
+		display: none;
+	}
+	
+	.block-decor .block-items-wrapper > div > div:hover {
+		padding-top:10px;
+	}
+	
+	.block-decor .block-items-wrapper > div > div > a.margin-top-20 {
+		margin-top:-30px;
+	}
+	
+}
+
+.block-actions .block-items-wrapper > div {
+	padding:0;
+	height: 560px;
+	overflow: hidden;
+	display: table;
+}
+
+.block-actions .block-items-wrapper > div > div {
+	display: table-cell;
+    vertical-align: bottom;
+	transition: all .7s;
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.block-actions-region .block-items-wrapper > div > div {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+
+.block-actions .block-items-wrapper > div > div > div {
+	display: block;
+	margin:100px auto;
+	width:320px;
+}
+
+.block-actions .block-items-wrapper > div:hover > div {
+	background: #16285f;
+}
+
+@media all and (max-width:420px) {
+	.block-actions .block-items-wrapper > div {
+		height: auto;
+	}
+	
+	.block-actions .block-items-wrapper > div > div > div {
+		margin:30px auto;
+	}
+}
+
+.block-price-doma .block-items-wrapper > div {
+	padding:0;
+	height: 360px;
+	overflow: hidden;
+	display: table;
+}
+
+.block-price-doma .block-items-wrapper > div > div {
+	display: table-cell;
+    vertical-align: bottom;
+	transition: all .7s;
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.4);
+	border-right:1px solid #eee;	
+    border-bottom: 1px solid #eee;
+}
+
+.block-price-doma .block-items-wrapper > div > div > div {
+	display: block;
+	margin:40px auto;
+	width:260px;
+}
+
+.block-price-doma .block-items-wrapper > div > div > div > div {
+	transition: all .5s;
+}
+
+.block-price-doma .block-items-wrapper > div:hover > div > div > div {
+	opacity: 0;
+}
+
+.block-price-doma .block-items-wrapper > div:hover > div {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.block-price-doma .block-items-wrapper > div:hover > div > div  > a.button-white {
+	background: #212629;
+	border:1px solid #212629;
+}
+
+.block-price-doma .block-items-wrapper > div:hover > div > div  > a.button-white:hover {
+	background: #6a8ae6;
+	border:1px solid #6a8ae6;
+}
+
+@media all and (max-width:420px) {
+	.block-price-doma .block-items-wrapper > div {
+		height: auto;
+		margin-right:3%;
+		margin-top:10px;
+		width:47%;
+	}
+	
+	.block-price-doma .block-items-wrapper > div > div > div {
+		margin:30px auto;
+	}
+	
+	.block-price-doma .block-items-wrapper > div > div > div > div {
+		display: none;
+	}
+	
+	.block-price-doma .block-items-wrapper > div > div > div {
+		width: auto;
+		padding-left:10px;
+	}
+
+}
+
+.block-reviews-main > .block-items-wrapper > div {
+	height: 100%;
+	padding:10px 20px;
+}
+
+.block-reviews-main > .block-items-wrapper > div > div {
+	height: 100%;
+	border:1px solid #ddd;
+}
+
+.block-reviews-main-image {
+	height: 260px;
+	overflow: hidden;
+}
+
+.block-reviews-main-text {
+	margin-top:20px;
+	font-weight: 300;
+	margin-bottom:20px;
+	padding:0px 20px;
+	position: relative;
+}
+
+.block-reviews-main-text:before {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    content: "\201C";
+    font-size: 200px;
+    line-height: 120px;
+    font-weight: 900;
+    color: #f8f8f8;
+    z-index: -1;
+}
+
+.block-reviews-main-name {
+	font-weight: bold;
+	float:left;
+	margin-left:20px;
+}
+
+.block-reviews-main-date {
+	color:#a2a2a2;
+	font-weight: 300;
+	float:right;
+	margin-right:20px;
+}
+
+.contacts-block {
+    top: 60px;
+    height: 340px;
+    width: 400px;
+    right: 60px;
+    position: absolute;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    background: white;
+    padding:30px;
+    overflow-y: auto;
+}
+
+.block-reviews-partners > .block-items-wrapper > div {
+	
+	padding:10px 20px;
+}
+
+.block-reviews-partners > .block-items-wrapper > div > div {
+
+}
+.block-reviews-partners-image {
+	font-size: 10pt;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.block-reviews-partners-image img {
+ 	float: left;
+ 	width: 80px;
+ 	margin:5px 10px 10px;
+}
+
+.block-reviews-partners-image p {
+	font-weight: bold;
+	font-size: 13pt;
+	margin-top:5px;
+}
+
+.block-reviews-partners-text {
+	margin-top:20px;
+	font-weight: 300;
+	margin-top:20px;
+	padding:10px 20px;
+	clear: left;
+	
+}
+
+.block-reviews-partners-image:before {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    content: "\201C";
+    font-size: 200px;
+    line-height: 120px;
+    font-weight: 900;
+    color: #eeeeee;
+    z-index: -1;
+}
+
+
+@media all and (max-width:420px) {
+	.contacts-block {
+		position:static;
+		width: 100%;
+		height: auto;
+	}
+	
+	.region-selector-contacts {
+		padding:10px;
+	}
+	.region-selector-contacts a {
+		float:left;
+		width: 25%;
+	}
+}	
+
+@media all and (max-width:420px) {
+	.block-tech > div > div > div > div > div > div > div {
+		padding:0px 10px;
+	}
+
+	.block-tech > div > div > div > .block-left {
+		
+	}
+	
+	.block-tech .page-slider .block-width-500 {
+		max-width: 30%;
+		margin-top:20px;
+	}
+	
+	.block-tech .page-slider .block-width-500+.block-width-700 {
+		max-width: 70%;
+		padding-left:5px;
+	}
+	
+	.block-tech .page-slider .block-width-500+.block-width-700 p {
+		font-size: 11pt;
+	}
+	
+	.block-tech .block-4-items img {
+		width: 30px;
+		float:left;
+		margin-top:3px;
+		margin-right:10px;
+	}
+	
+	.block-tech .block-4-items div br {
+		content:' ';
+	}
+	
+	.block-tech .block-4-items div br:after {
+		content:" ";
+	}
+	
+	.block-tech .block-4-items div b{
+		font-weight: normal;
+	}
+	
+	.block-tech .text-600.text-size-18 {
+		font-size: 12pt;
+		font-weight: normal;
+	}
+	
+	.block-tech+.margin-top-50 {
+		margin-top:0;
+	}
+	
+}
+
+@media all and (max-width:420px) {
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > img.block-left {
+		max-width: 40%;
+	}
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > .block-left.margin-top-30 {
+		max-width: 60%;
+		margin-top:5px;
+	}
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > .block-left.margin-top-30 > div {
+		float:left;
+		width: 50%;
+		font-size: 10pt;
+		font-weight: normal;
+		padding:5px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > .block-left > div > span {
+		font-weight: 700;
+	}
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > .clearfix.margin-left-20 {
+		max-width: 100%;
+		margin-left:10px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > .clearfix .margin-top-5 {
+		margin-top:-15px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 {
+		padding:0;
+		font-weight: normal;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 .text-size-24 {
+		display: block;
+		clear: left;
+		margin-top:5px;
+		margin-bottom:5px;
+		font-weight: 600;
+		font-size: 18pt;
+	}	
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 br {
+		content:" ";
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 br:after {
+		content:" ";
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 .text-size-30 {
+		width: 100%;
+		display: block; 
+		font-weight: 700;
+		margin-bottom:10px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > .block-background-grey {
+		background: white;
+	}
+	
+	 .block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 s {
+		display: block;
+		clear: both;
+		float:right;
+		margin-top:20px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div > div.padding-side-20 .block-left {
+		display: block;
+		clear: both;
+		float:right;
+		margin-bottom:0;
+	}
+		
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div.text-normal br {
+		content:" ";
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div.text-normal img {
+		width:35%!important;
+		float:left;
+		margin-top:-60px;
+	}
+	
+	.block-profiles .page-slider .block-2-items .block-items-wrapper > div.text-normal .block-width-250 {
+		width:60%;
+		float:right;
+		margin-bottom:10px;
+	}
+
+}
+
+@media all and (max-width:420px) {
+	.block-five-steps .block-5-items > .block-items-wrapper > div:nth-child(5){
+		width:100%;
+		display: block;
+		border-top:1px solid #ddd;
+		padding-top:20px;
+	}
+	
+	.block-five-steps .block-5-items > .block-items-wrapper > div:nth-child(5) p {
+		float:right;
+		/*width:85%;
+		margin-left:20px;
+		margin-top:-40px;*/
+		margin-bottom:20px;
+	}
+	
+	.block-five-steps .block-5-items > .block-items-wrapper > div:nth-child(5) span, .block-five-steps .block-5-items > .block-items-wrapper > div:nth-child(5) b {
+		display: block;
+		float:left;
+		margin-top:0px;
+		clear: left;
+	}
+	
+	.block-five-steps .block-5-items > .block-items-wrapper > div:nth-child(5) br {
+		display: none;
+	}
+	
+	.block-five-steps .block-5-items > .block-items-wrapper > div .margin-left-20 {
+		margin-left:0;
+	}
+	
+	.block-five-steps .block-5-items > .block-items-wrapper > div p {
+		margin-bottom:0;
+		font-size: 11pt;
+
+	}
+	
+	.content > .text-size-40 {
+		margin-left: 5px;
+	}
+}
+
+@media all and (max-width:420px) {
+	.block-proizvodstvo .block-relative > br, .block-proizvodstvo .block-relative > .block-3-items > br  {
+		display: none;		
+	}
+	
+	.block-proizvodstvo .block-relative {
+		padding-bottom:30px;
+		float: left;
+	}
+	
+	.block-proizvodstvo .block-relative > .margin-top-100 {
+		margin-top:0;
+		padding-top:100px;
+		padding-left:20px;
+		padding-bottom:30px;
+	}
+	
+	.block-proizvodstvo .block-relative > .margin-top-100 > .text-size-45 {
+		font-size: 25pt;
+	}
+	
+	.block-proizvodstvo .block-relative > .block-absolute {
+		top:0;
+		left:0;
+	}
+	.block-proizvodstvo .block-relative > .block-3-items .text-size-45 {
+		font-size: 34pt;
+		margin-top:0px;
+	}
+
+}
+
+@media all and (max-width:420px) {
+	.block-reviews-main .block-reviews-main-image {
+		height: 120px;		
+	}
+	
+	.block-reviews-main .block-reviews-main-image img {
+		margin-top:-70px;
+	}
+	
+	.block-reviews-main > .block-items-wrapper > div {
+		height: 300px;
+	}
+	
+	.block-reviews-main-text {
+		margin: 20px;
+		padding:0px;
+		margin-bottom:10px;
+	}
+	
+	.block-reviews-main-text p {
+		margin:0px;
+	}
+	
+	.block-reviews-main-text p br {
+		display: none;
+	}
+}
+
+@media all and (max-width:420px) {
+	
+	.block-sertificates.margin-top-30 {
+		margin-top:0;
+	}
+	
+	.block-sertificates > .content > .block-width-400 {
+		padding:10px;
+	}
+}
+
+@media all and (max-width:420px) {
+	.block-main-text .text-size-18 {
+		font-size: 12pt;
+	}
+	
+	.block-main-text .text-size-18 br {
+		display: none;
+	}
+	
+	.block-main-text h1 {
+		font-size: 16pt;
+	}
+	
+	.block-main-text h1 br {
+		content:' ';
+		
+	}
+	
+	.block-main-text h1 br:after {
+		content: ' ';
+	}
+	
+	.block-preimushestva div {
+		font-size: 0pt;
+	}
+	
+	.block-preimushestva img {
+		margin-bottom:10px;
+		width:30px;
+		float:left;
+		margin-right:10px;
+	}
+	
+	.block-preimushestva b {
+		font-weight: normal;
+		font-size: 12pt;
+	}
+	
+	.index-slider .text-size-18 {
+		font-size: 12pt;
+	}
+}
+
+@media all and (max-width:420px) {
+	.block-price-po-kvartiram .block-width-550 {
+		max-height: 150px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	
+	.block-price-po-kvartiram .block-width-550 img {
+		margin-top:-100px;
+	}
+	
+	.block-price-po-kvartiram  .block-3-items > .block-items-wrapper > div {
+		width: 33%;
+		font-size: 11pt;
+	}
+	
+	.block-price-po-kvartiram  .block-4-items > .block-items-wrapper > div {
+		font-size: 10pt;
+	}
+	
+	.block-price-po-kvartiram  .block-4-items > .block-items-wrapper > div img {
+		max-width: 50%;
+	
+	}
+	
+	.block-price-po-kvartiram  .block-3-items > .block-items-wrapper > div .text-bold, .block-price-po-kvartiram  .block-4-items > .block-items-wrapper > div .text-bold {
+		font-weight: normal;
+	}
+	
+	.block-price-po-kvartiram  .block-3-items > .block-items-wrapper > div .text-small {
+		font-size: 9pt;
+	}
+	
+	.block-price-po-kvartiram + .margin-top-50 {
+		margin-top:10px;
+	}
+	
+	.block-price-po-kvartiram .block-navigation-tabs.line-style > div {
+		width:33%;
+		margin-top:10px;
+	}
+}
+
+@media all and (max-width:420px) {
+	.block-50-let > .content > .block-2-items > .block-items-wrapper > .block-relative {
+		height: 200px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	
+	.block-50-let  .block-relative .margin-top-minus-300 {
+		margin-top:-370px;
+	}
+	
+	.block-50-let > .content > .block-2-items > .block-items-wrapper > div:not(.block-relative) img {
+		max-width: 11%;
+		margin-right:3%;
+	}
+	
+	.block-50-let > .content > .block-2-items > .block-items-wrapper > div:not(.block-relative) .block-width-500 {
+		width: 85%;
+	}
+
+}
+
+ @media all and (max-width:420px) { 
+	 .block-profile-page img {
+		 margin:0px auto;
+		 width: 50%;
+		 display: block;
+	 }
+	 
+	  .block-profile-page .block-3-items.text-800 {
+		 font-weight: normal;
+		 font-size: 11pt;
+	 }
+	 
+	 .block-profile-page .block-3-items > div > div {
+		 padding: 0;
+	 }
+}
+
+.block-plitka .block-items-wrapper > div {
+	padding:0;
+	height: 360px;
+	overflow: hidden;
+	display: table;
+}
+
+.block-plitka hr {
+	margin:20px 0px;
+}
+
+.block-plitka .block-items-wrapper > div > div {
+	display: table-cell;
+    vertical-align: top;
+	transition: all .7s;
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.6);
+	border-right:1px solid rgba(255, 255, 255, 0.77);
+	border-bottom:1px solid rgba(255, 255, 255, 0.77);
+}
+
+.block-plitka .block-items-wrapper > div > div > div {
+	display: block;
+	margin:40px auto;
+	width:300px;
+}
+
+.block-plitka .block-items-wrapper > div.block-plitka-white > div {
+	color:black;
+	background: #f9f9f9;
+}
+
+.block-plitka .block-items-wrapper > div.block-plitka-blue > div {
+	background: #2049ae;
+}
+
+.block-plitka .block-items-wrapper > div.block-plitka-double {
+	width:66.6666%;
+} 
+
+.block-plitka .block-items-wrapper > div.block-plitka-double > div > div {
+	width:600px;
+} 
+
+
+.block-plitka .block-items-wrapper > div.block-plitka-white > div hr {
+	border-color: #212629;
+}
+
+
+
+.block-plitka .block-items-wrapper > div > div > div > div {
+	transition: all .5s;
+}
+
+
+.block-plitka.block-3-items > .block-items-wrapper > div:nth-child(3n+1) {
+	clear: none;
+}
+
+.block-plitka .button-square {
+	padding-top:13px;
+	padding-bottom:13px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 0.8em;
+}
+
+@media all and (max-width:420px) {
+	.block-plitka .block-items-wrapper > div {
+		height: auto;
+		margin-top:10px;
+		width:100%;
+	}
+	
+	.block-plitka .block-items-wrapper > div > div > div {
+		margin:30px auto;
+	}
+		
+	.block-plitka .block-items-wrapper > div > div > div {
+		width: auto;
+		padding-left:10px;
+	}
+	
+	.block-plitka .block-items-wrapper > div.block-plitka-double {
+		width:100%;
+	} 
+	
+	.block-plitka .block-items-wrapper > div.block-plitka-double > div > div {
+		width:auto;
+	} 
+	
+	.block-plitka .button-square.full-width, .block-plitka .button-square.block-width-300 {
+		width: auto;
+		margin-bottom:10px;
+	}
+
+}
+
+.block-cena-osteklenia-pochemu {
+	margin-top:30px;
+
+}
+
+.block-cena-osteklenia-pochemu > .block-items-wrapper > div {
+	padding:0;
+	height: 600px;
+	overflow: hidden;
+	display: table;
+		font-size: 14pt;
+}
+.block-cena-osteklenia-pochemu .block-items-wrapper hr {
+	margin:30px 0px;
+}
+
+.block-cena-osteklenia-pochemu .block-items-wrapper > div > div {
+	display: table-cell;
+    vertical-align: bottom;
+	transition: all .7s;
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.1);
+	border-right:1px solid rgba(255, 255, 255, 0.77);
+}
+
+.block-cena-osteklenia-pochemu > .block-items-wrapper > div > div > div  {
+	display: block;
+	margin:60px auto;
+	width:300px;
+}
+
+@media all and (max-width:420px) {
+	.block-cena-osteklenia-pochemu > .block-items-wrapper > div {
+		padding:0;
+		height: auto;
+		overflow: hidden;
+		display: table;
+		font-size: 12pt;
+		margin-bottom:20px;
+	}
+	
+	.block-cena-osteklenia-pochemu .block-items-wrapper > div > div {
+		background: rgba(0, 0, 0, 0.4);
+	}
+		
+	.block-cena-osteklenia-pochemu > .block-items-wrapper > div > div > div  {
+		display: block;
+		margin:30px auto;
+		width:85%;
+	}
+	
+	.block-cena-osteklenia-pochemu .block-items-wrapper hr {
+		margin:15px 0px;
+	}
+}
+
+@media all and (max-width:420px) {
+	.block-doors-menu  .margin-left-50 {
+		margin-left: 0;		
+	}
+	
+	.block-doors-menu > div > div > div > div > p br {
+		display: none;
+	}
+	
+	.block-doors-menu p, .block-doors-menu h1 {
+		margin:0;
+	}
+	
+	.block-doors-menu .block-2-items .block-2-items > div > div {
+		position: relative;
+	}
+	
+	.block-doors-menu .block-2-items .block-2-items > div > div > br+br {
+		display: none;
+	}
+	
+	.block-doors-menu .block-2-items .block-2-items > div > div > p {
+		margin-bottom: 10px;
+	}
+	
+	.block-doors-menu .block-2-items .block-2-items > div > div > a.button-square {
+		bottom:-130px;
+		right:10px;
+		position: absolute;
+	}
+	
+	.block-2-items > .block-items-wrapper > div.block-doors-menu-text img {
+		max-width: 11%;
+		margin-right:3%;
+	}
+	
+	.block-2-items > .block-items-wrapper > div.block-doors-menu-text .block-width-500 {
+		width: 85%;
+	}
+	.block-doors-price.block-2-items > .block-items-wrapper > div img {
+		max-width: 50%;
+		margin-top:20px;
+	}
+	
+	.block-doors-price.block-2-items > .block-items-wrapper > div {
+		border-top:1px solid #ccc;
+		margin-top:30px;
+	}
+	
+	.block-doors-price.block-2-items > .block-items-wrapper > div .button-square {
+		margin-top:-15px;
+	}
+}
+
+.block-left big {font-size:11pt; font-weight: bold}
+
+.block-inline-skidki img {
+	width:20px;
+	margin-bottom:-3px;
+	margin-right:5px;
+}
+
+.block-inline-skidki .block-items-wrapper > div {
+	font-size: 12pt;
+
+}
+
+.block-background-rassrochka { background:url(https://axismetal.com.ua/images/bgs/bg-rassrochka.jpg) center center;	background-size: cover; }
+
+
+/* ----------- REHAU PREMIUM SET --------------- */
+
+.block-premium-preimushestva img {
+	max-height: 70px;
+}
+
+.block-premium-compare .block-2-items > .block-items-wrapper > div img {
+	max-width: 95%;
+}
+
+.block-premium-compare-more .block-2-items > .block-items-wrapper > div {
+	padding:0 20px;
+}
+
+.block-premium-compare-title {
+ 	font-size: 20pt;
+ 	color:#ff0000;
+ 	display: inline-block;
+ 	margin-top:30px;
+ 	margin-bottom:5px;
+ 	font-weight: 600;
+ 	padding-left:10px;
+}
+
+.block-premium-compare-title+p {
+	padding-left:10px;
+}
+
+.block-premium-compare-more .block-premium-compare-title {
+	font-size: 14pt;
+	padding-left:20px;
+	margin-bottom:20px;
+}
+
+.block-premium-compare-name {
+ 	font-size: 20pt;
+ 	display: inline-block;
+ 	margin-top:20px;
+ 	margin-bottom:10px;
+ 	font-weight: 600;
+}
+
+.block-premium-compare-more .block-premium-compare-name {
+	font-size: 14pt;
+}
+
+.block-premium-compare div div p {
+	max-width: 70%;
+	color:#444;
+}
+
+.block-premium-compare-more.block-premium-compare div div p {
+	max-width: 100%;
+	font-size: .9em;
+	line-height: 1.2em;
+	color:#666;
+}
+
+.block-premium-compare-good, .block-premium-compare-bad {
+	max-height: 378px;
+	overflow: hidden;
+	position: relative;
+}
+
+.block-premium-compare-good:after,.block-premium-compare-bad:after {
+	content:"";
+	position: absolute;
+	background: url(https://axismetal.com.ua/images/icons/icon-premium-good.png) no-repeat center center/cover;
+	width: 50px;
+	height: 50px;
+	bottom:0px;
+	right:5%;
+}
+
+.block-premium-compare-bad:after {
+	background: url(https://axismetal.com.ua/images/icons/icon-premium-bad.png) no-repeat center center/cover;	
+}
+
+.block-premium-compare-more .block-premium-compare-good, .block-premium-compare-more .block-premium-compare-bad{
+	max-height: 180px;
+	overflow: hidden;
+}
+
+.block-premium-compare-more .block-premium-compare-good:after, .block-premium-compare-more .block-premium-compare-bad:after{
+	width: 40px;
+	height: 40px;
+}
+
+.block-premium-faq-title, .block-premium-faq-body {
+	margin-left:70px;
+	padding:20px 0px;
+	position: relative;	
+}
+
+.block-premium-faq-title:before {
+	content:"";
+	position: absolute;
+	left:-40px;
+	top:27px;
+	background: url(https://axismetal.com.ua/images/icons/icon-premium-faq-closed.png) no-repeat;
+	width:30px;
+	height:30px;
+	transition: all .1s;
+}
+
+.block-premium-faq-title.block-premium-faq-title-active:before {
+	background: url(https://axismetal.com.ua/images/icons/icon-premium-faq-open.png) no-repeat;
+	top:31px;
+}
+
+.block-premium-faq-body {
+	padding:10px 0px 30px;
+}
+
+.block-premium-faq-title {
+	font-weight: 600;
+	border-top:1px solid #ddd;
+	font-size: 16pt;
+}
+
+.block-premium-faq-title:not(.block-premium-faq-title-active):hover {
+	color: #3b5fa0;
+	cursor: pointer;
+}
+
+.block-premium-faq-title:not(.block-premium-faq-title-active):hover:before {
+	left:-35px;
+}
+
+.block-premium-faq-body {
+	color:#444;
+}
+
+.block-premium-faq-body {
+	display: none;
+}
+
+.block-premium-faq-body:nth-child(2){
+	display: block;
+}
+
+@media all and (max-width:420px) {
+	
+	.block-premium-compare-title, .block-premium-compare-name {		
+		font-size: 14pt;
+	}
+	
+	.block-premium-compare-title {
+		padding-left:10px;
+	}
+	
+	.block-premium-compare .block-2-items > .block-items-wrapper > div img {
+		max-width: 100%;
+	}
+	
+	.block-premium-compare div div p {
+		max-width: 100%;
+	}
+	
+	.block-premium-faq-title, .block-premium-faq-body {
+		margin-left:30px;
+		padding:10px 0px;
+	}
+	
+	.block-premium-faq-title {
+		font-weight: bold;
+		font-size: 14pt;
+	}
+	
+	.block-premium-faq-title:before {
+		background-size: 6px 12px;
+		margin-left:20px;
+		margin-top:-10px;
+	}
+	
+	.block-premium-faq-title.block-premium-faq-title-active:before {
+		background-size: 12px 6px;
+	}
+	
+	.block-premium-compare-more .block-2-items > .block-items-wrapper > div {
+		padding:0 10px;
+	}
+	
+	.block-premium-compare .block-2-items > .block-items-wrapper > div {
+		width: 50%;
+	}
+	
+	.block-premium-compare-more .block-2-items > .block-items-wrapper > div {
+		width: 100%;
+	}
+	
+	.block-premium-compare-more .block-2-items .block-2-items > .block-items-wrapper > div {
+		width: 50%;
+	}
+	
+	.block-premium-compare-good:after,.block-premium-compare-bad:after {
+		right:0px;
+		width:40px;
+		height:40px;
+	}
+	
+	.block-premium-text .block-width-500.block-left {
+		float:none;
+	}
+	
+	.block-premium-text p, .block-premium-text ul {
+		padding-left:10px;
+	}
+}
+		
+@media all and (max-width:420px) {
+
+	
+	.actions-slider .block-absolute {
+		position: static;
+	}
+	
+	.full-width-slider.actions-slider  > div > .block-items-wrapper > div > div.block-relative {
+		padding:0;
+		height: auto;
+		background: rgba(255, 255, 255, 0.36);
+		float: left;
+		margin-top:0px;
+		margin-bottom:0px;
+		padding-bottom:10px;
+		width: 100%;
+	}
+	
+	.full-width-slider.actions-slider  br + br {
+
+	}
+	
+	.full-width-slider.actions-slider  > div > .block-items-wrapper > div > div.block-relative > div {
+		background: none!important;
+	}
+}
+
+/* ÐœÐ½Ð¾Ð³Ð¾ Ð¾ÐºÐ¾Ð½ */
+@media all and (max-width:420px) {
+	
+	.block-windows-custom .text-size-11 {
+		font-size:9pt;
+	}
+	
+	.block-windows-custom .text-size-11.text-dark-grey {
+		font-size:9pt;
+		line-height: 11pt;
+		display: inline-block;
+		min-height: 22pt;
+		vertical-align: middle;
+		margin-top:5px;
+	}
+	
+	.block-windows-custom img {
+		max-height: 110px;
+		margin-bottom:10px;
+	}
+	
+	.block-windows-custom .text-800 {
+		display: block;
+	}
+	
+	.block-windows-custom .button-square {
+		padding:5px 10px;
+		margin-top:-10px;
+	}
+	
+	.block-windows-custom .margin-top-minus-100 {
+		margin-top:-14pt;
+		padding-top:0;
+	}
+	
+	.block-windows-custom .margin-left-minus-100 {
+		margin-left:0;
+	}
+	
+	.block-windows-custom s {
+		color:#666;
+	}
+	.block-windows-custom .block-line {
+		font-size: 9pt;
+	}
+}
+
+.online-pay-form label, .online-pay-form  input, .online-pay-form select{
+	float: left;
+	padding:10px 20px;
+	min-width: 230px;
+	margin:1%;
+}
+
+.online-pay-form input, .online-pay-form select {
+	font-size: 14pt;
+	width: 400px;
+	border:1px solid #ccc;
+}
+
+ .online-pay-form select {
+ 	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background:url(https://axismetal.com.ua/images/icons/icon-arrow-down.png) no-repeat right 5px center;
+}
+
+.online-pay-form input::placeholder {
+	color:#bbb;
+	font-weight: 300;
+}
+
+.online-pay-form label {
+	clear: left;
+	display: block;
+	text-align: right;
+	margin-top:13px;
+}
+
+@media all and (max-width:420px) {
+	.online-pay-form label,.online-pay-form  input{
+		clear:left;
+		text-align: left;
+		width: 90%;
+		min-width: 90%;
+		
+		margin:0 5%;
+	}
+	
+	.online-pay-form label {
+		font-weight: 600;
+		padding:10px 10px;
+		margin-top:5px;
+	}
+	
+	.online-pay-form input.button-square {
+		text-align: center;
+	}
+	
+
+}
+
+
+
+
+
+
+
+/*blockCalculator*/
+.blockCalculator{
+  display: flex;
+  background-color: #e8e8e8;
+  padding: 30px 20% 30px 20%;
+}
+@media screen and (max-width: 1600px) {
+.blockCalculator{
+  display: flex;
+  background-color: #e8e8e8;
+  padding: 30px 10% 30px 10%;
+}
+  }
+
+@media screen and (max-width: 1200px) {
+.blockCalculator{
+  display: flex;
+  background-color: #e8e8e8;
+  padding: 30px 5% 30px 5%;
+}
+  }
+
+@media screen and (max-width: 800px) {
+  .blockCalculator{
+  display: flex;
+  flex-flow: column;
+  background-color: #e8e8e8;
+  padding: 30px 0% 30px 0%;
+}
+.leftBlockCalculator{
+  padding: 15px;
+}
+.leftBlockCalculator .text{
+  width: auto !important;
+  text-align: center;
+}
+.leftBlockCalculator .icon{
+  width: 50% !important;
+}
+.rightBlockCalculator{
+  padding: 15px;
+}
+}
+
+.leftBlockCalculator{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftBlockCalculator .icon{
+  width: 22%;
+  margin-top: 5px;
+}
+
+.leftBlockCalculator .text{
+  width: 30%;
+  font-size: 35px;
+  font-weight: bold;
+  color: #444444;
+  line-height: 45px;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+
+.rightBlockCalculator{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightBlockCalculator .button{
+  background-color: #ff0000;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: ridge;
+  border-top-style: none;
+  border-left-style: none;
+  border-color: #ff0000;
+  transition: 1s;
+}
+
+.rightBlockCalculator .button:hover{
+  background-color: #d65d5d;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.4);
+  border-width: 5px;
+  border-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-color: #d65d5d;
+  transition: 1s;
+}
+/*END blockCalculator*/
+
+/*BlocContactSpecialist*/
+
+.backgroundBlocContactSpecialist{background-color: #212629;}
+
+.contentBlocContactSpecialist{display: flex;padding: 20px 20px;}
+
+.leftBlocContactSpecialist{flex: 2;padding: 15px 15px 15px 15px;}
+
+.leftBlocContactSpecialist .title{font-size: 30px;font-weight: bold;color: #fff;line-height: 2;}
+
+.leftBlocContactSpecialist .text{color: #fff;font-size: 24px;}
+
+.rightLeftBlocContactSpecialist{display: flex;flex: 1;padding: 15px 0px 15px 15px;justify-content: center;align-items: center;}
+
+.rightLeftBlocContactSpecialist .contactForm{display: flex;flex-flow: column;}
+
+.rightLeftBlocContactSpecialist .contactForm .input{
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    width: 100%;
+    padding: 13.5px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+    transition: all 100ms ease-out;
+}
+
+.rightLeftBlocContactSpecialist .contactForm .button{
+    background-color: #ff0000;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    transition: 1s;
+}
+
+.rightLeftBlocContactSpecialist .contactForm .button:hover{
+    background-color: #97030e;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.18);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    transition: 1s;
+}
+
+@media screen and (max-width: 1200px) {
+.rightLeftBlocContactSpecialist .contactForm .button{
+    background-color: #ff0000;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    transition: 1s;
+}
+
+.rightLeftBlocContactSpecialist .contactForm .button:hover{
+    background-color: #fd9801;
+    padding: 10px 30px 10px 30px;
+    color: #444;
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.18);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    transition: 1s;
+}
+}
+
+@media screen and (max-width: 990px) {
+.contentBlocContactSpecialist{
+    flex-flow: column;
+}
+}
+
+@media screen and (max-width: 710px) {
+  .leftBlocContactSpecialist .title{
+    line-height: normal;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+  .leftBlocContactSpecialist .title{
+  font-size: 23px;
+  text-align: center;
+  }
+  .leftBlocContactSpecialist .text{
+  font-size: 17px;
+  text-align: center;
+  }
+  }
+/*END BlocContactSpecialist*/
+
+/*transMethods*/
+
+.transMethods{
+
+}
+
+.transMethods .title{text-align: center;font-size: 31px;font-weight: bold;color: #444;text-transform: uppercase;padding-top: 20px;padding-bottom: 20px;}
+
+.transMethods p{margin: 0;}
+
+.allBlockTransMethods {display: flex;flex-flow: row;}
+  @media screen and (max-width: 630px) {
+.allBlockTransMethods {flex-flow: column !important;}
+  }
+
+.allBlockTransMethods .icon {display: flex;justify-content: center;align-items: center;}
+
+.allBlockTransMethods .icon .iconBackground {display: flex;background-color: #fb5068;border-radius: 50%;width: 150px;height: 150px;}
+
+.allBlockTransMethods .icon .iconBackground .iconsvg {width: 90%;padding: 15%;margin: auto;}
+
+.allBlockTransMethods .titleBlockTransMethods {color: #444;font-size: 20px;font-weight: bold;text-align: center;text-transform: uppercase;padding: 15px 0px;}
+
+.allBlockTransMethods .textBlockTransMethods {background-color: #fff;padding: 15px;font-size: 14px;border-radius: 5px;height: 30%;}
+  
+  @media screen and (max-width: 990px) {
+.allBlockTransMethods .textBlockTransMethods {height: 35% !important;}
+.allBlockTransMethods .falseTextBlockTransMethods {height: 17% !important;}
+  }
+
+.allBlockTransMethods .falseTextBlockTransMethods {background-color: #fff;padding: 15px;font-size: 14px;margin-top: 15px;border: 2px solid red;border-radius: 5px;height: 15%;}
+
+.allBlockTransMethods .trueTextBlockTransMethods {background-color: #fff;padding: 15px;font-size: 14px;margin-top: 15px;border: 2px solid green;border-radius: 5px;}
+
+.oneBlockTransMethods{flex: 1;padding-right: 20px;background-color: #ebebeb;padding: 20px 10px;margin-right: 20px;}
+
+.twoBlockTransMethods{flex: 1;padding-right: 20px;background-color: #ebebeb;padding: 20px 10px;margin-right: 20px;}
+  
+  @media screen and (max-width: 630px) {
+.oneBlockTransMethods, .twoBlockTransMethods {margin-right: auto !important;margin-bottom: 15px !important;}
+}
+.threeBlockTransMethods{flex: 1;background-color: #ebebeb;padding: 20px 10px;}
+
+.bottomBlockTransMethods{margin-top: 15px;background-color: #ebebeb;padding: 15px;border-radius: 5px;margin-bottom: 30px;}
+
+/*END transMethods*/
+
+
+/*blockCalk*/
+
+#bgBlockCalk {
+    background-color: #e8e8e8;
+    display: block;
+}
+
+.openBgBlockCalk {
+    display: block !important;
+}
+
+#bgBlockCalk .title{
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    color: #7d7d7d;
+}
+
+.blockCalk{
+    display: flex;
+    padding: 30px;
+}
+
+.leftBlockCalk{
+	float: left;
+    flex: 3;
+    padding: 25px;
+    color: #7d7d7d;
+}
+
+.oneBlockInputCalk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wFrom{text-align: center;width: 25%;background-color: #c4c4c4;padding: 10px;border-radius: 10px 0px 0px 10px;}
+
+.wFromItem{
+    width: 25%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#oneBlockInputCalk_1{
+}
+
+.where{
+    text-align: center;
+    width: 25%;
+    background-color: #c4c4c4;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.whereItem{
+    width: 25%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#oneBlockInputCalk_2{}
+
+.twoBlockInputCalk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.uploadDate{
+    text-align: center;
+    width: 25%;
+    background-color: #c4c4c4;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.uploadDateItem{
+    width: 25%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    color: #7d7d7d;
+}
+
+#twoBlockInputCalk_1{}
+
+.distance{
+    text-align: center;
+    width: 25%;
+    background-color: #c4c4c4;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.distanceItem{
+    width: 25%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#twoBlockInputCalk_2{}
+
+.threeBlockInputCalk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.shipping{text-transform: uppercase;}
+
+.transInUkr{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+#threeBlockInputCalk_1{}
+
+.transInEuro{
+    text-transform: uppercase;
+}
+
+#threeBlockInputCalk_2{}
+
+.transWithEuro{
+    text-transform: uppercase;
+}
+
+#threeBlockInputCalk_3{}
+
+.typeOfCar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.titleOf{
+    text-transform: uppercase;
+}
+
+.t20{
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.autoT20Img{
+  height: 58px;
+  width: 138px;
+  background-image: url(https://axismetal.com.ua/img/logistic/20t.png);
+  margin-bottom: 15px;
+}
+
+#typeOfCar_1{}
+
+.t10{
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autoT10Img{  
+  height: 60px;
+    width: 142px;
+  background-image: url(https://axismetal.com.ua/img/logistic/10t.png);
+  margin-bottom: 15px;
+}
+
+#typeOfCar_2{}
+
+.t5{
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autoT5Img{ 
+  height: 59px;
+    width: 125px;
+  background-image: url(https://axismetal.com.ua/img/logistic/5t.png);
+  margin-bottom: 15px;
+}
+
+#typeOfCar_3{}
+
+.t3{  
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.autoT3Img{ 
+  height: 65px;
+    width: 114px;
+  background-image: url(https://axismetal.com.ua/img/logistic/3t.png);
+  margin-bottom: 15px;
+}
+
+#typeOfCar_4{}
+
+.bodyType{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tent {}
+
+.autoTentImg{ 
+  height: 68px;
+    width: 118px;
+  background-image: url(https://axismetal.com.ua/img/logistic/tent.png);
+  margin-bottom: 15px;
+}
+
+#bodyType_1{}
+
+.ref{}
+
+.autoRefImg{  
+  height: 85px;
+    width: 122px;
+  background-image: url(https://axismetal.com.ua/img/logistic/ref.png);
+  margin-bottom: 15px;
+}
+
+#bodyType_2{}
+
+.metal{}
+
+.autoMetalImg{  
+  height: 71px;
+    width: 120px;
+  background-image: url(https://axismetal.com.ua/img/logistic/zelnomet.png);
+  margin-bottom: 15px;
+}
+
+#bodyType_3{}
+
+.allBlockTitleAndCheck{    
+  display: flex;
+    justify-content: center;
+}
+
+.allBlockTitleAndCheck .name{margin-right: 10px;}
+
+.buttonBlockCalk{
+    display: flex;
+}
+
+.goCalculation{
+	font-size: 16px;
+    flex: 2;
+    margin: 10px;
+    background-color: #212629;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.personalDiscount{
+    flex: 1;
+    margin: 10px;
+    background-color: #fb5068;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.styleValuePrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: calc(100% - 36.5%);
+}
+
+.valuePrice{
+    flex: 2;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.grnValuePrice{
+    flex: 1;
+    text-align: center;
+}
+
+.euroValuePrice{
+    flex: 1;
+    text-align: center;
+    display: none;
+}
+
+.rightBlockCalk{
+    flex: 1;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.bgFormBlock{background-color: #212629;display: flex;flex-flow: column;justify-content: center;align-items: center;height: 100%;padding: 50px;}
+
+
+.titleFormBlock{
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.rightBlockCalk .name{
+    width: 100%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.rightBlockCalk .telefon{
+    width: 100%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.rightBlockCalk .eMail{
+    width: 100%;
+    padding: 11.5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.goFromCalculation{
+    background-color: #ff0000;
+    line-height: initial;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    color: #444;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+
+.goFromCalculation:hover{
+  background-color: #ff0000;
+  line-height: initial;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  color: #444;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.3);
+  border: none;
+  transition: 1s;
+}
+
+.calculationContForm{display: none;}
+
+@media screen and (max-width: 1200px) {
+  .blockCalk{flex-flow: column;}
+  .bgFormBlock{width: 100%;flex-flow: row;padding: 25px;}
+  .titleFormBlock{width: 100%;text-align: center;flex: 1;padding: 10px;}
+  .itemFormBlock{flex: 2;padding: 10px;}
+}
+@media screen and (max-width: 990px) {
+	.blockCalk{padding: 5px;}
+	.leftBlockCalk{padding: 5px;}
+
+	#bgBlockCalk .title{font-size: 30px;}
+
+	.oneBlockInputCalk {flex-flow: wrap;}
+	.wFrom {width: 40%;margin-bottom: 10px;}
+	.wFromItem {width: 40%;margin-bottom: 10px;margin-right: 0px;}
+	.where {width: 40%;}
+	.whereItem {width: 40%;}
+
+	.twoBlockInputCalk {flex-flow: wrap;}
+	.uploadDate {width: 40%;margin-bottom: 10px;}
+	.uploadDateItem {width: 40%;margin-bottom: 10px;margin-right: 0px;padding: 9px;}
+	.distance {width: 40%;padding: 12.3px;}
+	.distanceItem {width: 40%;padding: 14px;}
+
+	.threeBlockInputCalk {flex-flow: wrap;}
+	.shipping {width: 100%;text-align: center;margin-bottom: 15px;font-size: 25px;}
+	.transInUkr {margin-right: 0px;flex: 1.2;display: flex;justify-content: center;align-items: center;flex-flow: column;text-align: center;}
+	.transInEuro {flex: 1;display: flex;justify-content: center;align-items: center;flex-flow: column;text-align: center;}
+	.transWithEuro {flex: 1;display: flex;justify-content: center;align-items: center;flex-flow: column;text-align: center;}
+
+	.bodyType {flex-flow: column;}
+	.typeOfCar {flex-flow: column;}
+	.titleOf {margin-bottom: 20px;font-size: 25px;}
+	.t20, .t10, .t5 {margin-bottom: 20px;}
+	.tent, .ref, .metal {margin-bottom: 30px;}
+
+	.buttonBlockCalk {flex-flow: column;}
+	.styleValuePrice {width: 100%;}
+
+	.rightBlockCalk{padding-left: 0px;}
+
+	.bgFormBlock {flex-flow: column;}
+	.titleFormBlock{width: auto;padding: 0px;font-size: 24px;}
+	.rightLeftBlocContactSpecialist .contactForm{text-align: center;}
+
+	.blockSpecAllStyle{margin: 0px 0px 15px 0px;}
+	.leftBlockSpec{padding: 0px;}
+	.rightBlockSpec{padding: 0px;}
+	.bottomBlockSpec{text-align: center;flex-flow: column;}
+	.bottomBlockSpec .leftBlockSpecIcon{padding:0px;}
+	.blockConsultation .text{margin-bottom: 60px;}
+	.blockConsultation .faceman{display: none;}
+}
+@media screen and (max-width: 393px) {
+	.distance {padding: 3.3px;}
+}
+
+/*END blockCalk*/
+
+
+
+
+/*blockPromocod*/
+
+.blockPromocod{display: flex;justify-content: center;align-items: center;text-align: center;height: 100%;}
+
+.bgBlockPromocod{  
+  width: 100%;
+  height: 268px;
+  background-image: url(https://axismetal.com.ua/img/logistic/picture-port.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.leftBlockPromocod{
+    flex: 1;
+    text-align: left;
+    padding: 100px;
+}
+
+.leftBlockPromocod .text{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: initial;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.leftBlockPromocod .textPromocod{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: initial;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #009b7a;
+    width: calc(100% - 31%);
+    padding: 5px;
+}
+
+.rightBlockPromocod{
+    flex: 1;
+}
+
+.rightBlockPromocod .button{
+  background-color: #ff0000;
+  padding: 10px 30px 10px 30px;
+  color: #444;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: ridge;
+  border-top-style: none;
+  border-left-style: none;
+  border-color: #bf841dcf;
+  transition: 1s;
+}
+
+.rightBlockPromocod .button:hover{
+  background-color: #ff0000;
+  padding: 10px 30px 10px 30px;
+  color: #444;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-color: #bf841dcf;
+  transition: 1s;
+}
+
+@media screen and (max-width: 1200px){
+  .leftBlockPromocod .textPromocod{width: auto;}
+  .leftBlockPromocod .text{font-size: 24px;}
+  .leftBlockPromocod{text-align: center;}
+}
+
+@media screen and (max-width: 990px){
+  .blockPromocod{flex-flow: column;}
+  .leftBlockPromocod{padding-bottom: 15px;padding: 15px;}
+}
+
+@media screen and (max-width: 550px){
+.leftBlockPromocod{padding-top: 5px;}
+.leftBlockPromocod .text{font-size: 20px;}
+.leftBlockPromocod .textPromocod{font-size: 20px;}
+.rightBlockPromocod .button{font-size: 20px;}
+}
+
+/*END blockPromocod*/
+
+
+
+.block-rassrochka {
+	background: url(https://axismetal.com.ua/img/logistic/picture-port.jpg) no-repeat left center;
+	background-size: cover;
+}
+
+.block-rassrochka-1 {
+	background: url(https://axismetal.com.ua/img/logistic/picture-port-1.jpg) no-repeat left center;
+	background-size: cover;
+}
+
+.block-rassrochka, .block-rassrochka-1   > div {
+
+	padding-top:0px;
+	padding-bottom:40px;
+}
+
+
+@media all and (max-width:420px) {
+	.block-rehau-about > div {
+		width:auto;
+		text-align: left;
+		margin:0;
+		padding:10px;
+	}
+
+	.leftBlockCalk{
+	float: none!important;
+	}
+	
+	.block-about-rehau-logo {
+	margin-right:10px;
+	}
+	
+	.block-rassrochka  {
+		background: url(https://axismetal.com.ua/img/logistic/picture-port-mob.jpg) no-repeat right 10% center;
+		background-size: cover;
+	}
+
+	.block-rassrochka-1  {
+		background: url(https://axismetal.com.ua/img/logistic/picture-port-1-mob.jpg) no-repeat right 10% center;
+		background-size: cover;
+	}
+}
+
+
+
+.block-call-form-type-2 input {
+	width:300px;
+}
+
+.block-call-form h2 {
+    margin-bottom:10px!important;
+}
+.block-call-form .text-white {
+    margin-bottom:40px;
+}
+.block-call-form-fields {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.block-call-form-fields input.form-field  {
+    margin-right:20px;
+}
+
+
+.block-call-form .block-form-conf {
+	margin:0px auto;
+	margin-top:30px;
+	color:white;
+	max-width: 700px;
+	
+	padding:10px;
+}
+
+.block-call-form .block-form-conf a {
+	color:white;
+}
+
+@media all and (max-width:420px) {
+    .block-call-form-fields {
+        padding-top: 40px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom: 80px;
+    }
+    .block-call-form-fields input.form-field  {
+        width:100%;
+        margin-right:0;
+        float: none;
+        font-size:1em;
+        margin-bottom:20px;
+    }
+    .block-call-form-fields input.button-round  {
+        width:100%;
+        float: none;
+    }
+    
+    .block-call-form-type-2 > .content {
+	    padding-left:20px;
+    }
+    
+    .block-call-form-type-2 input {
+		width:100%;
+		 
+	}
+	
+	.block-call-form-type-2 .block-call-form-fields input.form-field {
+		/*margin-bottom:0px;*/
+	}
+	
+	.block-call-form-type-2 .text-size-27 {
+		font-size: 20pt;
+	}
+	
+	.block-call-form-type-2 .text-size-18 {
+		font-size: 14pt;
+	}
+}
+
+
+.home.page-template .container[role=main]{width:100%;padding:0}#pg-8-0{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:0
+auto;margin-bottom:80px}#pg-8-2{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:0
+auto}#pg-8-12{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:0
+auto}#pg-8-13{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:0
+auto}#pg-8-14{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:0
+auto}#pg-8-15{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:40px
+auto}#pg-8-20{width:100%;padding-left:15px;padding-right:15px;margin:40px
+auto}#pgc-8-21-0{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:40px
+auto}#pg-8-22{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:40px
+auto}#pg-8-23{width:100%;max-width:1170px;padding-left:15px;padding-right:15px;margin:40px
+auto}#panel-8-19-1-0{max-width:672px;margin:0
+auto}#pg-8-18>.panel-row-style{padding:60px 20%}
+
+
+#pgc-8-0-0,#pgc-8-0-1,#pgc-8-0-2,#pgc-8-0-3{width:25%;width:calc(25% - ( 0.75 * 30px ) )}#pl-8 #panel-8-0-0-0 , #pl-8 #panel-8-0-0-1 , #pl-8 #panel-8-0-0-2 , #pl-8 #panel-8-0-0-3 , #pl-8 #panel-8-0-1-0 , #pl-8 #panel-8-0-1-1 , #pl-8 #panel-8-0-1-2 , #pl-8 #panel-8-0-1-3 , #pl-8 #panel-8-0-2-0 , #pl-8 #panel-8-0-2-1 , #pl-8 #panel-8-0-2-2 , #pl-8 #panel-8-0-2-3 , #pl-8 #panel-8-0-3-0 , #pl-8 #panel-8-0-3-1 , #pl-8 #panel-8-0-3-2 , #pl-8 #panel-8-0-3-3 , #pl-8 #panel-8-1-0-0 , #pl-8 #panel-8-2-0-0 , #pl-8 #panel-8-3-0-0 , #pl-8 #panel-8-4-0-0 , #pl-8 #panel-8-5-0-0 , #pl-8 #panel-8-6-0-0 , #pl-8 #panel-8-7-0-0 , #pl-8 #panel-8-8-0-0 , #pl-8 #panel-8-9-0-0 , #pl-8 #panel-8-10-0-0 , #pl-8 #panel-8-11-0-0 , #pl-8 #panel-8-12-0-0 , #pl-8 #panel-8-13-0-0 , #pl-8 #panel-8-14-0-0 , #pl-8 #panel-8-14-0-1 , #pl-8 #panel-8-14-1-0 , #pl-8 #panel-8-14-1-1 , #pl-8 #panel-8-14-2-0 , #pl-8 #panel-8-14-2-1 , #pl-8 #panel-8-15-0-0 , #pl-8 #panel-8-16-0-0 , #pl-8 #panel-8-17-0-0 , #pl-8 #panel-8-18-0-0 , #pl-8 #panel-8-18-1-0 , #pl-8 #panel-8-18-2-0 , #pl-8 #panel-8-19-1-0 , #pl-8 #panel-8-20-0-0 , #pl-8 #panel-8-20-0-1 , #pl-8 #panel-8-20-1-0 , #pl-8 #panel-8-21-0-0 , #pl-8 #panel-8-22-0-0 , #pl-8 #panel-8-22-1-0 , #pl-8 #panel-8-22-2-0 , #pl-8 #panel-8-23-0-0 , #pl-8 #panel-8-23-1-0 , #pl-8 #panel-8-23-2-0 , #pl-8 #panel-8-24-0-0{}#pg-8-0{margin-bottom:80px}#pgc-8-1-0,#pgc-8-2-0,#pgc-8-3-0,#pgc-8-4-0,#pgc-8-5-0,#pgc-8-6-0,#pgc-8-7-0,#pgc-8-8-0,#pgc-8-9-0,#pgc-8-10-0,#pgc-8-11-0,#pgc-8-12-0,#pgc-8-13-0,#pgc-8-15-0,#pgc-8-16-0,#pgc-8-17-0,#pgc-8-21-0,#pgc-8-24-0{width:100%;width:calc(100% - ( 0 * 30px ) )}#pg-8-1,#pg-8-2,#pg-8-3,#pg-8-4,#pg-8-5,#pg-8-6,#pg-8-7,#pg-8-8,#pg-8-9,#pg-8-10,#pg-8-11,#pg-8-12,#pg-8-13,#pg-8-16,#pg-8-21,#pg-8-22,#pg-8-23{margin-bottom:5px}#pgc-8-14-0,#pgc-8-14-1,#pgc-8-14-2,#pgc-8-18-0,#pgc-8-18-1,#pgc-8-18-2,#pgc-8-22-0,#pgc-8-22-1,#pgc-8-22-2,#pgc-8-23-0,#pgc-8-23-1,#pgc-8-23-2{width:33.3333%;width:calc(33.3333% - ( 0.66666666666667 * 30px ) )}#pg-8-14{margin-bottom:45px}#pg-8-15 , #pg-8-20 , #pl-8 .so-panel{margin-bottom:30px}#pg-8-17 , #pg-8-18 , #pl-8 .so-panel:last-child{margin-bottom:0px}#pgc-8-19-0,#pgc-8-19-2{width:19.9957%;width:calc(19.9957% - ( 0.80004295532646 * 30px ) )}#pgc-8-19-1{width:60.0086%;width:calc(60.0086% - ( 0.39991408934708 * 30px ) )}#pg-8-19{margin-bottom:60px}#pgc-8-20-0,#pgc-8-20-1{width:50%;width:calc(50% - ( 0.5 * 30px ) )}#pg-8-0.panel-no-style,#pg-8-0.panel-has-style>.panel-row-style,#pg-8-1.panel-no-style,#pg-8-1.panel-has-style>.panel-row-style,#pg-8-2.panel-no-style,#pg-8-2.panel-has-style>.panel-row-style,#pg-8-3.panel-no-style,#pg-8-3.panel-has-style>.panel-row-style,#pg-8-4.panel-no-style,#pg-8-4.panel-has-style>.panel-row-style,#pg-8-5.panel-no-style,#pg-8-5.panel-has-style>.panel-row-style,#pg-8-6.panel-no-style,#pg-8-6.panel-has-style>.panel-row-style,#pg-8-7.panel-no-style,#pg-8-7.panel-has-style>.panel-row-style,#pg-8-8.panel-no-style,#pg-8-8.panel-has-style>.panel-row-style,#pg-8-9.panel-no-style,#pg-8-9.panel-has-style>.panel-row-style,#pg-8-10.panel-no-style,#pg-8-10.panel-has-style>.panel-row-style,#pg-8-11.panel-no-style,#pg-8-11.panel-has-style>.panel-row-style,#pg-8-12.panel-no-style,#pg-8-12.panel-has-style>.panel-row-style,#pg-8-13.panel-no-style,#pg-8-13.panel-has-style>.panel-row-style,#pg-8-14.panel-no-style,#pg-8-14.panel-has-style>.panel-row-style,#pg-8-15.panel-no-style,#pg-8-15.panel-has-style>.panel-row-style,#pg-8-16.panel-no-style,#pg-8-16.panel-has-style>.panel-row-style,#pg-8-17.panel-no-style,#pg-8-17.panel-has-style>.panel-row-style,#pg-8-20.panel-no-style,#pg-8-20.panel-has-style>.panel-row-style,#pg-8-21.panel-no-style,#pg-8-21.panel-has-style>.panel-row-style,#pg-8-22.panel-no-style,#pg-8-22.panel-has-style>.panel-row-style,#pg-8-23.panel-no-style,#pg-8-23.panel-has-style>.panel-row-style,#pg-8-24.panel-no-style,#pg-8-24.panel-has-style>.panel-row-style{-webkit-align-items:flex-start;align-items:flex-start}#pgc-8-0-2,#pgc-8-0-3{align-self:auto}#panel-8-4-0-0>.panel-widget-style{background-color:#fff}#pg-8-17>.panel-row-style{background-color:#f5f5f5}#panel-8-17-0-0>.panel-widget-style{color:#444;display:none}#pg-8-18>.panel-row-style{background-image:url(https://axismetal.com.ua/css/wp-content/uploads/2015/05/blured.jpg);background-repeat:repeat;padding:60px}#pg-8-19>.panel-row-style{background-image:url(https://ubi-logistic.com.ua/wp-content/uploads//2015/05/core_values_bg.jpg);background-position:center center;background-repeat:no-repeat;padding:60px}#pg-8-20>.panel-row-style{padding:50px 0px 0px 0px}#pg-8-22>.panel-row-style{padding:0px 0px 50px 0px}#pg-8-24>.panel-row-style{padding:70px 0px 0px 0px}@media (max-width:991px){#pg-8-0.panel-no-style,#pg-8-0.panel-has-style>.panel-row-style,#pg-8-1.panel-no-style,#pg-8-1.panel-has-style>.panel-row-style,#pg-8-2.panel-no-style,#pg-8-2.panel-has-style>.panel-row-style,#pg-8-3.panel-no-style,#pg-8-3.panel-has-style>.panel-row-style,#pg-8-4.panel-no-style,#pg-8-4.panel-has-style>.panel-row-style,#pg-8-5.panel-no-style,#pg-8-5.panel-has-style>.panel-row-style,#pg-8-6.panel-no-style,#pg-8-6.panel-has-style>.panel-row-style,#pg-8-7.panel-no-style,#pg-8-7.panel-has-style>.panel-row-style,#pg-8-8.panel-no-style,#pg-8-8.panel-has-style>.panel-row-style,#pg-8-9.panel-no-style,#pg-8-9.panel-has-style>.panel-row-style,#pg-8-10.panel-no-style,#pg-8-10.panel-has-style>.panel-row-style,#pg-8-11.panel-no-style,#pg-8-11.panel-has-style>.panel-row-style,#pg-8-12.panel-no-style,#pg-8-12.panel-has-style>.panel-row-style,#pg-8-13.panel-no-style,#pg-8-13.panel-has-style>.panel-row-style,#pg-8-14.panel-no-style,#pg-8-14.panel-has-style>.panel-row-style,#pg-8-15.panel-no-style,#pg-8-15.panel-has-style>.panel-row-style,#pg-8-16.panel-no-style,#pg-8-16.panel-has-style>.panel-row-style,#pg-8-17.panel-no-style,#pg-8-17.panel-has-style>.panel-row-style,#pg-8-18.panel-no-style,#pg-8-18.panel-has-style>.panel-row-style,#pg-8-19.panel-no-style,#pg-8-19.panel-has-style>.panel-row-style,#pg-8-20.panel-no-style,#pg-8-20.panel-has-style>.panel-row-style,#pg-8-21.panel-no-style,#pg-8-21.panel-has-style>.panel-row-style,#pg-8-22.panel-no-style,#pg-8-22.panel-has-style>.panel-row-style,#pg-8-23.panel-no-style,#pg-8-23.panel-has-style>.panel-row-style,#pg-8-24.panel-no-style,#pg-8-24.panel-has-style>.panel-row-style{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}#pg-8-0>.panel-grid-cell,#pg-8-0>.panel-row-style>.panel-grid-cell,#pg-8-1>.panel-grid-cell,#pg-8-1>.panel-row-style>.panel-grid-cell,#pg-8-2>.panel-grid-cell,#pg-8-2>.panel-row-style>.panel-grid-cell,#pg-8-3>.panel-grid-cell,#pg-8-3>.panel-row-style>.panel-grid-cell,#pg-8-4>.panel-grid-cell,#pg-8-4>.panel-row-style>.panel-grid-cell,#pg-8-5>.panel-grid-cell,#pg-8-5>.panel-row-style>.panel-grid-cell,#pg-8-6>.panel-grid-cell,#pg-8-6>.panel-row-style>.panel-grid-cell,#pg-8-7>.panel-grid-cell,#pg-8-7>.panel-row-style>.panel-grid-cell,#pg-8-8>.panel-grid-cell,#pg-8-8>.panel-row-style>.panel-grid-cell,#pg-8-9>.panel-grid-cell,#pg-8-9>.panel-row-style>.panel-grid-cell,#pg-8-10>.panel-grid-cell,#pg-8-10>.panel-row-style>.panel-grid-cell,#pg-8-11>.panel-grid-cell,#pg-8-11>.panel-row-style>.panel-grid-cell,#pg-8-12>.panel-grid-cell,#pg-8-12>.panel-row-style>.panel-grid-cell,#pg-8-13>.panel-grid-cell,#pg-8-13>.panel-row-style>.panel-grid-cell,#pg-8-14>.panel-grid-cell,#pg-8-14>.panel-row-style>.panel-grid-cell,#pg-8-15>.panel-grid-cell,#pg-8-15>.panel-row-style>.panel-grid-cell,#pg-8-16>.panel-grid-cell,#pg-8-16>.panel-row-style>.panel-grid-cell,#pg-8-17>.panel-grid-cell,#pg-8-17>.panel-row-style>.panel-grid-cell,#pg-8-18>.panel-grid-cell,#pg-8-18>.panel-row-style>.panel-grid-cell,#pg-8-19>.panel-grid-cell,#pg-8-19>.panel-row-style>.panel-grid-cell,#pg-8-20>.panel-grid-cell,#pg-8-20>.panel-row-style>.panel-grid-cell,#pg-8-21>.panel-grid-cell,#pg-8-21>.panel-row-style>.panel-grid-cell,#pg-8-22>.panel-grid-cell,#pg-8-22>.panel-row-style>.panel-grid-cell,#pg-8-23>.panel-grid-cell,#pg-8-23>.panel-row-style>.panel-grid-cell,#pg-8-24>.panel-grid-cell,#pg-8-24>.panel-row-style>.panel-grid-cell{width:100%;margin-right:0}#pgc-8-0-0,#pgc-8-0-1,#pgc-8-0-2,#pgc-8-14-0,#pgc-8-14-1,#pgc-8-18-0,#pgc-8-18-1,#pgc-8-19-0,#pgc-8-19-1,#pgc-8-20-0,#pgc-8-22-0,#pgc-8-22-1,#pgc-8-23-0,#pgc-8-23-1{margin-bottom:30px}#pl-8 .panel-grid-cell{padding:0}#pl-8 .panel-grid .panel-grid-cell-empty{display:none}#pl-8 .panel-grid .panel-grid-cell-mobile-last{margin-bottom:0px}#pg-8-20>.panel-row-style{padding:0px 0px 0px 0px}}
+
+
+
+/* slider */
+.baner-text-style{
+	font-size: 30pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2f2f2f;
+}
+
+.master-ssilka{
+	text-transform: none;
+	font-size: 18pt;
+}
+
+.main-slider {
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+.main-slider.ded-slider {
+	height:550px;
+}
+
+.main-slider-item {
+	width: 100%;
+	height: 100%;
+}
+
+.main-slider-item-text {
+	padding-top: 4%;
+    color: black;
+}
+
+.main-slider.ded-slider .main-slider-item-text {
+	padding-top:300px;
+	padding-right: 100px;
+}
+
+.main-slider-item-1 {
+	background: url(https://axismetal.com.ua/img/logistic/baner1.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-2 {
+	background: url(https://axismetal.com.ua/img/logistic/baner2.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-3 {
+	background: url(https://axismetal.com.ua/img/logistic/baner3.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-4 {
+	background: url(https://axismetal.com.ua/img/logistic/baner4.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-5 {
+	background: url(https://axismetal.com.ua/img/logistic/baner5.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-6 {
+	background: url(https://axismetal.com.ua/img/logistic/baner6.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-7 {
+	background: url(https://axismetal.com.ua/img/logistic/baner7.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-8 {
+	background: url(https://axismetal.com.ua/img/logistic/baner8.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-9 {
+	background: url(https://axismetal.com.ua/img/logistic/baner9.jpg) center;
+	background-size: cover;
+}
+
+.main-slider-item-10 {
+	background: url(https://axismetal.com.ua/img/logistic/baner10.jpg) center;
+	background-size: cover;
+}
+
+
+
+.main-slider-item-podmoskove {
+	background: url(https://axismetal.com.ua/img/design2017/block-image-podmoskove-bg.jpg) center 20%;
+	background-size: cover;
+}
+
+.main-slider-item-ded {
+	background: url(https://axismetal.com.ua/img/design2017/main-slide-ded-bg.html) center top;
+	background-size: cover;
+}
+
+.main-slider-item-inside {
+	width:1260px;
+	margin:0px auto;
+	display: block;
+}
+
+.main-slider-controller-item {
+	background: #ef2214;
+	opacity: .5;
+	float:left;
+	margin:8px;	
+	width:8px;
+	height:8px;
+	border-radius: 16px;
+}
+.main-slider-controller-item-active {
+	opacity: 1;
+}
+
+.main-slider-controller {
+	width: 1260px;
+	margin:0px auto;
+	margin-top:-200px;
+}
+
+.heigth-350 {
+	height: 350px;
+}
+
+@media all and (max-width:1300px) {
+	.main-slider-item-inside {
+		width:1000px;
+	}
+	
+	.main-slider-controller {
+		width: 1000px;
+	}
+}
+
+@media all and (max-width:420px) {
+	.heigth-350 {
+		height: auto;
+	}
+	.main-slider {
+		width:100%;
+		height:auto;
+		position: relative;
+	}
+	
+	.main-slider.ded-slider {
+		height:350px;
+	
+	}
+
+	.main-slider-item-inside {
+		width:100%;
+	}
+	
+	.main-slider-controller {
+		width: 100%;
+		margin-top:-30px;
+		text-align: center;
+	}
+	
+	.main-slider-controller-item {
+		display: inline-block;
+		float: none;
+	}
+
+	.main-slider-item-text {
+		margin: 0 10px;
+	}
+}
+
+.main-page-nav.block-4-items > div {
+	
+}
+
+.main-page-nav.block-4-items > div img {
+	max-width: 70%;
+	transition: all .5s;
+	overflow: hidden;
+}
+
+.main-page-nav a {
+	font-size: 16pt;
+	color:black;
+	text-decoration: none;
+	transition:all .2s;
+}
+
+.main-page-nav a img {
+	transition:all .2s;
+}
+
+.main-page-nav a:hover {
+	color:#ff5549;
+}
+
+.main-page-nav a:hover img {
+	 -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media all and (max-width:420px) {
+	.main-page-nav a {
+		font-size: 12pt;
+	}
+}
+
+.main-page-about {
+	background: #f5f5f5;
+	margin-top:50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.main-page-about-text {
+	width:40%;
+	line-height: 1.8em;
+}
+
+.main-page-about-text h1 {
+	line-height: normal;
+}
+
+.main-page-about-quote {
+	width:55%;
+}
+
+.main-page-about-quote .block-right {
+	background: white;
+	margin:30px;
+	width:40%;
+	padding:20px 30px 0px;
+}
+
+.main-page-about-quote .block-right > div {
+	width:100%;
+	font-family: serif;
+	font-weight: 700;
+}
+
+.text-quote {
+	font-family: serif;
+	font-weight: 700;
+	font-size: 40pt;
+	color:#ef2214;
+}
+
+@media all and (max-width:420px) {
+	.text-quote {
+		font-size: 20pt;
+	}
+}
+
+.main-page-about-quote .block-absolute {
+	background: url(https://axismetal.com.ua/img/design2017/main/main-block-quote-bg.html) no-repeat;
+	width:656px;
+	height:515px;
+	margin-left:-70px;
+	bottom:0;
+	background-size: cover;
+}
+
+@media all and (max-width:420px) {
+	
+	.main-page-about {
+		margin-top:20px;
+	}
+	
+	.main-page-about > div > div {
+		width:100%;
+	}
+	
+	.main-page-about-quote .block-absolute {
+		width:400px;
+		height:350px;
+		margin-left:-45%;
+	}
+	
+	.main-page-about-quote .block-right {
+		width:65%;
+		margin-top:-30px;
+		margin-bottom:90px;
+		margin-right:10px;
+	}
+	
+	.main-page-about-text {
+		padding:10px;
+		line-height: 1.3em;
+	}
+	
+	.main-page-about-text p {
+		display: none;
+	}
+}
+
+
+@media all and (max-width:420px) {
+		
+	/*.main-slider-item-1, .main-slider-item-2, .main-slider-item-3, .main-slider-item-4, .main-slider-item-5, .main-slider-item-6, .main-slider-item-7, .main-slider-item-8, .main-slider-item-9, .main-slider-item-10, .fon-img {
+		background: #bfccdd!important;
+	}
+*/
+	.fon-img {
+		padding-top:100px;
+	}
+ 
+	.windows-price-block-navigation > div:nth-child(1),.windows-price-block-navigation > div:nth-child(2) {
+		width:30%;
+	}
+	
+	.windows-price-block-navigation > div:nth-child(3) {
+		width:25%;
+	}
+	
+	.windows-price-block-navigation > div:nth-child(4) {
+		width:15%;
+	}
+}
+
+
+
+/* OKNAP WINDOWS PAGE */
+
+.block-profiles-inner {
+	border:1px solid #d9d9d9;
+	margin:10px;
+	padding:10px;
+	width:100%;
+	float:left;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.block-profiles > div > div > div > div:nth-child(2n-1) > .block-profiles-inner {
+	margin-left:0px;
+}
+
+.block-profiles > div > div > div > div:nth-child(2n) > .block-profiles-inner {
+	margin-right:0px;
+}
+
+.block-profile-description {
+	font-size: 10pt;
+}
+
+.block-profiles-bars {
+	height: 100%;
+	min-height: 300px;
+	margin-right:40px;
+	margin-left:10px;
+	position: relative;
+}
+
+.block-profiles-bar {
+	float:left;
+	width:22px;
+	margin-left:30px;
+}
+
+.block-profiles-bar-value {
+	color:#ababab;
+	font-size: 10pt;
+	margin-bottom:10px;
+}
+
+.block-profiles-bar-inner {
+	background: #ebebeb;
+	position: relative;
+	min-height: 250px;
+	border-radius: 12px;
+	margin:5px;
+}
+
+.block-profiles-bar-bar, .block-profiles-bar-gost {
+	position: absolute;
+	width:100%;
+	bottom:0;
+	background: #ffc600;
+	border-radius: 12px;
+	transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.block-profiles-bar-gost {
+	background: #245218;
+	height:0%;
+	border-radius: 0px 0px 12px 12px;
+}
+
+.block-profiles-bar-icon-temperature, .block-profiles-bar-icon-noise {
+	width:21px;
+	height:15px;
+	background: url(https://axismetal.com.ua/img/design2017/icon-bars-temperature.png) no-repeat center center;
+}
+
+ .block-profiles-bar-icon-noise {
+	 background: url(https://axismetal.com.ua/img/design2017/icon-bars-noise.png) no-repeat center center;
+	 width:25px;
+ }
+ 
+
+.block-profiles-bar-gost-mark {
+	color:#999;
+	position: absolute;
+	right:0;
+	/*bottom:141px;*/bottom:20px;
+	left:0;
+	width:140px;
+	font-size: 9pt;
+	text-align: right;
+	transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.block-profiles .block-items-wrapper > div:nth-child(1) .block-profiles-bar-gost-mark,  .block-profiles .block-items-wrapper > div:nth-child(1) .block-profiles-bar-gost, .block-profiles .block-items-wrapper > div:nth-child(1) .block-profiles-bar-bar {
+	 transition-delay: 1s;
+}
+
+ .block-profiles .block-items-wrapper > div:nth-child(2) .block-profiles-bar-gost-mark,  .block-profiles .block-items-wrapper > div:nth-child(2) .block-profiles-bar-gost,  .block-profiles .block-items-wrapper > div:nth-child(2) .block-profiles-bar-bar {
+	 transition-delay: 1.5s;
+}
+
+.block-profiles .block-items-wrapper > div:nth-child(3) .block-profiles-bar-gost-mark,  .block-profiles .block-items-wrapper > div:nth-child(3) .block-profiles-bar-gost,  .block-profiles .block-items-wrapper > div:nth-child(3) .block-profiles-bar-bar {
+	 transition-delay: 2s;
+}
+
+.block-profiles .block-items-wrapper > div:nth-child(4) .block-profiles-bar-gost-mark,  .block-profiles .block-items-wrapper > div:nth-child(4) .block-profiles-bar-gost,  .block-profiles .block-items-wrapper > div:nth-child(4) .block-profiles-bar-bar {
+	 transition-delay: 2.5s;
+}
+
+.block-profiles .block-items-wrapper > div:nth-child(5) .block-profiles-bar-gost-mark,  .block-profiles .block-items-wrapper > div:nth-child(5) .block-profiles-bar-gost,  .block-profiles .block-items-wrapper > div:nth-child(5) .block-profiles-bar-bar {
+	 transition-delay: 3s;
+}
+
+.block-profiles .block-items-wrapper > div:nth-child(6) .block-profiles-bar-gost-mark, .block-profiles .block-items-wrapper > div:nth-child(6) .block-profiles-bar-gost,  .block-profiles .block-items-wrapper > div:nth-child(6) .block-profiles-bar-bar {
+	 transition-delay: 4.5s;
+}
+
+.block-profiles-bar-gost-mark:before {
+	content: "60%";
+	width:30px;
+	left:0px;
+
+	position: absolute;
+	
+}
+
+.block-profiles-bar-gost-mark:after {
+	content: "";
+	border-top:1px solid #ccc;
+	width:70px;
+	left:35px;
+	position: absolute;
+	margin-top:7px;
+	
+}
+
+.block-profile-text > a {
+	text-decoration: none;
+	color:#555;
+	display: inline-block;
+	border-bottom:1px solid #ddd;
+	margin-bottom:5px;
+	height:38px;
+}
+
+.block-profile-text > a:hover {
+	border-color: #999;
+}
+
+ .block-profiles-image > img {
+	transition: all 0.3s;
+}
+
+.block-profiles-image > img:hover {
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media all and (max-width:420px) {
+	.block-profiles-image {
+		width:80px;
+	}
+	
+	.block-profiles-inner {
+		padding-top:10px;
+		margin:0px;
+	}
+	
+	.block-profiles-image > img {
+		max-width: 100%;
+	}
+	
+	.block-profiles-bars {
+		min-height: 100px;
+		margin-right:10px;
+	}
+	
+	.block-profiles-bar {
+		margin-left:10px;
+	}
+	
+	.block-profiles-bar-gost-mark {
+		display: none;
+	}
+	
+	.block-profiles-bar-inner {
+		min-height: 80px;
+	}
+	
+	.block-profile-description {
+		clear:both;
+		display: block;
+		margin-top:40px;
+	}
+	
+	.block-profile-text > .text-size-27 {
+		font-size: 20pt;
+	}
+	
+	.block-profile-small:not(.text-small) {
+		margin-top:-20px;
+		display: block;
+	}
+	
+	.block-profile-small > .text-size-27 {
+		font-size: 25pt;
+	}
+	
+	.block-profile-small.block-profile-small {
+		font-size: 13pt;
+		font-weight: 300;
+	}
+}
+
+.block-rehau-about {
+	background: url(https://axismetal.com.ua/img/design2017/block-rehau-about-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.block-rehau-about > div {
+	width: 500px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.block-about-rehau-logo {
+	margin-right:-100px;
+}
+
+.block-podmoskove-delivery {
+	background: url(https://axismetal.com.ua/img/design2017/block-podmoskove-delivery-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.block-podmoskove-delivery  > div {
+
+	padding-top:0px;
+	padding-bottom:40px;
+}
+
+
+@media all and (max-width:420px) {
+	.block-rehau-about > div {
+		width:auto;
+		text-align: left;
+		margin:0;
+		padding:10px;
+	}
+
+
+	.block-warranty{
+		background: #676767 !important;
+	}
+	
+	.block-about-rehau-logo {
+	margin-right:10px;
+	}
+
+}
+
+/*.block-call-form-type-2 > .content {
+	padding-left:700px;
+}*/
+
+.block-call-form-type-2 input {
+	width:300px;
+}
+
+.block-call-form h2 {
+    margin-bottom:10px!important;
+}
+.block-call-form .text-white {
+    margin-bottom:40px;
+}
+.block-call-form-fields {
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.block-call-form-fields input.form-field  {
+    margin-right:20px;
+}
+
+
+.block-call-form .block-form-conf {
+	margin:0px auto;
+	margin-top:30px;
+	color:white;
+	max-width: 700px;
+	
+	padding:10px;
+}
+
+.block-call-form .block-form-conf a {
+	color:white;
+}
+
+@media all and (max-width:420px) {
+    .block-call-form-fields {
+        padding-top: 40px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom: 80px;
+    }
+    .block-call-form-fields input.form-field  {
+        width:100%;
+        margin-right:0;
+        float: none;
+        font-size:1em;
+        margin-bottom:20px;
+    }
+    .block-call-form-fields input.button-round  {
+        width:100%;
+        float: none;
+    }
+    
+    .block-call-form-type-2 > .content {
+	    padding-left:20px;
+    }
+    
+    .block-call-form-type-2 input {
+		width:100%;
+		 
+	}
+	
+	.block-call-form-type-2 .block-call-form-fields input.form-field {
+		/*margin-bottom:0px;*/
+	}
+	
+	.block-call-form-type-2 .text-size-27 {
+		font-size: 20pt;
+	}
+	
+	.block-call-form-type-2 .text-size-18 {
+		font-size: 14pt;
+	}
+}
+
+.block-steklopaket-text {
+	margin:10px 30px 70px 100px;
+	width:500px;
+	float:left
+}
+
+@media all and (max-width:420px) {
+		.block-steklopaket-text {
+			width: auto;
+			margin:10px;
+		}
+}
+
+.block-furniture-maco {
+    background:#f2f3f3 url(https://axismetal.com.ua/img/design2017/block-furniture-maco-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    padding:60px 0;
+}
+.block-furniture-maco .content > * {
+    margin-left:55%;
+}
+.block-furniture-maco .text-size-27:first-line {
+    font-size:80%;
+}
+.block-furniture-maco .text-size-16 {
+    font-size:95%;
+    line-height: 25px;
+    margin-bottom:25px;
+}
+
+@media all and (max-width:420px) {
+	.block-furniture-maco {
+		background-position: 0% top;
+		padding:0;
+		background-size: 200%;
+	}
+	
+	.block-furniture-maco .content {
+		padding-top:280px;
+		padding-bottom:20px;
+		color:black;
+	}
+	.block-furniture-maco .content > * {
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
+
+.block-montag {
+	 background:#f5f0d8 url(https://axismetal.com.ua/img/design2017/block-montag-bg.jpg) 50% 70% no-repeat;
+}
+
+
+
+.block-montag-text {
+	margin-top:120px;
+	margin-left:50px;
+	margin-bottom:80px;
+	width:530px;
+}
+
+@media all and (max-width:420px) {
+	.block-montag-text {
+		width:auto;
+		margin:0;
+		padding:10px;
+	}
+}
+
+.page-block-windows-options > div > div {
+	margin-bottom:30px;
+}
+
+.page-block-windows-options > div > div > a > img {
+	transition: all .3s;
+}
+
+.page-block-windows-options > div > div > a:hover > img {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.block-review-wrapper {
+	position: relative;
+}
+
+.block-review-container {
+	padding:30px;
+	border:1px solid #ddd;
+	width:600px;
+	margin-left:90px;
+	margin-top:30px;
+	margin-bottom:120px;
+	font-size: 11pt;
+}
+
+.block-review-container > .block-navigation-arrows {
+	display: inline-block;
+	float:none;
+	margin-bottom:-20px;
+	margin-left:90px;
+}
+.block-review-name {
+	float:left;
+	font-size: 24pt;
+}
+
+.block-review-date {
+	float:right;
+	font-size: 10pt;
+	color:#999;
+}
+
+.block-review-text {
+	clear:both;
+	margin-top:60px;
+	font-weight: 300;
+	margin-bottom:40px;
+	font-size: 12pt;
+}
+
+.block-review-image {
+	position: absolute;
+	top:0;
+	right:100px;
+	z-index: -1;
+}
+
+@media all and (max-width:420px) {
+
+	.mobile-heigt-500 {
+		height: 500px;
+	}
+
+	.block-review-container {
+	margin:0;
+	width:auto;
+	padding:10px;
+	}
+	
+	.block-review-container > .text-purple {
+		display: none;
+	}
+	
+	.block-review-image {
+		display: none;
+	}
+	
+	.block-review-container > .block-navigation-arrows {
+		margin-left:15px;
+	}
+}
+
+.block-warranty {
+	 background:#808080 url(https://axismetal.com.ua/img/design2017/block-warranty-bg.jpg) 90% 1% no-repeat;
+	 color:white;
+	 padding-bottom:0px;
+}
+
+.block-windows-example {
+	margin-bottom:40px;
+	float:left;
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+}
+
+.block-windows-example > div {
+    float: left;
+    width:30%;
+}
+
+.block-windows-example > div > a {
+	margin-left: 0;
+}
+
+.block-windows-example > div > .block-window-b {
+	margin-bottom:-87px;
+}
+
+.block-windows-example li {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    list-style: none;
+    height: 54px;
+    text-align: left;
+}
+.block-windows-example li:not(:first-child) {
+    border-bottom:1px solid #ebebeb;
+    line-height: 54px;
+}
+
+.block-windows-example li:first-child span {
+    line-height: normal;
+}
+
+.block-windows-example li span {
+    line-height: 54px;
+    float: left;
+}
+.block-windows-example li:last-child {
+    border-bottom:0;
+}
+.block-windows-example li span:last-child {
+    float: right;
+    margin-left:15px;
+}
+.block-windows-example li sup {
+    line-height: 0;
+}
+
+.block-windows-example ul {
+	margin:0;
+}
+
+@media all and (max-width:420px) {
+	.block-windows-example > div {
+	    float: left;
+	    width:100%;
+	    text-align: center;
+	    margin-bottom:50px;
+	    padding:10px;
+	}
+	
+	.block-windows-example .text-size-27 {
+		font-size: 27pt;
+	}
+	
+	.block-windows-example .text-small {
+		font-size: 11pt;
+		line-height: 11pt;
+	}
+	
+	.block-windows-example .text-size-16 {
+		font-size: 16pt;
+	}
+	
+	.block-windows-example > div > a {
+		margin:auto;
+	}
+}
+
+.profile-bg.profile-bg-blitz {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-blitz-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-grazio {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-grazio-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-sib {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-sib-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-gzhel {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-gzhel-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-gost60 {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-gost60-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-delight {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-delight-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-brillant {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-brillant-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-geneo {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-geneo-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-intelio {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-rehau-intelio-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg.profile-bg-provedal {
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-provedal-c640-bg.jpg)  center center no-repeat;   
+}
+
+.profile-bg {
+	min-height: 925px;
+}
+
+.profile-bg > .content {
+	color:black;
+}
+
+.profile-bg > .content > .profile-page-description {
+	min-height: 775px;
+	background: url(https://axismetal.com.ua/img/design2017/windows/profile-arrows.png)  -350px -100px no-repeat;
+	margin:0;
+	width:750px;
+	float:left;
+	margin-right:50px;
+	position: relative;
+	margin-top:70px;
+}
+
+.profile-bg > .content > .profile-page-description > div {
+	float:right;
+	clear:right;
+	width:150px;
+	font-size: 10pt;
+	text-align: right;
+	height:50px;
+	position: absolute;
+	right:38px;
+
+}
+
+.profile-bg > .content > .profile-page-text {
+	float:left;
+	padding-top:200px;
+	width:400px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(1){
+	bottom:660px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(2){
+	bottom:540px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(3){
+	bottom:410px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(4){
+	bottom:244px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(5){
+	bottom:132px;
+}
+
+.profile-bg > .content > .profile-page-description > div:nth-child(6){
+	bottom:20px;
+}
+
+
+.button-style {
+	margin: -30% 0 0 88%;
+}
+
+@media all and (max-width:420px) {
+
+	.button-style {
+	margin: 0;
+}
+
+	.scrollTop {
+		left:85%!important;
+	}
+
+
+	.profile-bg {
+		min-height: auto;
+		height: auto;
+		background-position: 30% 0px!important;
+		background-size: 300%!important;
+		
+	}
+	
+	.profile-bg > .content > .profile-page-description {
+		display: none;
+	}
+	
+	.profile-bg > .content > .profile-page-text {
+		padding-top:0;
+		margin:0;
+		width: auto;
+	}
+	
+	.profile-bg > .content > .profile-page-text p {
+		padding:10px;
+	}
+	
+	.profile-bg > .content > .profile-page-text h1, .profile-bg > .content > .profile-page-text h2 {
+		font-size: 16pt;
+		margin:0;
+		margin-bottom:500px;
+		background: rgba(255, 255, 255, 0.59);
+		padding:15px 10px;
+		width:100%;
+	}
+}
+
+.link {
+    font-size: 20px;
+    font-weight: 300;
+    color: #198fcb;
+    cursor: hand;
+    cursor: pointer;
+    }
+
+    .link:hover {
+    color: #000;
+    }
+
+    #test, #test1, #test2, #test3, #test4, #test5, #test6, #test7, #test8, #test9, #test10 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1c1c1c;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+
+.link2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+
+
+
+
+
+.super-wrapper.page-404{
+	min-height: 100vh;
+	min-width: 100%;
+	padding-bottom: 30vh;
+}
+.main-404{
+	width: 100%;
+	height: 90vh;
+	position: relative;
+	background: url('https://axismetal.com.ua/img/icons/bg.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.wrapper-404{
+	max-width: 1166px;
+	width:auto;
+	height: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.error-layout{
+	min-width:auto;
+}
+@media only screen and (max-width : 1000px) {
+	.wrapper-404{
+	max-width: 1000px;
+}
+}
+.main-404 .img{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background: url('https://axismetal.com.ua/img/icons/dark.png') no-repeat center center;
+}
+.main-404 .img.light{
+	background: url('https://axismetal.com.ua/img/icons/light.png') no-repeat center center;
+}
+.footer-404{
+	height: 30vh;
+	margin-top: -30vh;
+	background: #272726;
+	padding-top: 40px;
+	text-align: center;
+	color: #fff
+}
+.footer-404 .btn{
+	height: 54px;
+	line-height: 58px;
+}
+@media only screen and (max-width : 1380px) {
+	.main-404 .img{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background: url('https://axismetal.com.ua/img/icons/dark.png') no-repeat center center;
+	background-size: contain;
+}
+.main-404 .img.light{
+	background: url('https://axismetal.com.ua/img/icons/light.png') no-repeat center center;
+	background-size: contain;
+}
+.footer-404{
+	height: 30vh;
+	margin-top: -30vh;
+	background: #272726;
+	padding-top: 50px;
+	text-align: center;
+	color: #fff
+}
+}
+@media only screen and (max-width : 790px) {
+		.footer-404 .h3{
+			font-size: 18px;
+    		line-height: 22px;
+    		margin-bottom: 15px !important;
+		}
+		.footer-404 {
+   
+    padding-top: 20px;
+    
+}
+}
+
+
+@media all and (max-width:420px) {
+
+.link, .link2 {
+    margin: 0 10px;
+    }
+
+.main-404{
+	height: 70vh;
+	}    
+ }
+
+
+.custom-file-label {
+    overflow: hidden;
+}
+
+.custom-file-label::after {
+    content: "Найти";
+}
+
+.panel-success {
+    border-color: #29b74e;
+}
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #e30003;
+    border-color: #e30003;
+}
+.btn-success {
+    color: #fff;
+    background-color: #e30003;
+    border-color: #e30003;
+}
+.success {
+    color: #29b74e;
+}
+.jgrowl-error {
+    background-color: #a94442 !important;
+}
+
+.jgrowl-success {
+    background-color: #3c763d !important;
+}
+
+.jgrowl-warning {
+    background-color: #8a6d3b !important;
+}
+
+
+.toc {
+    display: table;
+    padding: 7px;
+    width: 50%;
+}
+
+.toc, .mw-warning, .toccolours {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    font-size: 95%;
+}
+
+@media all and (max-width:420px) {
+
+	.toc {
+    margin: auto;
+    width: 100%;
+	}
+
+	.toc ul li {
+	list-style-type: none;
+}
+}
+
+
+
+:not(:checked) > .toctogglecheckbox {
+    display: inline !important;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.toc .toctitle {
+    text-align: center;
+    direction: ltr;
+}
+
+.toc h3 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.toc ul li {
+	color: #0092d1 !important;
+	list-style-type: none;
+}
+
+.toc ul li a {
+	color: #0092d1 !important;
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,216 @@
+const fopBtn = document.querySelector('#fop');
+const jyrikBtn = document.querySelector('#jyrik');
+const toHide = document.querySelectorAll('.toHide');
+const CartProductList = document.querySelector('.order_content__list');
+const cartQuantity = document.querySelector('.cart_quantity');
+const fullPrice = document.querySelector('.fullprice');
+const form = document.querySelector('.order_contacts__data');
+const paymentMethod = document.querySelector('[name="payment_method"]');
+const onSubmitBtn = document.querySelector('.onSubmitBtn');
+
+let cartToLocal = [];
+let price = 0;
+
+let user = {
+	name,
+	email,
+	tel,
+};
+
+const generateCartProduct = (id, img, alt, title, priceNumber) => {
+	return `<li class="cart_item">
+				<article class="cart_item__article" data-id="${id}">
+						<img class="cart_item__img" src=".${img}" alt="${alt}">
+
+							<div class="cart_item__text">
+								<h3 class="cart_item__title">${title}</h3>
+								<span class="cart_item__price">Ціна:
+									<span class="price">${priceNumber}</span> 
+									грн</span>
+							</div>
+							<div class="cart_item__count">Кількість
+									<label for="input_count" class="cart_item__label">
+										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="1"><br><br>					
+									</label>
+							</div>
+							<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
+				</article>
+			</li>`;
+};
+
+if (fopBtn.getAttribute('checked') === 'true') {
+	toHide.forEach(el => el.classList.add('unvisibled'));
+}
+
+fopBtn.onclick = function () {
+	toHide.forEach(el => el.classList.add('unvisibled'));
+};
+
+jyrikBtn.onclick = function () {
+	toHide.forEach(el => el.classList.remove('unvisibled'));
+};
+
+const priceWitchoutSpaces = str => {
+	return str.replace(/\s+/g, ' ');
+};
+
+const normalPrice = str => {
+	return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+};
+
+const plusFullPrice = currentPrice => {
+	return (price += currentPrice);
+};
+
+const minusFullPrice = currentPrice => {
+	return (price -= currentPrice);
+};
+
+const printQuantity = () => {
+	let length = CartProductList.children.length;
+	cartQuantity.textContent = length;
+	// length > 0 ? cart.classList.add('active') : cart.classList.remove('active');
+};
+
+const printFullPrice = () => {
+	fullPrice.textContent = `${normalPrice(price)} грн`;
+};
+
+function loadLocaleStorage() {
+	if (localStorage.getItem('cartList')) {
+		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
+		if (cartToLocal) {
+			cartToLocal.map(({ id, img, alt, title, priceNumber }) => {
+				price += Number(priceNumber);
+				CartProductList.insertAdjacentHTML(
+					'beforeend',
+					generateCartProduct(id, img, alt, title, priceNumber)
+				);
+			});
+			printFullPrice();
+			cartQuantity.textContent = Number(cartToLocal.length);
+			localStorage.setItem('priceFull', price);
+		}
+	}
+}
+
+loadLocaleStorage();
+
+const deleteItem = productParent => {
+	let id = productParent.querySelector('.cart_item__article').dataset.id;
+	const element = document.querySelector(`.product_item[data-id="${id}"]`);
+
+	let currentPrice = parseInt(
+		priceWitchoutSpaces(productParent.querySelector('.price').textContent)
+	);
+
+	price = minusFullPrice(currentPrice);
+	productParent.remove();
+	const search = cartToLocal.filter(el => el.id !== id);
+	cartToLocal = search;
+	localStorage.setItem('cartList', JSON.stringify(search));
+	printQuantity();
+	printFullPrice();
+	localStorage.setItem('priceFull', price);
+};
+
+CartProductList.addEventListener('click', e => {
+	if (e.target.classList.contains('cart_item__delete'))
+		deleteItem(e.target.closest('.cart_item'));
+
+	if (e.target.nodeName === 'INPUT') {
+		price = 0;
+		const productList = CartProductList.querySelectorAll('.cart_item');
+		productList.forEach(el => {
+			const Price = el.querySelector('.price');
+			const Count = el.querySelector('.cart_item__input_count');
+			price += Count.value * Number(Price.textContent);
+			printFullPrice(price);
+			localStorage.setItem('priceFull', price);
+		});
+	}
+});
+
+paymentMethod.addEventListener('change', e => {
+	if (e.target.value === 'ОнлайнОплата') {
+		onSubmitBtn.textContent = 'Оплатити онлайн';
+		onSubmitBtn.setAttribute(
+			'onClick',
+			`location.href=createOrder('${user.name}','${user.tel}')`
+		);
+	} else onSubmitBtn.textContent = 'Підтвердити замовлення';
+});
+
+form.addEventListener('change', e => {
+	let self = e.currentTarget;
+	user.name = self.querySelector('[name="contact_lastName"]').value;
+	user.tel = self.querySelector('[name="contact_phone"]').value;
+	user.email = self.querySelector('[name="contact_email"]').value;
+	if (!user.name || !user.email || !user.tel) {
+		onSubmitBtn.disabled = true;
+	} else {
+		onSubmitBtn.disabled = false;
+		localStorage.setItem('user', JSON.stringify({ name, email, tel }));
+	}
+});
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	let self = e.currentTarget;
+	// createOrder(user);
+	// let name = self.querySelector('[name="contact_lastName"]').value;
+	// let tel = self.querySelector('[name="contact_phone"]').value;
+	// let mail = self.querySelector('[name="contact_email"]').value;
+	let nameOrganization = self.querySelector(
+		'[name="contact_nameOrganization"]'
+	).value;
+	let EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
+	let deliveryContact = self.querySelector(
+		'[name="contact_deliveryContact"]'
+	).value;
+	let sity = self.querySelector('[name="contact_sity"]').value;
+	let service = self.querySelector('[name="select_delivery"]').value;
+	let department = self.querySelector('[name="contact_department"]').value;
+	let method = self.querySelector('[name="payment_method"]').value;
+	let comment = self.querySelector('[name="contact_comment"]').value;
+
+	console.log(cartToLocal);
+	emailjs.init('YOwuZ0YbnNXpFf1ZR');
+
+	const templateParams = {
+		user: {
+			name,
+			tel,
+			mail,
+			nameOrganization,
+			EDRPOY,
+			deliveryContact,
+		},
+		delivery: {
+			sity,
+			service,
+			department,
+		},
+
+		payment: {
+			method,
+			comment,
+		},
+
+		cartToLocal: JSON.stringify(
+			cartToLocal.map(el => {
+				return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
+			})
+		),
+	};
+
+	console.log(templateParams);
+	emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
+		function (response) {
+			console.log('SUCCESS!', response.status, response.text);
+		},
+		function (error) {
+			console.log('FAILED...', error);
+		}
+	);
+});

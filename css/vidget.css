@@ -1,0 +1,26 @@
+.vidget_link {
+	display: inline-block !important;
+	background: #2b3160
+		url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png')
+		no-repeat center right;
+	background-size: cover;
+	width: 255px !important;
+	height: 45px !important;
+	border: none !important;
+	border-radius: 14px !important;
+	padding: 18px !important;
+	text-decoration: none !important;
+	box-shadow: 3px 2px 8px rgba(71, 66, 66, 0.22) !important;
+	text-align: left !important;
+	box-sizing: border-box !important;
+	margin-right: 10px;
+}
+.vidget_text {
+	font-family: Verdana, Arial, sans-serif !important;
+	font-weight: bold !important;
+	font-size: 14px !important;
+	color: #ffffff !important;
+	line-height: 10px !important;
+	vertical-align: middle !important;
+	display: flex !important;
+}

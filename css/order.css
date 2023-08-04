@@ -1,0 +1,109 @@
+.unvisibled {
+	display: none;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.contacts_choise {
+	width: 100%;
+	display: flex;
+}
+
+.contacts_choise input {
+	display: flex;
+	margin-right: 5px;
+}
+
+.contacts_choise label {
+	margin-bottom: 0;
+	margin-right: 20px;
+}
+
+.contacts_values,
+.delivery,
+.payment {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 30px;
+}
+
+.contacts_values input,
+.delivery input,
+.payment select,
+.delivery select {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.coment {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.coment textarea {
+	margin-top: 10px;
+	height: 100px;
+	padding: 10px;
+}
+.order {
+	display: flex;
+	column-count: 2;
+	gap: 50px;
+}
+.order_content {
+	width: 650px;
+	margin-top: 40px;
+	overflow: hidden;
+	cursor: default;
+	background-color: rgba(214, 209, 209, 1);
+	box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+	color: black;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+.order_content__list {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.onSubmitBtn {
+	display: flex;
+	margin-top: 20px;
+	font-size: 14pt;
+	cursor: pointer;
+	transition: all 0.3s;
+	color: white !important;
+	background: #ff0000;
+	width: 250px;
+	margin-left: auto;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+
+.item_to_order {
+	display: flex;
+	flex-direction: column;
+}
+
+.order_sidebar {
+	width: 100%;
+	max-height: 800px;
+}
+
+.order_content__bottom {
+	border-top: 1px solid gray;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
