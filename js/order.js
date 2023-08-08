@@ -3,7 +3,7 @@ const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
 const CartProductList = document.querySelector('.order_content__list');
 const cartQuantity = document.querySelector('.cart_quantity');
-const fullPrice = document.querySelector('.fullprice');
+const fullPrice = document.querySelector('.order_fullprice');
 const form = document.querySelector('.order_contacts__data');
 const paymentMethod = document.querySelector('[name="payment_method"]');
 const onSubmitBtn = document.querySelector('.onSubmitBtn');
@@ -18,22 +18,22 @@ let user = {
 };
 
 const generateCartProduct = (id, img, alt, title, priceNumber) => {
-	return `<li class="cart_item">
-				<article class="cart_item__article" data-id="${id}">
-						<img class="cart_item__img" src=".${img}" alt="${alt}">
+	return `<li class="order_cart__item">
+				<article class="order_cart__item_article" data-id="${id}">
+						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 
-							<div class="cart_item__text">
-								<h3 class="cart_item__title">${title}</h3>
-								<span class="cart_item__price">Ціна:
-									<span class="price">${priceNumber}</span> 
+							<div class="order_cart__item_text">
+								<h3 class="order_cart__item_title">${title}</h3>
+								<span class="order_cart__item_price">Ціна:
+									<span class="order_price">${priceNumber}</span> 
 									грн</span>
 							</div>
-							<div class="cart_item__count">Кількість
-									<label for="input_count" class="cart_item__label">
-										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="1"><br><br>					
+							<div class="order_cart__item_count">Кількість
+									<label for="input_count" class="order_cart__item_label">
+										<input class="order_cart__item_input_count" type="number" name="input_count" min="1" value="1"><br><br>					
 									</label>
 							</div>
-							<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
+							<button  type="button" class="order_cart__item_delete" aria-label="Видалити товар" id="btn_f"></button>
 				</article>
 			</li>`;
 };
@@ -97,11 +97,11 @@ function loadLocaleStorage() {
 loadLocaleStorage();
 
 const deleteItem = productParent => {
-	let id = productParent.querySelector('.cart_item__article').dataset.id;
+	let id = productParent.querySelector('.order_cart__item_article').dataset.id;
 	const element = document.querySelector(`.product_item[data-id="${id}"]`);
 
 	let currentPrice = parseInt(
-		priceWitchoutSpaces(productParent.querySelector('.price').textContent)
+		priceWitchoutSpaces(productParent.querySelector('.order_price').textContent)
 	);
 
 	price = minusFullPrice(currentPrice);
@@ -115,15 +115,15 @@ const deleteItem = productParent => {
 };
 
 CartProductList.addEventListener('click', e => {
-	if (e.target.classList.contains('cart_item__delete'))
-		deleteItem(e.target.closest('.cart_item'));
+	if (e.target.classList.contains('order_cart__item_delete'))
+		deleteItem(e.target.closest('.order_cart__item'));
 
 	if (e.target.nodeName === 'INPUT') {
 		price = 0;
-		const productList = CartProductList.querySelectorAll('.cart_item');
+		const productList = CartProductList.querySelectorAll('.order_cart__item');
 		productList.forEach(el => {
-			const Price = el.querySelector('.price');
-			const Count = el.querySelector('.cart_item__input_count');
+			const Price = el.querySelector('.order_price');
+			const Count = el.querySelector('.order_cart__item_input_count');
 			price += Count.value * Number(Price.textContent);
 			printFullPrice(price);
 			localStorage.setItem('priceFull', price);
