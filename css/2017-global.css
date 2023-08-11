@@ -2438,7 +2438,7 @@ table th a {
 
 @media all and (max-width: 420px) {
 	.content {
-		/* width:auto; */
+		width: auto;
 	}
 
 	.content > * {
