@@ -221,13 +221,8 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	.order_contacts__data {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+
 	.order {
-		width: 70%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -392,26 +387,47 @@
 		font-weight: 700;
 	}
 }
-
-@media (min-width: 990.5px) {
+@media (max-width: 575px) {
+	.order_contacts__data {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	/* .order_contacts__data {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	} */
+}
+@media (min-width: 575px) {
 	.order {
-		/* width: 70%; */
 		display: flex;
 		flex-direction: row;
-		gap: 70px;
-		/* justify-content: center; */
+		gap: 30px;
+		justify-content: space-around;
 	}
+	.order_contacts__data {
+		width: calc(100% / 2 - 100px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (min-width: 990.5px) {
 	.contacts,
 	.delivery,
 	.payment {
-		width: 400px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 		margin-top: 30px;
 	}
 	.contacts_values {
-		width: 400px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -422,12 +438,12 @@
 	.delivery input,
 	.payment select,
 	.delivery select {
-		width: 400px;
+		width: 100%;
 		margin-top: 10px;
 		padding: 10px;
 	}
 	.order_content {
-		width: 600px;
+		width: 100%;
 		margin-top: 40px;
 		overflow: hidden;
 		cursor: default;
