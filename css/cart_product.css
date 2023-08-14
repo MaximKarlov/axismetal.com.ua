@@ -240,7 +240,7 @@ main {
 		background: white;
 	}
 	.product_item:hover {
-		transform: scale(1.2);
+		transform: scale(1.02);
 		transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	.cart {
@@ -548,10 +548,6 @@ main {
 	gap: 40px;
 	flex-direction: row;
 	align-items: center;
-	/* align-items: center;
-	justify-content: center;
-	justify-content: space-around;
-	gap: 20px; */
 }
 .info_details {
 	width: 50%;
