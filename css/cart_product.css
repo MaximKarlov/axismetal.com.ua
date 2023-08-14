@@ -545,12 +545,23 @@ main {
 	margin: 30px 0;
 	display: flex;
 	width: 100%;
+	gap: 40px;
 	flex-direction: row;
 	align-items: center;
+	/* align-items: center;
 	justify-content: center;
 	justify-content: space-around;
-	gap: 20px;
+	gap: 20px; */
 }
+.info_details {
+	width: 50%;
+}
+.carousel {
+	height: 100%;
+}
+/* .preview:last-child {
+	width: 50%;
+} */
 
 .preview img {
 	width: 30%;
