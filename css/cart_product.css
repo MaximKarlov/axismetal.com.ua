@@ -89,10 +89,6 @@ main {
 		border-bottom: 1px solid black;
 	}
 
-	.cart_item:hover {
-		background-color: red;
-	}
-
 	.cart_item__article {
 		width: 100%;
 		display: flex;
@@ -284,10 +280,6 @@ main {
 		align-items: center;
 		padding: 5px 20px;
 		border-bottom: 1px solid black;
-	}
-
-	.cart_item:hover {
-		background-color: red;
 	}
 
 	.cart_item__article {

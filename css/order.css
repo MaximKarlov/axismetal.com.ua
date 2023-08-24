@@ -24,6 +24,12 @@
 	display: flex;
 	flex-direction: column;
 }
+.title_h2 {
+	font-family: 'Oswald', sans-serif !important;
+	font-weight: 800;
+	font-size: 30pt;
+	line-height: 1.2;
+}
 
 .coment textarea {
 	margin-top: 10px;
@@ -55,6 +61,7 @@
 		margin-bottom: 0;
 		padding: 0;
 	}
+
 	.order_content__data {
 		width: 100%;
 		margin-top: 40px;
@@ -94,10 +101,6 @@
 		align-items: center;
 		padding: 5px 20px;
 		border-bottom: 1px solid black;
-	}
-
-	.order_cart__item:hover {
-		background-color: red;
 	}
 
 	.order_cart__item_article {
@@ -246,6 +249,7 @@
 	.onSubmitBtn {
 		display: flex;
 		margin-top: 20px;
+		margin-left: auto;
 		font-size: 14pt;
 		cursor: pointer;
 		transition: all 0.3s;
@@ -287,10 +291,6 @@
 		align-items: center;
 		padding: 5px 20px;
 		border-bottom: 1px solid black;
-	}
-
-	.order_cart__item:hover {
-		background-color: red;
 	}
 
 	.order_cart__item_article {
@@ -405,8 +405,8 @@
 	.order {
 		display: flex;
 		flex-direction: row;
-		gap: 30px;
-		justify-content: space-around;
+		gap: 90px;
+		justify-content: center;
 	}
 	.order_contacts__data {
 		width: calc(100% / 2 - 100px);
@@ -443,7 +443,7 @@
 		padding: 10px;
 	}
 	.order_content {
-		width: 100%;
+		width: 105%;
 		margin-top: 40px;
 		overflow: hidden;
 		cursor: default;
