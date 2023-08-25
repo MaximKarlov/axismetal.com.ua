@@ -551,6 +551,7 @@ main {
 }
 .carousel {
 	height: 100%;
+	width: 50%;
 }
 /* .preview:last-child {
 	width: 50%;
