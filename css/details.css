@@ -96,3 +96,54 @@
 	position: absolute;
 	right: 20px;
 }
+
+.block_2_items {
+	display: flex;
+	flex-direction: row;
+	column-count: 2;
+	align-items: center;
+}
+
+.block_delivery_pay {
+	font-family: 'Oswald', sans-serif !important;
+	font-weight: 800;
+	font-size: 30pt;
+	line-height: 1.2;
+	width: 50%;
+	border: 1px solid grey;
+}
+
+.block_delivery_pay p {
+	margin-left: 20px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+.block_delivery_pay h3 {
+	font-size: 16px;
+}
+
+.block_delivery_pay div:not(:last-child) {
+	border-bottom: 1px solid grey;
+}
+
+.block_delivery_pay_text {
+	padding: 20px;
+}
+.btn_and_delivery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.product_item__btn_bay {
+	/* border: 2px solid #ff0000; */
+	font-size: 20pt;
+	cursor: pointer;
+	transition: all 0.3s;
+	color: white !important;
+	background: #ff0000;
+	width: 200px;
+	height: 64px;
+	justify-content: center;
+	padding: 5px;
+}
