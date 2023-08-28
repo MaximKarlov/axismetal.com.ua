@@ -217,3 +217,7 @@
 .product_item__btn_bay:disabled {
 	background-color: grey;
 }
+
+.table_details {
+	width: 100%;
+}

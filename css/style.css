@@ -12,7 +12,6 @@
 @import '../css/order.css';
 @import '../css/vidget.css';
 
-
 :root {
 	--blue: #007bff;
 	--indigo: #6610f2;
@@ -6695,9 +6694,9 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background: transparent no-repeat center center;
+	width: 30px;
+	height: 30px;
+	background: red no-repeat center center;
 	background-size: 100% 100%;
 }
 
