@@ -6610,7 +6610,7 @@ button.close {
 	display: none;
 	align-items: center;
 	width: 100%;
-	transition: transform 0.6s ease;
+	transition: transform 3s ease;
 	backface-visibility: hidden;
 	perspective: 1000px;
 }
@@ -14144,6 +14144,9 @@ body .home .page-template .breadcrumbs,
 	-webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0) !important;
 	-o-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
 	-ms-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
+	width: 600px;
+	height: 500px;
+	object-fit: contain;
 	box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
 }
 

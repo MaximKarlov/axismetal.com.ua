@@ -20,7 +20,7 @@ let user = {
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 	return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src="${img}" alt="${alt}">
+						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${title}</h3>
