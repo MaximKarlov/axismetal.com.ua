@@ -550,8 +550,10 @@ main {
 	width: 50%;
 }
 .carousel {
-	height: 100%;
-	width: 50%;
+	height: 450px;
+	width: 700px;
+	display: flex;
+	align-items: center;
 }
 /* .preview:last-child {
 	width: 50%;
