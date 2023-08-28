@@ -91,23 +91,28 @@ const priceWitchoutSpaces = str => {
 	let norm = str.split(' ');
 	norm.splice(2);
 	return norm.join('');
-	// return str.replace(/\s+/g, ' ');
 };
 
 const idWitchoutSpaces = str => {
 	let norm = str.split(' ');
 	norm.splice(0, 1);
 	return norm.join('');
-	// return str.replace(/\s+/g, ' ');
 };
 
 const loadLocaleStorage = () => {
 	if (localStorage.getItem('cartList')) {
 		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
-		cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
-			if (id === idWitchoutSpaces(productId.textContent));
+		console.log(cartToLocal);
+		cartToLocal.map(({ id, img, title, priceNumber, priceCount }) => {
+			console.log(id);
+			console.log(idWitchoutSpaces(productId.textContent));
+			if (id === idWitchoutSpaces(productId.textContent))
+				btnBay.disabled = true;
 			price += Number(priceNumber) * priceCount;
-			btnBay.disabled = true;
+			CartProductList.insertAdjacentHTML(
+				'beforeend',
+				generateCartProduct(id, img, title, priceNumber, priceCount)
+			);
 		});
 		console.log(price);
 		printFullPrice();
@@ -116,7 +121,6 @@ const loadLocaleStorage = () => {
 };
 loadLocaleStorage();
 
-// const detailsCartProduct = (
 // 	productId,
 // 	productImg,
 // 	productName,
@@ -171,7 +175,7 @@ btnBay.addEventListener('click', e => {
 
 	cartToLocal.push({
 		id: product_Id,
-		img: product_Img.slice(1),
+		img: product_Img,
 		alt: product_Name,
 		title: product_Name,
 		priceNumber: product_Price,
