@@ -19,7 +19,7 @@ let price = 0;
 // 	);
 // };
 
-const generateCartProduct = (id, img, alt, title, priceNumber) => {
+const generateCartProduct = (id, img, alt, title, priceNumber, count) => {
 	return `<li class="cart_item">
 				<article class="cart_item__article" data-id="${id}">
 						<img class="cart_item__img" src="${img}" alt="${alt}">
@@ -32,7 +32,7 @@ const generateCartProduct = (id, img, alt, title, priceNumber) => {
 							</div>
 							<div class="cart_item__count">Кількість
 									<label for="input_count" class="cart_item__label">
-										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="1"><br><br>					
+										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="${count}"><br><br>					
 									</label>
 							</div>
 							<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
@@ -73,11 +73,11 @@ const loadLocaleStorage = () => {
 	if (localStorage.getItem('cartList')) {
 		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
 		if (cartToLocal) {
-			cartToLocal.map(({ id, img, alt, title, priceNumber }) => {
+			cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
 				price += Number(priceNumber);
 				CartProductList.insertAdjacentHTML(
 					'beforeend',
-					generateCartProduct(id, img, alt, title, priceNumber)
+					generateCartProduct(id, img, alt, title, priceNumber, priceCount)
 				);
 			});
 			printFullPrice();
@@ -138,11 +138,13 @@ productBtn.forEach(el => {
 
 		printFullPrice(price);
 
+		const priceCount = 1;
+
 		CartProductList.insertAdjacentHTML(
 			'beforeend',
-			generateCartProduct(id, img, alt, title, priceNumber)
+			generateCartProduct(id, img, alt, title, priceNumber, priceCount)
 		);
-		cartToLocal.push({ id, img, alt, title, priceNumber });
+		cartToLocal.push({ id, img, alt, title, priceNumber, priceCount });
 		self.disabled = true;
 		printQuantity();
 		modalWindow.classList.add('active');
