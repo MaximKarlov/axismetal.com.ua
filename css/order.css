@@ -94,6 +94,10 @@
 		align-items: center;
 		padding: 15px;
 	}
+	.onSubmitBtn:disabled {
+		cursor: default;
+		background: grey;
+	}
 
 	.order_cart__item {
 		display: flex;
@@ -260,6 +264,12 @@
 		align-items: center;
 		padding: 15px;
 	}
+
+	.onSubmitBtn:disabled {
+		cursor: default;
+		background: grey;
+	}
+
 	.contacts,
 	.delivery,
 	.payment {
@@ -302,7 +312,7 @@
 	.order_cart__item_img {
 		width: 100px;
 		height: 100px;
-		object-fit: cover;
+		object-fit: contain;
 		margin-right: 20px;
 	}
 	.order_cart__item_text {

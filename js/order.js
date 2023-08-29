@@ -11,6 +11,8 @@ const onSubmitBtn = document.querySelector('.onSubmitBtn');
 let cartToLocal = [];
 let price = 0;
 
+onSubmitBtn.disabled = true;
+
 let user = {
 	name,
 	email,
@@ -20,8 +22,7 @@ let user = {
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 	return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
-
+						<img class="order_cart__item_img" src="${img}" alt="${alt}">
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${title}</h3>
 								<span class="order_cart__item_price">Ціна:

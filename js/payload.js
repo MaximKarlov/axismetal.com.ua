@@ -13,12 +13,12 @@ function createOrder(name, tel) {
 		label: 'ПІБ',
 		value: name,
 		required: true,
-		readonly: true,
+		// readonly: true,
 	});
 	button.addField({
 		label: 'Номер телефону',
 		value: tel,
-		readonly: true,
+		// readonly: true,
 		required: true,
 	});
 	button.addField({
