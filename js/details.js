@@ -12,11 +12,16 @@ const productPrice = document.querySelector('#price_id__toBay');
 const productCount = document.querySelector('#input_count');
 const productImg = document.querySelector('#photo_to__bay');
 const fullPrice = document.querySelector('.fullprice');
-
+const productStock = document.querySelector('.product_stock');
 let cartToLocal = [];
 let counter = 1;
 
 let price = 0;
+
+if (productStock.textContent === 'немає в наявності') {
+	console.log(productStock.attributes);
+	productStock.classList.add('disabled');
+}
 
 if (Number(detailsCount.value) === 1) btnDecrement.disabled = true;
 
