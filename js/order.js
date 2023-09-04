@@ -22,7 +22,7 @@ let user = {
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 	return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
+						<img class="order_cart__item_img" src="${img}" alt="${alt}">
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${title}</h3>
 								<span class="order_cart__item_price">Ціна:
@@ -93,6 +93,7 @@ function loadLocaleStorage() {
 			localStorage.setItem('priceFull', price);
 		}
 	}
+	cartToLocal = [];
 }
 
 loadLocaleStorage();
@@ -116,6 +117,7 @@ const deleteItem = productParent => {
 };
 
 CartProductList.addEventListener('click', e => {
+	cartToLocal = [];
 	if (e.target.classList.contains('order_cart__item_delete'))
 		deleteItem(e.target.closest('.order_cart__item'));
 
@@ -128,6 +130,31 @@ CartProductList.addEventListener('click', e => {
 			price += Count.value * Number(Price.textContent);
 			printFullPrice(price);
 			localStorage.setItem('priceFull', price);
+		});
+		productList.forEach(product => {
+			const id = product.querySelector('.order_cart__item_article').dataset.id;
+			const priceCount = product.querySelector(
+				'.order_cart__item_input_count'
+			).value;
+			const img = product
+				.querySelector('.order_cart__item_img')
+				.getAttribute('src');
+			const alt = product
+				.querySelector('.order_cart__item_img')
+				.getAttribute('alt');
+			const title = product.querySelector(
+				'.order_cart__item_title'
+			).textContent;
+
+			const priceNumber = parseInt(
+				priceWitchoutSpaces(product.querySelector('.order_price').textContent)
+			);
+
+			console.log(cartToLocal);
+			console.log(priceCount);
+			cartToLocal.push({ id, img, alt, title, priceNumber, priceCount });
+			localStorage.setItem('cartList', JSON.stringify(cartToLocal));
+			console.log(id, img, alt, priceCount.value, priceNumber);
 		});
 	}
 });
@@ -175,7 +202,6 @@ form.addEventListener('submit', e => {
 	let method = self.querySelector('[name="payment_method"]').value;
 	let comment = self.querySelector('[name="contact_comment"]').value;
 
-	console.log(cartToLocal);
 	emailjs.init('YOwuZ0YbnNXpFf1ZR');
 
 	const templateParams = {

@@ -415,7 +415,7 @@
 	.order {
 		display: flex;
 		flex-direction: row;
-		gap: 90px;
+		gap: 20px;
 		justify-content: center;
 	}
 	.order_contacts__data {
@@ -427,6 +427,19 @@
 }
 
 @media (min-width: 990.5px) {
+	.order {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		justify-content: center;
+	}
+	.order_contacts__data {
+		width: calc(100% / 2 - 100px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.contacts,
 	.delivery,
 	.payment {
@@ -484,4 +497,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+}
+
+@media (min-width: 1440px) {
+	/* .order {
+		display: flex;
+		flex-direction: row;
+		gap: 90px;
+		justify-content: center;
+	} */
+	.order {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		align-content: center;
+		gap: 90px;
+	}
 }

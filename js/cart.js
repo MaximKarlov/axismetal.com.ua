@@ -5,12 +5,18 @@ const productBtn = document.querySelectorAll(
 );
 const CartProductList = document.querySelector('.cart_content__list');
 const cart = document.querySelector('.cart');
+const cartText = document.querySelector('.cart_text');
 const cartQuantity = document.querySelector('.cart_quantity');
 const fullPrice = document.querySelector('.fullprice');
 let cartToLocal = [];
 let counter = 1;
 
 let price = 0;
+
+if (Number(cartQuantity.textContent) >= 1) {
+	console.log(true);
+	cartText.attributes.setNamedItem('href', './ page_pay / order.html');
+}
 
 // const randomId = () => {
 // 	return (
@@ -84,6 +90,10 @@ const loadLocaleStorage = () => {
 			cartQuantity.textContent = Number(cartToLocal.length);
 		}
 	}
+	if (Number(cartQuantity.textContent) >= 1) {
+		console.log(true);
+		cartText.setAttribute('href', './page_pay/order.html');
+	}
 };
 loadLocaleStorage();
 
@@ -150,6 +160,10 @@ productBtn.forEach(el => {
 		modalWindow.classList.add('active');
 		bodyElement.classList.add('dont_scroll');
 		localStorage.setItem('cartList', JSON.stringify(cartToLocal));
+		if (Number(cartQuantity.textContent) >= 1) {
+			console.log(true);
+			cartText.setAttribute('href', './page_pay/order.html');
+		}
 	});
 	counter += 1;
 });
