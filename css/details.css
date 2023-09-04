@@ -1,5 +1,9 @@
-.body {
+body {
 	font-family: 'Oswald', sans-serif;
+}
+
+.padding-left-20 {
+	padding-left: 20px;
 }
 
 .price_tab {
