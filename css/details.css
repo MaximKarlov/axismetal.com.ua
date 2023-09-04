@@ -13,7 +13,7 @@
 .price_tab td:first-child {
 	width: 50%;
 	background: red;
-	color: var(--gray);
+	color: var(--white);
 }
 
 .characteristics_table {
@@ -106,6 +106,14 @@
 	flex-direction: row;
 	column-count: 2;
 	align-items: center;
+	justify-content: space-around;
+}
+
+.block_3_items {
+	display: flex;
+	flex-direction: row;
+	column-count: 2;
+	align-items: flex-start;
 	justify-content: space-around;
 }
 
