@@ -22,7 +22,7 @@ let user = {
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 	return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src="${img}" alt="${alt}">
+						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${title}</h3>
 								<span class="order_cart__item_price">Ціна:
@@ -150,11 +150,17 @@ CartProductList.addEventListener('click', e => {
 				priceWitchoutSpaces(product.querySelector('.order_price').textContent)
 			);
 
-			console.log(cartToLocal);
-			console.log(priceCount);
-			cartToLocal.push({ id, img, alt, title, priceNumber, priceCount });
+			let normalImg = img.toString().slice(1);
+			console.log(normalImg);
+			cartToLocal.push({
+				id,
+				img: normalImg,
+				alt,
+				title,
+				priceNumber,
+				priceCount,
+			});
 			localStorage.setItem('cartList', JSON.stringify(cartToLocal));
-			console.log(id, img, alt, priceCount.value, priceNumber);
 		});
 	}
 });
