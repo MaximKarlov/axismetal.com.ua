@@ -11,6 +11,20 @@ main {
 	/* main {
 		max-width: 421px;
 	} */
+	.d-block {
+		display: block !important;
+		width: 420px;
+		height: 300px;
+	}
+	.carousel {
+		height: 300px;
+		width: auto;
+		display: flex;
+		align-items: center;
+		object-fit: cover;
+		padding: 10px;
+		/* margin: 30px; */
+	}
 	.cart {
 		color: black;
 	}
@@ -195,6 +209,19 @@ main {
 	/* main {
 		min-width: 421.5px;
 	} */
+	.d-block {
+		display: block !important;
+		width: 550px;
+		height: 500px;
+	}
+	.carousel {
+		height: 500px;
+		width: 550px;
+		display: flex;
+		align-items: center;
+		object-fit: cover;
+		padding: 10px;
+	}
 	.menu-item-red {
 		padding: 4px 35px;
 	}
@@ -555,14 +582,7 @@ main {
 .info_details {
 	width: 50%;
 }
-.carousel {
-	/* height: 500px;
-	width: 550px; */
-	display: flex;
-	align-items: center;
-	object-fit: cover;
-	padding: 10px;
-}
+
 /* .preview:last-child {
 	width: 50%;
 } */

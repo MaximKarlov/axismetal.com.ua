@@ -21,7 +21,7 @@
 	top: 50%;
 	left: 50%;
 	overflow: hidden;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	width: 50%;
 	z-index: 99999;
 	height: auto;

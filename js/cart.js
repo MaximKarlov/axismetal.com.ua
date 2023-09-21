@@ -3,6 +3,7 @@ const modalWindow = document.querySelector('.backdrop');
 const productBtn = document.querySelectorAll(
 	'.product_item__btn.product_item__tocart'
 );
+const cashClear = document.querySelector('.cash_clear');
 const CartProductList = document.querySelector('.cart_content__list');
 const cart = document.querySelector('.cart');
 const cartText = document.querySelector('.cart_text');
@@ -12,6 +13,11 @@ let cartToLocal = [];
 let counter = 1;
 
 let price = 0;
+
+cashClear.addEventListener('click', e => {
+	localStorage.clear();
+	location.reload();
+});
 
 if (Number(cartQuantity.textContent) >= 1) {
 	console.log(true);

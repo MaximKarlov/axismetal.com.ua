@@ -98,7 +98,7 @@ body {
 	.btn_and_delivery {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.block_delivery_pay {
 		font-family: 'Oswald', sans-serif !important;

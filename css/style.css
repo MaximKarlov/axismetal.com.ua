@@ -6696,7 +6696,7 @@ button.close {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	background: red no-repeat center center;
+	background: transparent no-repeat center center;
 	background-size: 100% 100%;
 }
 
@@ -7009,10 +7009,6 @@ button.bg-dark:focus {
 
 .d-inline-block {
 	display: inline-block !important;
-}
-
-.d-block {
-	display: block !important;
 }
 
 .d-table {
@@ -13390,7 +13386,6 @@ body .home .page-template .breadcrumbs,
 	text-align: center;
 	position: relative;
 }
-
 .navbar.navbar-expand-md .navbar-nav .nav-link {
 	font-family: 'Oswald', sans-serif;
 	color: rgb(0, 0, 0);
@@ -13399,6 +13394,18 @@ body .home .page-template .breadcrumbs,
 	font-weight: 500;
 	padding-right: 0;
 	padding-left: 0.5rem;
+}
+
+@media (min-width: 991px) {
+	.navbar.navbar-expand-md .navbar-nav .nav-link {
+		font-family: 'Oswald', sans-serif;
+		color: rgb(255, 255, 255);
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 500;
+		padding-right: 0;
+		padding-left: 0.5rem;
+	}
 }
 .navbar-expand-md .navbar-nav > li > a.nav-link {
 	padding-right: 0.5rem;
@@ -14140,12 +14147,10 @@ body .home .page-template .breadcrumbs,
 
 /* .corusely img { */
 .carousel img {
-	background-color: #fff;
+	background-color: transparent !important;
 	-webkit-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0) !important;
 	-o-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
 	-ms-box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
-	width: 600px;
-	height: 500px;
 	object-fit: contain;
 	box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.12) !important;
 }
