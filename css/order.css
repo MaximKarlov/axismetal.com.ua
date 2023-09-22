@@ -1,6 +1,20 @@
 .unvisibled {
 	display: none;
 }
+.onSubmitBtn {
+	display: flex;
+	margin-top: 20px;
+	font-size: 14pt;
+	margin-left: auto;
+	cursor: pointer;
+	transition: all 0.3s;
+	color: white !important;
+	background: #ff0000;
+	width: 250px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
 
 .contacts_choise {
 	width: 100%;
@@ -81,19 +95,7 @@
 		margin-top: 10px;
 		padding: 10px;
 	}
-	.onSubmitBtn {
-		display: flex;
-		margin-top: 20px;
-		font-size: 14pt;
-		cursor: pointer;
-		transition: all 0.3s;
-		color: white !important;
-		background: #ff0000;
-		width: 250px;
-		justify-content: center;
-		align-items: center;
-		padding: 15px;
-	}
+
 	.onSubmitBtn:disabled {
 		cursor: default;
 		background: grey;
@@ -253,7 +255,7 @@
 	.onSubmitBtn {
 		display: flex;
 		margin-top: 20px;
-		margin-left: auto;
+		/* margin-left: auto; */
 		font-size: 14pt;
 		cursor: pointer;
 		transition: all 0.3s;

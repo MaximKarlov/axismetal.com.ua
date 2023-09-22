@@ -257,44 +257,51 @@
                     </div>
                     <div class="delivery">
                         <h2 class="title_h2">Доставка</h2>
-                        <label for="tel">Ваше місто:
-                            <input type="tel" id="tel" name="contact_sity">
-                        </label>
-                        <label class="" for="tel">Спосіб доставки:
-                            <select name="select_delivery">
-                                <!--Supplement an id here instead of using 'name'-->
-                                <option value="Самовивіз">Самовивіз</option>
-                                <option value="Нова пошта">Нова пошта</option>
-                                <option value="Курєр">Кур'єром AXISMETAL</option>
+                        <div class="contacts_values">
+                            <label for="tel">Ваше місто:
+                                <input type="tel" id="tel" name="contact_sity">
+                            </label>
+                            <label class="" for="tel">Спосіб доставки:
+                                <select name="select_delivery">
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="Самовивіз">Самовивіз</option>
+                                    <option value="Нова пошта">Нова пошта</option>
+                                    <option value="Курєр">Кур'єром AXISMETAL</option>
 
-                            </select>
-                        </label>
-                        <label for="tel">Пункт видачі:
-                            <input type="text" id="vid" name="contact_department">
-                        </label>
+                                </select>
+                            </label>
+                            <label for="tel">Пункт видачі:
+                                <input type="text" id="vid" name="contact_department">
+                            </label>
+                        </div>
                     </div>
                     <div class="payment">
                         <h2 class="title_h2">Оплата</h2>
-                        <label for="select">Спосіб оплати:
-                            <select name="payment_method">
-                                <!--Supplement an id here instead of using 'name'-->
-                                <option value="ОплатаНаКарту">Оплата на карту ПриватБанку</option>
-                                <option value="Наложка">Наложений платіж</option>
-                                <option value="Безготівка+ПДВ">Безготівкова оплата з ПДВ(+20%)</option>
-                                <option value="Безготівка-ПДВ">Безготівкова оплата без ПДВ</option>
-                                <option value="ОнлайнОплата">Онлайн оплата</option>
-                            </select>
-                            <!-- <input type="tel" id="tel" name="contact"> -->
-                        </label>
-                        <label for="coment">Коментар:
-                            <textarea class="coment" type="coment" id="coment" name="contact_comment"
-                                placeholder="Залиште коментар"></textarea>
-                        </label>
+                        <div class="contacts_values">
+                            <label for="select">Спосіб оплати:
+                                <select name="payment_method">
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="ОплатаНаКарту">Оплата на карту ПриватБанку</option>
+                                    <option value="Наложка">Наложений платіж</option>
+                                    <option value="Безготівка+ПДВ">Безготівкова оплата з ПДВ(+20%)</option>
+                                    <option value="Безготівка-ПДВ">Безготівкова оплата без ПДВ</option>
+                                    <option value="ОнлайнОплата">Онлайн оплата</option>
+                                </select>
+                                <!-- <input type="tel" id="tel" name="contact"> -->
+                            </label>
+                            <label for="coment">Коментар:
+                                <textarea class="coment" type="coment" id="coment" name="contact_comment"
+                                    placeholder="Залиште коментар"></textarea>
+                            </label>
+                            <button type="submit" class="onSubmitBtn">Підтвердити
+                                замовлення</button>
+                        </div>
                     </div>
                     <!-- <button type="button" class=" onSubmitBtn" onclick="location.href=createOrder()">Підтвердити
                     замовлення</button> -->
-                    <button type="submit" class="onSubmitBtn">Підтвердити
-                        замовлення</button>
+
+
+
                 </form>
 
                 <div class="order_contacts__data">
