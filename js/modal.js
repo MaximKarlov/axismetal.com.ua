@@ -12,14 +12,18 @@ const bodyElement = document.querySelector('body');
 // 	}
 // });
 
-modalBtnClose.addEventListener('click', () => {
-	modalWindow.classList.remove('active');
-	cartBtn.classList.remove('active');
-	bodyElement.classList.remove('dont_scroll');
-});
+if (modalBtnClose) {
+	modalBtnClose.addEventListener('click', () => {
+		modalWindow.classList.remove('active');
+		cartBtn.classList.remove('active');
+		bodyElement.classList.remove('dont_scroll');
+	});
+}
 
-modalWindowClose.addEventListener('click', () => {
-	modalWindow.classList.remove('active');
-	cartBtn.classList.remove('active');
-	bodyElement.classList.remove('dont_scroll');
-});
+if (modalWindowClose) {
+	modalWindowClose.addEventListener('click', () => {
+		modalWindow.classList.remove('active');
+		cartBtn.classList.remove('active');
+		bodyElement.classList.remove('dont_scroll');
+	});
+}

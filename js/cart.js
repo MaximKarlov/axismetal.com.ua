@@ -86,16 +86,23 @@ const printFullPrice = () => {
 const loadLocaleStorage = () => {
 	if (localStorage.getItem('cartList')) {
 		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
+
 		if (cartToLocal) {
-			cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
-				price += Number(priceNumber);
-				CartProductList.insertAdjacentHTML(
-					'beforeend',
-					generateCartProduct(id, img, alt, title, priceNumber, priceCount)
-				);
-			});
-			printFullPrice();
-			cartQuantity.textContent = Number(cartToLocal.length);
+			console.log(cartQuantity.textContent);
+			console.log(CartProductList);
+			if (CartProductList) {
+				cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
+					price += Number(priceNumber);
+					CartProductList.insertAdjacentHTML(
+						'beforeend',
+						generateCartProduct(id, img, alt, title, priceNumber, priceCount)
+					);
+				});
+				printFullPrice();
+				cartQuantity.textContent = Number(cartToLocal.length);
+				console.log(cartQuantity.textContent);
+				console.log(cartQuantity);
+			}
 		}
 	}
 	if (Number(cartQuantity.textContent) >= 1) {
@@ -176,21 +183,24 @@ productBtn.forEach(el => {
 	counter += 1;
 });
 
-CartProductList.addEventListener('click', e => {
-	if (e.target.classList.contains('cart_item__delete'))
-		deleteItem(e.target.closest('.cart_item'));
-});
-
-CartProductList.addEventListener('change', e => {
-	if (e.target.nodeName === 'INPUT') {
-		price = 0;
-		const productList = CartProductList.querySelectorAll('.cart_item');
-		productList.forEach(el => {
-			const Price = el.querySelector('.price');
-			const Count = el.querySelector('.cart_item__input_count');
-			price += Count.value * Number(Price.textContent);
-			printFullPrice(price);
-			localStorage.setItem('priceFull', price);
-		});
-	}
-});
+if (CartProductList) {
+	CartProductList.addEventListener('click', e => {
+		if (e.target.classList.contains('cart_item__delete'))
+			deleteItem(e.target.closest('.cart_item'));
+	});
+}
+if (CartProductList) {
+	CartProductList.addEventListener('change', e => {
+		if (e.target.nodeName === 'INPUT') {
+			price = 0;
+			const productList = CartProductList.querySelectorAll('.cart_item');
+			productList.forEach(el => {
+				const Price = el.querySelector('.price');
+				const Count = el.querySelector('.cart_item__input_count');
+				price += Count.value * Number(Price.textContent);
+				printFullPrice(price);
+				localStorage.setItem('priceFull', price);
+			});
+		}
+	});
+}
