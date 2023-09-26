@@ -1,11 +1,13 @@
 body {
 	font-family: 'Oswald', sans-serif;
 }
-/* @media (max-width: 425px) {
-	.table_details {
-		width: 98%;
+@media (max-width: 425px) {
+	.size_in_table td {
+		display: flex;
+		width: 80px;
+		height: 65px;
 	}
-} */
+}
 
 @media (max-width: 767.5px) {
 	.characteristics_table {

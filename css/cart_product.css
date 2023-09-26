@@ -315,9 +315,9 @@ main {
 		align-items: center;
 	}
 	.cart_item__img {
-		width: 100px;
-		height: 100px;
-		object-fit: cover;
+		width: 160px;
+		height: 160px;
+		object-fit: fill;
 		margin-right: 20px;
 	}
 	.cart_item__text {

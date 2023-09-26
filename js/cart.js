@@ -14,10 +14,12 @@ let counter = 1;
 
 let price = 0;
 
-cashClear.addEventListener('click', e => {
-	localStorage.clear();
-	location.reload();
-});
+if (cashClear) {
+	cashClear.addEventListener('click', e => {
+		localStorage.clear();
+		location.reload();
+	});
+}
 
 if (Number(cartQuantity.textContent) >= 1) {
 	console.log(true);
