@@ -543,7 +543,7 @@
     /** on hover popup message for disabled submit buttons
     * @since 2.6.0
     */
-    $('div.cf7-smart-grid .wpcf7-submit').after('<span class="cf7sg-popup display-none">'+cf7sg.submit_disabled+'</span>').parent().addClass('cf7sg-popup');
+    // $('div.cf7-smart-grid .wpcf7-submit').after('<span class="cf7sg-popup display-none">'+cf7sg.submit_disabled+'</span>').parent().addClass('cf7sg-popup');
     /** enable max rows.
     * @since 2.8.0
     */

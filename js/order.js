@@ -199,9 +199,7 @@ form.addEventListener('submit', e => {
 		'[name="contact_nameOrganization"]'
 	).value;
 	let EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
-	let deliveryContact = self.querySelector(
-		'[name="contact_deliveryContact"]'
-	).value;
+	let deliveryContact = self.querySelector('[name="contact_deliveryContact"]').value;
 	let sity = self.querySelector('[name="contact_sity"]').value;
 	let service = self.querySelector('[name="select_delivery"]').value;
 	let department = self.querySelector('[name="contact_department"]').value;

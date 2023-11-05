@@ -3,8 +3,8 @@
 		min-width: 1224px !important;
 	}
 }
-
-@media all and (max-width: 420px) {
+/*@media all and (max-width: 420px){*/
+@media (max-width: 420px) {
 	body,
 	html {
 		overflow-x: hidden !important;
@@ -4244,14 +4244,14 @@ div.border-wrap h2 {
 
 .form-field-name {
 	padding-left: 40px;
-	background-image: url(https://axismetal.com.ua/img/logistic/icon-form-field-name.png);
+	/*background-image: url(https://axismetal.com.ua/img/logistic/icon-form-field-name.png);*/
 	background-position: left 20px center;
 	background-repeat: no-repeat;
 }
 
 .form-field-phone {
 	padding-left: 40px;
-	background-image: url(https://axismetal.com.ua/img/logistic/icon-form-field-phone.png);
+	/*background-image: url(https://axismetal.com.ua/img/logistic/icon-form-field-phone.png);*/
 	background-position: left 20px center;
 	background-repeat: no-repeat;
 }

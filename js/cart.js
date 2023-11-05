@@ -22,7 +22,6 @@ if (cashClear) {
 }
 
 if (Number(cartQuantity.textContent) >= 1) {
-	console.log(true);
 	cartText.attributes.setNamedItem('href', './ page_pay / order.html');
 }
 
@@ -88,8 +87,6 @@ const loadLocaleStorage = () => {
 		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
 
 		if (cartToLocal) {
-			console.log(cartQuantity.textContent);
-			console.log(CartProductList);
 			if (CartProductList) {
 				cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
 					price += Number(priceNumber);
@@ -100,13 +97,10 @@ const loadLocaleStorage = () => {
 				});
 				printFullPrice();
 				cartQuantity.textContent = Number(cartToLocal.length);
-				console.log(cartQuantity.textContent);
-				console.log(cartQuantity);
 			}
 		}
 	}
 	if (Number(cartQuantity.textContent) >= 1) {
-		console.log(true);
 		cartText.setAttribute('href', './page_pay/order.html');
 	}
 };
@@ -176,7 +170,6 @@ productBtn.forEach(el => {
 		bodyElement.classList.add('dont_scroll');
 		localStorage.setItem('cartList', JSON.stringify(cartToLocal));
 		if (Number(cartQuantity.textContent) >= 1) {
-			console.log(true);
 			cartText.setAttribute('href', './page_pay/order.html');
 		}
 	});
