@@ -11,12 +11,16 @@ const onSubmitBtn = document.querySelector('.onSubmitBtn');
 let cartToLocal = [];
 let price = 0;
 
-onSubmitBtn.disabled = true;
+onSubmitBtn.classList.add('disabled');
 
 let user = {
-	name,
-	email,
-	tel,
+	// name,
+	// email,
+	// tel,
+	// // city,
+	// // delivery,
+	// // deliveryDepartment,
+	// // payment_method,
 };
 
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
@@ -166,7 +170,7 @@ CartProductList.addEventListener('click', e => {
 });
 
 paymentMethod.addEventListener('change', e => {
-	if (e.target.value === 'ОнлайнОплата') {
+	if (e.target.value === 'Онлайн оплата') {
 		onSubmitBtn.textContent = 'Оплатити онлайн';
 		onSubmitBtn.setAttribute(
 			'onClick',
@@ -180,68 +184,89 @@ form.addEventListener('change', e => {
 	user.name = self.querySelector('[name="contact_lastName"]').value;
 	user.tel = self.querySelector('[name="contact_phone"]').value;
 	user.email = self.querySelector('[name="contact_email"]').value;
+
 	if (!user.name || !user.email || !user.tel) {
-		onSubmitBtn.disabled = true;
+		onSubmitBtn.classList.add('disabled');
 	} else {
-		onSubmitBtn.disabled = false;
-		localStorage.setItem('user', JSON.stringify({ name, email, tel }));
+		onSubmitBtn.classList.remove('disabled');
 	}
 });
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	let self = e.currentTarget;
-	// createOrder(user);
-	// let name = self.querySelector('[name="contact_lastName"]').value;
-	// let tel = self.querySelector('[name="contact_phone"]').value;
-	// let mail = self.querySelector('[name="contact_email"]').value;
-	let nameOrganization = self.querySelector(
+	user.nameOrganization = self.querySelector(
 		'[name="contact_nameOrganization"]'
 	).value;
-	let EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
-	let deliveryContact = self.querySelector('[name="contact_deliveryContact"]').value;
-	let sity = self.querySelector('[name="contact_sity"]').value;
-	let service = self.querySelector('[name="select_delivery"]').value;
-	let department = self.querySelector('[name="contact_department"]').value;
-	let method = self.querySelector('[name="payment_method"]').value;
-	let comment = self.querySelector('[name="contact_comment"]').value;
+	user.EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
+	user.deliveryContact = self.querySelector(
+		'[name="contact_deliveryContact"]'
+	).value;
+	user.village = self.querySelector('[name="contact_sity"]').value;
+	user.delivery = self.querySelector('[name="select_delivery"]').value;
+	user.deliveryDepartment = self.querySelector(
+		'[name="contact_department"]'
+	).value;
+	user.payment_method = self.querySelector('[name="payment_method"]').value;
+	// let sity = self.querySelector('[name="contact_sity"]').value;
+	// let service = self.querySelector('[name="select_delivery"]').value;
+	// let department = self.querySelector('[name="contact_department"]').value;
+	// let method = self.querySelector('[name="payment_method"]').value;
+	user.comment = self.querySelector('[name="contact_comment"]').value;
 
-	emailjs.init('YOwuZ0YbnNXpFf1ZR');
-
-	const templateParams = {
-		user: {
-			name,
-			tel,
-			mail,
-			nameOrganization,
-			EDRPOY,
-			deliveryContact,
-		},
-		delivery: {
-			sity,
-			service,
-			department,
-		},
-
-		payment: {
-			method,
-			comment,
-		},
-
-		cartToLocal: JSON.stringify(
-			cartToLocal.map(el => {
-				return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
-			})
-		),
-	};
-
-	console.log(templateParams);
-	emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
-		function (response) {
-			console.log('SUCCESS!', response.status, response.text);
-		},
-		function (error) {
-			console.log('FAILED...', error);
-		}
+	localStorage.setItem(
+		'user',
+		JSON.stringify({
+			user: user.name,
+			email: user.email,
+			tel: user.tel,
+			village: user.village,
+			delivery: user.delivery,
+			deliveryDepartment: user.deliveryDepartment,
+			payment_method: user.payment_method,
+			comment: user.comment,
+			nameOrganization: user.nameOrganization,
+			EDRPOY: user.EDRPOY,
+		})
 	);
+	console.log('true');
+	location.assign('/page_pay/succes.html');
+	// emailjs.init('YOwuZ0YbnNXpFf1ZR');
+
+	// const templateParams = {
+	// 	user: {
+	// 		name,
+	// 		tel,
+	// 		mail,
+	// 		nameOrganization,
+	// 		EDRPOY,
+	// 		deliveryContact,
+	// 	},
+	// 	delivery: {
+	// 		sity,
+	// 		service,
+	// 		department,
+	// 	},
+
+	// 	payment: {
+	// 		method,
+	// 		comment,
+	// 	},
+
+	// 	cartToLocal: JSON.stringify(
+	// 		cartToLocal.map(el => {
+	// 			return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
+	// 		})
+	// 	),
+	// };
+
+	// console.log(templateParams);
+	// emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
+	// 	function (response) {
+	// 		console.log('SUCCESS!', response.status, response.text);
+	// 	},
+	// 	function (error) {
+	// 		console.log('FAILED...', error);
+	// 	}
+	// );
 });
