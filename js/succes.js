@@ -32,10 +32,11 @@ const generateSummRow = price => {
 };
 
 const generateUserTable = user => {
-	return ` 
+	if (user.userInfo === 'FO') {
+		return ` 
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.deliveryDepartment}</td>
+              <td>${user.village}, ${user.deliveryDepartment}</td>
             </tr>
 			<tr>
               <td></td>
@@ -54,6 +55,42 @@ const generateUserTable = user => {
               <td></td>
             </tr>
       `;
+	} else {
+		return ` 
+            <tr>
+              <td>${user.delivery}</td>
+              <td>${user.village}, ${user.deliveryDepartment}</td>
+            </tr>
+			<tr>
+              <td></td>
+              <td>${user.user}</td>
+            </tr>
+			<tr>
+              <td></td>
+              <td>${user.tel}</td>
+            </tr>
+			<tr>
+              <td></td>
+              <td>${user.email}</td>
+            </tr>
+			<tr>
+              <td>ЄДРПОУ</td>
+              <td>${user.EDRPOY}</td>
+            </tr>
+			<tr>
+              <td>Назва Організації</td>
+              <td>${user.nameOrganization}</td>
+            </tr>
+			<tr>
+              <td>контактна особа</td>
+              <td>${user.deliveryContact}</td>
+            </tr>
+			<tr>
+              <td>${user.payment_method}</td>
+              <td></td>
+            </tr>
+      `;
+	}
 };
 
 function loadLocaleStorage() {
@@ -72,7 +109,6 @@ function loadLocaleStorage() {
 	}
 	if (localStorage.getItem('user')) {
 		userToLocal = JSON.parse(localStorage.getItem('user'));
-		console.log('user', userToLocal);
 		if (userToLocal) {
 			userListInfo.insertAdjacentHTML(
 				'beforeend',

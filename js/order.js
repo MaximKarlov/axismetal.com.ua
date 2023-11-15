@@ -1,6 +1,8 @@
 const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
+const toHideDepartment = document.querySelector('.toHideDepartment');
+const selectDelivery = document.querySelector('#select_delivery');
 const CartProductList = document.querySelector('.order_content__list');
 const cartQuantity = document.querySelector('.cart_quantity');
 const fullPrice = document.querySelector('.order_fullprice');
@@ -12,6 +14,8 @@ let cartToLocal = [];
 let price = 0;
 
 onSubmitBtn.classList.add('disabled');
+
+let userInfo = [];
 
 let user = {
 	// name,
@@ -43,17 +47,28 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 			</li>`;
 };
 
+selectDelivery.addEventListener('change', e => {
+	if (selectDelivery.value === 'Нова пошта') {
+		toHideDepartment.classList.remove('unvisibled');
+	} else toHideDepartment.classList.add('unvisibled');
+});
+
 if (fopBtn.getAttribute('checked') === 'true') {
 	toHide.forEach(el => el.classList.add('unvisibled'));
+	userInfo = 'FO';
 }
 
 fopBtn.onclick = function () {
 	toHide.forEach(el => el.classList.add('unvisibled'));
+	userInfo = 'FO';
 };
 
 jyrikBtn.onclick = function () {
 	toHide.forEach(el => el.classList.remove('unvisibled'));
+	userInfo = 'Jyrik';
 };
+
+// toHideDepartment;
 
 const priceWitchoutSpaces = str => {
 	return str.replace(/\s+/g, ' ');
@@ -155,7 +170,6 @@ CartProductList.addEventListener('click', e => {
 			);
 
 			let normalImg = img.toString().slice(1);
-			console.log(normalImg);
 			cartToLocal.push({
 				id,
 				img: normalImg,
@@ -208,15 +222,12 @@ form.addEventListener('submit', e => {
 		'[name="contact_department"]'
 	).value;
 	user.payment_method = self.querySelector('[name="payment_method"]').value;
-	// let sity = self.querySelector('[name="contact_sity"]').value;
-	// let service = self.querySelector('[name="select_delivery"]').value;
-	// let department = self.querySelector('[name="contact_department"]').value;
-	// let method = self.querySelector('[name="payment_method"]').value;
 	user.comment = self.querySelector('[name="contact_comment"]').value;
 
 	localStorage.setItem(
 		'user',
 		JSON.stringify({
+			userInfo,
 			user: user.name,
 			email: user.email,
 			tel: user.tel,
@@ -227,10 +238,12 @@ form.addEventListener('submit', e => {
 			comment: user.comment,
 			nameOrganization: user.nameOrganization,
 			EDRPOY: user.EDRPOY,
+			deliveryContact: user.deliveryContact,
 		})
 	);
-	console.log('true');
-	location.assign('/page_pay/succes.html');
+	if (paymentMethod.value != 'Онлайн оплата') {
+		location.assign('/page_pay/succes.html');
+	}
 	// emailjs.init('YOwuZ0YbnNXpFf1ZR');
 
 	// const templateParams = {
