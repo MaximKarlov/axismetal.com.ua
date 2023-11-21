@@ -20,7 +20,7 @@ const generateTableRow = (title, priceNumber, priceCount) => {
 toIndex.addEventListener('click', e => {
 	e.preventDefault();
 	localStorage.clear();
-	location.assign('/index.html');
+	location.assign('index.html');
 });
 
 const generateSummRow = price => {
