@@ -242,7 +242,7 @@ form.addEventListener('submit', e => {
 		})
 	);
 	if (paymentMethod.value != 'Онлайн оплата') {
-		location.assign('/page_pay/succes.html');
+		location.assign('../page_pay/succes.html');
 	}
 	// emailjs.init('YOwuZ0YbnNXpFf1ZR');
 
