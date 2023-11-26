@@ -36,7 +36,9 @@ const generateUserTable = user => {
 		return ` 
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${user.deliveryDepartment}</td>
+              <td>${user.village}, ${
+			user.deliveryDepartment || user.deliveryAddress
+		} </td>
             </tr>
 			<tr>
               <td></td>
@@ -59,7 +61,9 @@ const generateUserTable = user => {
 		return ` 
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${user.deliveryDepartment}</td>
+              <td>${user.village}, ${
+			user.deliveryDepartment || user.deliveryAddress
+		}</td>
             </tr>
 			<tr>
               <td></td>

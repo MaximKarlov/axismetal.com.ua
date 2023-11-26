@@ -2,6 +2,7 @@ const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
 const toHideDepartment = document.querySelector('.toHideDepartment');
+const toHideDelivery = document.querySelector('.toHideDelivery');
 const selectDelivery = document.querySelector('#select_delivery');
 const CartProductList = document.querySelector('.order_content__list');
 const cartQuantity = document.querySelector('.cart_quantity');
@@ -48,9 +49,24 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 };
 
 selectDelivery.addEventListener('change', e => {
-	if (selectDelivery.value === 'Нова пошта') {
-		toHideDepartment.classList.remove('unvisibled');
-	} else toHideDepartment.classList.add('unvisibled');
+	switch (selectDelivery.value) {
+		case 'Нова пошта':
+			toHideDepartment.classList.remove('unvisibled');
+			toHideDelivery.classList.add('unvisibled');
+			break;
+		case 'Адресна доставка':
+			toHideDelivery.classList.remove('unvisibled');
+			toHideDepartment.classList.add('unvisibled');
+
+			break;
+		default:
+			toHideDepartment.classList.add('unvisibled');
+			toHideDelivery.classList.add('unvisibled');
+			break;
+	}
+	// if (selectDelivery.value === 'Нова пошта') {
+	// 	toHideDepartment.classList.remove('unvisibled');
+	// } else
 });
 
 if (fopBtn.getAttribute('checked') === 'true') {
@@ -67,8 +83,6 @@ jyrikBtn.onclick = function () {
 	toHide.forEach(el => el.classList.remove('unvisibled'));
 	userInfo = 'Jyrik';
 };
-
-// toHideDepartment;
 
 const priceWitchoutSpaces = str => {
 	return str.replace(/\s+/g, ' ');
@@ -221,6 +235,9 @@ form.addEventListener('submit', e => {
 	user.deliveryDepartment = self.querySelector(
 		'[name="contact_department"]'
 	).value;
+	user.deliveryAddress = self.querySelector(
+		'[name="contact_deliveryAddress"]'
+	).value;
 	user.payment_method = self.querySelector('[name="payment_method"]').value;
 	user.comment = self.querySelector('[name="contact_comment"]').value;
 
@@ -234,6 +251,7 @@ form.addEventListener('submit', e => {
 			village: user.village,
 			delivery: user.delivery,
 			deliveryDepartment: user.deliveryDepartment,
+			deliveryAddress: user.deliveryAddress,
 			payment_method: user.payment_method,
 			comment: user.comment,
 			nameOrganization: user.nameOrganization,

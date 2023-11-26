@@ -1,6 +1,4 @@
 function createOrder(name, tel) {
-	console.log(name);
-	console.log(tel);
 	// const userLocal = localStorage.getItem('user');
 	const button = $ipsp.get('button');
 	button.setMerchantId(1528369);

@@ -267,11 +267,13 @@
                                     <option value="Самовивіз">Самовивіз</option>
                                     <option value="Нова пошта">Нова пошта</option>
                                     <option value="Адресна доставка">Адресна доставка</option>
-
                                 </select>
                             </label>
                             <label class="toHideDepartment unvisibled" for="department">Пункт видачі:
                                 <input type="text" id="department" name="contact_department">
+                            </label>
+                            <label class="toHideDelivery unvisibled" for="deliveryAddress">Адреса доставки:
+                                <input type="text" id="deliveryAddress" name="contact_deliveryAddress">
                             </label>
                         </div>
                     </div>
@@ -341,26 +343,26 @@
 
                     <div>
                         <div class="title title-top">
-                            <a href="index.html#1">Оплата та доставка</a>
+                            <a href="../index.html#1">Оплата та доставка</a>
                         </div>
                         <div class="title">
-                            <a href="umovi-oplati-ta-dostavka.html">Умови оплати та доставка</a>
+                            <a href="../umovi-oplati-ta-dostavka.html">Умови оплати та доставка</a>
                         </div>
                     </div>
                     <div>
                         <div class="title title-top">
-                            <a href="index.html#1">Хто ми</a>
+                            <a href="../index.html#1">Хто ми</a>
                         </div>
                         <div class="title">
-                            <a href="pro-nas.html">Про компанію</a>
-                        </div>
-                        <hr>
-                        <div class="title">
-                            <a href="contacts.html">Контакти</a>
+                            <a href="../pro-nas.html">Про компанію</a>
                         </div>
                         <hr>
                         <div class="title">
-                            <a href="vakansii.html">Вакансії</a>
+                            <a href="../contacts.html">Контакти</a>
+                        </div>
+                        <hr>
+                        <div class="title">
+                            <a href="../vakansii.html">Вакансії</a>
                         </div>
                         <hr>
 
@@ -372,7 +374,7 @@
                                 26</a></span><br>
                         <span class="text-size-16"><a href="tel:+380 93 573 02 46" class="a-tel">+380 93 573 02
                                 46</a></span>
-                        <span class="text-size-16"><a href="mail:axismetal@ukr.net"
+                        <span class="text-size-16"><a href="mailto:axismetal@ukr.net"
                                 class="a-tel">axismetal@ukr.net</a></span>
                         <br>
                         <br><a type="button" data-toggle="modal" data-target="#feedbackFormModal"
@@ -391,6 +393,60 @@
 
         </div>
     </footer>
+
+    <!-- Форма обратной связи в модальном окне -->
+    <div class="modal" id="feedbackFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="margin-top: 15px!important;" id="myModalLabel">Форма зворотного
+                        зв'язку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Форма обратной связи -->
+                    <form id="feedbackForm" action="https://axismetal.com.ua/common/tgram.php" method="post">
+                        <div class="form-row">
+                            <div class="col-sm-6">
+                                <!-- Имя пользователя -->
+                                <div class="form-group">
+                                    <label for="name" class="control-label">Ім'я</label>
+                                    <input id="name" type="text" name="name" class="form-control" value=""
+                                        placeholder="Введіть ім'я" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <!-- Email пользователя -->
+                                <div class="form-group">
+                                    <label for="phone" class="control-label">Телефон</label>
+                                    <input id="phone" type="tel" name="phone" class="form-control" value=""
+                                        placeholder="+38 (0__) ___-__-__" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Сообщение пользователя -->
+                        <!-- <div class="form-group">
+                  <label for="message" class="control-label">Сообщение</label>
+                  <textarea id="message"  type="message" name="message" class="form-control" rows="3" placeholder="Сообщение" ></textarea>
+                </div> -->
+
+                        <!-- Кнопка для отправки формы  disabled="disabled"-->
+
+                        <input class="btn btn-success button-dialogwidget CKFormTrigger" value="Залишити заявку"
+                            type="submit" name="submityes">
+
+                    </form>
+                    <!-- Сообщение об успешной отправки формы -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="../js/simplebar.js"></script>
     <script src="../js/order.js"></script>
     <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
