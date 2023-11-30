@@ -1,3 +1,4 @@
+import {sendEmail} from '../js/email.js'
 const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
@@ -126,7 +127,6 @@ function loadLocaleStorage() {
 			localStorage.setItem('priceFull', price);
 		}
 	}
-	cartToLocal = [];
 }
 
 loadLocaleStorage();
@@ -259,45 +259,18 @@ form.addEventListener('submit', e => {
 			deliveryContact: user.deliveryContact,
 		})
 	);
-	if (paymentMethod.value != 'Онлайн оплата') {
-		location.assign('succes.html');
-	}
-	// emailjs.init('YOwuZ0YbnNXpFf1ZR');
-
-	// const templateParams = {
-	// 	user: {
-	// 		name,
-	// 		tel,
-	// 		mail,
-	// 		nameOrganization,
-	// 		EDRPOY,
-	// 		deliveryContact,
-	// 	},
-	// 	delivery: {
-	// 		sity,
-	// 		service,
-	// 		department,
-	// 	},
-
-	// 	payment: {
-	// 		method,
-	// 		comment,
-	// 	},
-
-	// 	cartToLocal: JSON.stringify(
-	// 		cartToLocal.map(el => {
-	// 			return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
-	// 		})
-	// 	),
-	// };
-
-	// console.log(templateParams);
-	// emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
-	// 	function (response) {
-	// 		console.log('SUCCESS!', response.status, response.text);
-	// 	},
-	// 	function (error) {
-	// 		console.log('FAILED...', error);
-	// 	}
-	// );
+	sendEmail(user,cartToLocal,userInfo);
+	// if (paymentMethod.value != 'Онлайн оплата') {
+	// 	location.assign('succes.html');
+	// }
+	
 });
+
+
+
+
+
+
+
+
+
