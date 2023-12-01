@@ -259,11 +259,10 @@ form.addEventListener('submit', e => {
 			deliveryContact: user.deliveryContact,
 		})
 	);
-	sendEmail(user,cartToLocal,userInfo);
-	// if (paymentMethod.value != 'Онлайн оплата') {
-	// 	location.assign('succes.html');
-	// }
-	
+	sendEmail(user,cartToLocal,userInfo,price);
+	if (paymentMethod.value != 'Онлайн оплата') {
+		location.assign('succes.html');
+	}
 });
 
 

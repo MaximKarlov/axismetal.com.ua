@@ -1,4 +1,6 @@
-
+const PUBLICKEY = 'YOwuZ0YbnNXpFf1ZR';
+const SERVICEID = 'service_vxe1rof';
+const TEMPLATEID = 'template_04gsmqw';
 
 
 const generateUserTable = (user,userInfo) => {
@@ -69,23 +71,23 @@ const generateUserTable = (user,userInfo) => {
 	}
 };
 
-const sendEmail = (user,cartToLocal,userInfo) =>{
+const sendEmail = (user,cartToLocal,userInfo,price) =>{
 	let orderList =[]
-	emailjs.init('YOwuZ0YbnNXpFf1ZR');
-console.log("user",user);
+	emailjs.init(PUBLICKEY);
+
 	cartToLocal.map(el => {
 		orderList.push(`<tr><td>${el.title}</td><td>${el.priceCount}</td><td>${el.priceNumber}</td><td>${el.priceNumber*el.priceCount}</td></tr>`);
 	})
 
 	const orderListTable=`<table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
 	<tbody>
-	<tr><td>Name</td><td>Count</td><td>Price</td><td>Summ</td></tr>
-	${orderList.join("")} </tbody>
+	<tr><td>Назва</td><td>Кількість</td><td>Ціна</td><td>Сума</td></tr>
+	${orderList.join("")} 
+  <tr><td>Разом</td><td> </td><td> </td><td>${localStorage.getItem("priceFull")}</td></tr>
+  </tbody>
 	</table>`
 	
 	const orderUserTable=generateUserTable(user,userInfo);
-
-	console.log("orderUserTable",orderUserTable)
 
 	const templateParams = {
 		user: orderUserTable,
@@ -95,7 +97,7 @@ console.log("user",user);
 
 	};
 
-	emailjs.send('service_vxe1rof', 'template_04gsmqw', templateParams).then(
+	emailjs.send(SERVICEID, TEMPLATEID, templateParams).then(
 		function (response) {
 			console.log('SUCCESS!', response.status, response.text);
 		},
