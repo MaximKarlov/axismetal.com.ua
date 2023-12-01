@@ -1,4 +1,4 @@
-import {sendEmail} from '../js/email.js'
+
 const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
@@ -15,10 +15,10 @@ const onSubmitBtn = document.querySelector('.onSubmitBtn');
 let cartToLocal = [];
 let price = 0;
 const max = 999999;
-let orderId;
+
 
 function getRandomInt(max) {
-	return orderId=Math.floor(Math.random() * max);
+	return Math.floor(Math.random() * max);
   }
 
 onSubmitBtn.classList.add('disabled');
@@ -221,7 +221,7 @@ form.addEventListener('change', e => {
 	}
 });
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async e => {
 	e.preventDefault();
 	let self = e.currentTarget;
 	user.nameOrganization = self.querySelector(
@@ -242,10 +242,13 @@ form.addEventListener('submit', e => {
 	user.payment_method = self.querySelector('[name="payment_method"]').value;
 	user.comment = self.querySelector('[name="contact_comment"]').value;
 
+	const orderId=getRandomInt(max)
+
 	localStorage.setItem(
 		'user',
 		JSON.stringify({
 			userInfo,
+			orderId,
 			user: user.name,
 			email: user.email,
 			tel: user.tel,
@@ -260,9 +263,10 @@ form.addEventListener('submit', e => {
 			deliveryContact: user.deliveryContact,
 		})
 	);
-	getRandomInt(max)
-	 sendEmail(user,cartToLocal,userInfo,orderId);
+	
+	
 	if (paymentMethod.value != 'Онлайн оплата') {
 		location.assign('succes.html');
+		;
 	}
 });

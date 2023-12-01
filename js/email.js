@@ -15,7 +15,7 @@ const generateUserTable = (user,userInfo) => {
             </tr>
 			<tr>
               <td></td>
-              <td>${user.name}</td>
+              <td>${user.user}</td>
             </tr>
 			<tr>
               <td></td>
@@ -41,7 +41,7 @@ const generateUserTable = (user,userInfo) => {
             </tr>
 			<tr>
               <td></td>
-              <td>${user.name}</td>
+              <td>${user.user}</td>
             </tr>
 			<tr>
               <td></td>
@@ -71,7 +71,8 @@ const generateUserTable = (user,userInfo) => {
 	}
 };
 
-const sendEmail = (user,cartToLocal,userInfo,orderId) =>{
+const sendEmail = (user,cartToLocal) =>{
+  console.log("user",user);
 	let orderList =[]
 	emailjs.init(PUBLICKEY);
 
@@ -87,15 +88,14 @@ const sendEmail = (user,cartToLocal,userInfo,orderId) =>{
   </tbody>
 	</table>`
 	
-	const orderUserTable=generateUserTable(user,userInfo);
+	const orderUserTable=generateUserTable(user,user.userInfo);
 
 	const templateParams = {
-    orderId: orderId,
-		user: orderUserTable,
-        email:user.email,
-		order: orderListTable,
-        
-
+      orderId: user.orderId,
+		  user: orderUserTable,
+      email:user.email,
+		  order: orderListTable,
+      comment: user.comment,
 	};
 
 	emailjs.send(SERVICEID, TEMPLATEID, templateParams).then(
