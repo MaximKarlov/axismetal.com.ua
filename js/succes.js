@@ -3,10 +3,12 @@ const orderList = cartList.querySelector('tbody');
 const userList = document.querySelector('.delivery_table');
 const userListInfo = userList.querySelector('tbody');
 const toIndex = document.querySelector('#product_item__btn_bay');
+const numberOrder = document.querySelector('.nomer_zamovlenia');
 
 let cartToLocal = [];
 let userToLocal = [];
 let price = 0;
+const max = 999999;
 
 const generateTableRow = (title, priceNumber, priceCount) => {
 	return ` 
@@ -16,6 +18,10 @@ const generateTableRow = (title, priceNumber, priceCount) => {
             </tr>
       `;
 };
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
 toIndex.addEventListener('click', e => {
 	e.preventDefault();
@@ -120,6 +126,8 @@ function loadLocaleStorage() {
 			);
 		}
 	}
+
+  numberOrder.textContent= getRandomInt(max);
 	cartToLocal = [];
 }
 

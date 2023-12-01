@@ -71,7 +71,7 @@ const generateUserTable = (user,userInfo) => {
 	}
 };
 
-const sendEmail = (user,cartToLocal,userInfo,price) =>{
+const sendEmail = (user,cartToLocal,userInfo,orderId) =>{
 	let orderList =[]
 	emailjs.init(PUBLICKEY);
 
@@ -90,6 +90,7 @@ const sendEmail = (user,cartToLocal,userInfo,price) =>{
 	const orderUserTable=generateUserTable(user,userInfo);
 
 	const templateParams = {
+    orderId: orderId,
 		user: orderUserTable,
         email:user.email,
 		order: orderListTable,

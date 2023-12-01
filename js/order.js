@@ -14,6 +14,12 @@ const onSubmitBtn = document.querySelector('.onSubmitBtn');
 
 let cartToLocal = [];
 let price = 0;
+const max = 999999;
+let orderId;
+
+function getRandomInt(max) {
+	return orderId=Math.floor(Math.random() * max);
+  }
 
 onSubmitBtn.classList.add('disabled');
 
@@ -65,9 +71,6 @@ selectDelivery.addEventListener('change', e => {
 			toHideDelivery.classList.add('unvisibled');
 			break;
 	}
-	// if (selectDelivery.value === 'Нова пошта') {
-	// 	toHideDepartment.classList.remove('unvisibled');
-	// } else
 });
 
 if (fopBtn.getAttribute('checked') === 'true') {
@@ -103,8 +106,6 @@ const minusFullPrice = currentPrice => {
 
 const printQuantity = () => {
 	let length = CartProductList.children.length;
-	cartQuantity.textContent = length;
-	// length > 0 ? cart.classList.add('active') : cart.classList.remove('active');
 };
 
 const printFullPrice = () => {
@@ -259,17 +260,9 @@ form.addEventListener('submit', e => {
 			deliveryContact: user.deliveryContact,
 		})
 	);
-	sendEmail(user,cartToLocal,userInfo,price);
+	getRandomInt(max)
+	 sendEmail(user,cartToLocal,userInfo,orderId);
 	if (paymentMethod.value != 'Онлайн оплата') {
 		location.assign('succes.html');
 	}
 });
-
-
-
-
-
-
-
-
-
