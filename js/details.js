@@ -119,7 +119,6 @@ const loadLocaleStorage = () => {
 				generateCartProduct(id, img, title, priceNumber, priceCount)
 			);
 		});
-		console.log(price);
 		printFullPrice();
 		cartQuantity.textContent = Number(cartToLocal.length);
 	}
