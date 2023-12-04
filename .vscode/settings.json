@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.CustomBrowser": "blisk"
+    "liveServer.settings.CustomBrowser": "blisk",
+    "files.autoSave": "onFocusChange"
 }
