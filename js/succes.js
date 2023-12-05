@@ -20,6 +20,45 @@ const generateTableRow = (title, priceNumber, priceCount) => {
 toIndex.addEventListener('click', e => {
 	e.preventDefault();
 	localStorage.clear();
+	emailjs.init('YOwuZ0YbnNXpFf1ZR');
+
+	const templateParams = {
+		user: {
+			name: userToLocal.user,
+			tel: userToLocal.tel,
+			mail: userToLocal.email,
+			nameOrganization: userToLocal.nameOrganization,
+			EDRPOY: userToLocal.EDRPOY,
+			deliveryContact: userToLocal.deliveryContact,
+		},
+		delivery: {
+			sity: userToLocal.village,
+			service: userToLocal.delivery,
+			department: userToLocal.deliveryDepartment,
+			deliveryAddress: userToLocal.deliveryAddress,
+		},
+
+		payment: {
+			method,
+			comment,
+		},
+
+		cartToLocal: JSON.stringify(
+			cartToLocal.map(el => {
+				return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
+			})
+		),
+	};
+
+	console.log(templateParams);
+	emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
+		function (response) {
+			console.log('SUCCESS!', response.status, response.text);
+		},
+		function (error) {
+			console.log('FAILED...', error);
+		}
+	);
 	location.assign('../index.html');
 });
 
@@ -120,6 +159,7 @@ function loadLocaleStorage() {
 			);
 		}
 	}
+	console.log(userToLocal);
 	cartToLocal = [];
 }
 
