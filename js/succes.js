@@ -1,12 +1,15 @@
+import {sendEmail} from '../js/email.js'
 const cartList = document.querySelector('.order_table');
 const orderList = cartList.querySelector('tbody');
 const userList = document.querySelector('.delivery_table');
 const userListInfo = userList.querySelector('tbody');
 const toIndex = document.querySelector('#product_item__btn_bay');
+const numberOrder = document.querySelector('.nomer_zamovlenia');
 
 let cartToLocal = [];
 let userToLocal = [];
 let price = 0;
+
 
 const generateTableRow = (title, priceNumber, priceCount) => {
 	return ` 
@@ -16,6 +19,8 @@ const generateTableRow = (title, priceNumber, priceCount) => {
             </tr>
       `;
 };
+
+
 
 toIndex.addEventListener('click', e => {
 	e.preventDefault();
@@ -157,9 +162,11 @@ function loadLocaleStorage() {
 				'beforeend',
 				generateUserTable(userToLocal)
 			);
+       numberOrder.textContent=userToLocal.orderId;
 		}
 	}
-	console.log(userToLocal);
+
+  sendEmail(userToLocal,cartToLocal);
 	cartToLocal = [];
 }
 
