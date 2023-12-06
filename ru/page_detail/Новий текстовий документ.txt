@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Матриця на напівавтоматичний трейсилер на 2 лотки 400х300 мм купити на Axismetal</title>
+  <title>Матриця на напівавтоматичний трейсилер на 2 лотки 400х300 мм Купить на Axismetal</title>
   <meta name="description"
     content="Матриця на трейсилер 400х300 мм.Виготовлення трейсилерів та комплектуючих (матриці, ножі) на замовлення для вашого бізнесу в AxisMetal 📞 +380979186226" />
   <meta name="keywords" content="" />
@@ -293,7 +293,7 @@
 
               </div>
               <div>
-                <button type="button" class="product_item__btn_bay" id="product_item__btn_bay">Купити</button>
+                <button type="button" class="product_item__btn_bay" id="product_item__btn_bay">Купить</button>
               </div>
             </div>
 
