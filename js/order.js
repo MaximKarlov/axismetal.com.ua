@@ -1,4 +1,3 @@
-
 const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
@@ -11,15 +10,16 @@ const fullPrice = document.querySelector('.order_fullprice');
 const form = document.querySelector('.order_contacts__data');
 const paymentMethod = document.querySelector('[name="payment_method"]');
 const onSubmitBtn = document.querySelector('.onSubmitBtn');
+const warningField = document.querySelector('.warning');
+const versionLang = document.querySelector('.versionRu');
 
 let cartToLocal = [];
 let price = 0;
 const max = 999999;
 
-
 function getRandomInt(max) {
-	return Math.floor(Math.random() * max);
-  }
+    return Math.floor(Math.random() * max);
+}
 
 onSubmitBtn.classList.add('disabled');
 
@@ -46,9 +46,8 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 				</article>
 			</li>`;
 };
-
-selectDelivery.addEventListener('change', (e) => {
-    switch (selectDelivery.value) {
+const selectDeliveryLoad = (value) => {
+    switch (value) {
         case 'Нова пошта':
             toHideDepartment.classList.remove('unvisibled');
             toHideDelivery.classList.add('unvisibled');
@@ -63,7 +62,12 @@ selectDelivery.addEventListener('change', (e) => {
             toHideDelivery.classList.add('unvisibled');
             break;
     }
+};
 
+selectDeliveryLoad(selectDelivery.value);
+
+selectDelivery.addEventListener('change', (e) => {
+    selectDeliveryLoad(selectDelivery.value);
 });
 
 if (fopBtn.getAttribute('checked') === 'true') {
@@ -100,7 +104,6 @@ const minusFullPrice = (currentPrice) => {
 const printQuantity = () => {
     let length = CartProductList.children.length;
     cartQuantity.textContent = length;
-
 };
 
 const printFullPrice = () => {
@@ -196,57 +199,50 @@ form.addEventListener('change', (e) => {
 
     if (!user.name || !user.email || !user.tel) {
         onSubmitBtn.classList.add('disabled');
+        warningField.classList.remove('unvisibled');
     } else {
         onSubmitBtn.classList.remove('disabled');
+        warningField.classList.add('unvisibled');
     }
 });
 
-form.addEventListener('submit', async e => {
-	e.preventDefault();
-	let self = e.currentTarget;
-	user.nameOrganization = self.querySelector(
-		'[name="contact_nameOrganization"]'
-	).value;
-	user.EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
-	user.deliveryContact = self.querySelector(
-		'[name="contact_deliveryContact"]'
-	).value;
-	user.village = self.querySelector('[name="contact_sity"]').value;
-	user.delivery = self.querySelector('[name="select_delivery"]').value;
-	user.deliveryDepartment = self.querySelector(
-		'[name="contact_department"]'
-	).value;
-	user.deliveryAddress = self.querySelector(
-		'[name="contact_deliveryAddress"]'
-	).value;
-	user.payment_method = self.querySelector('[name="payment_method"]').value;
-	user.comment = self.querySelector('[name="contact_comment"]').value;
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let self = e.currentTarget;
+    user.nameOrganization = self.querySelector('[name="contact_nameOrganization"]').value;
+    user.EDRPOY = self.querySelector('[name="contact_EDRPOY"]').value;
+    user.deliveryContact = self.querySelector('[name="contact_deliveryContact"]').value;
+    user.village = self.querySelector('[name="contact_sity"]').value;
+    user.delivery = self.querySelector('[name="select_delivery"]').value;
+    user.deliveryDepartment = self.querySelector('[name="contact_department"]').value;
+    user.deliveryAddress = self.querySelector('[name="contact_deliveryAddress"]').value;
+    user.payment_method = self.querySelector('[name="payment_method"]').value;
+    user.comment = self.querySelector('[name="contact_comment"]').value;
 
-	const orderId=getRandomInt(max)
+    const orderId = getRandomInt(max);
 
-	localStorage.setItem(
-		'user',
-		JSON.stringify({
-			userInfo,
-			orderId,
-			user: user.name,
-			email: user.email,
-			tel: user.tel,
-			village: user.village,
-			delivery: user.delivery,
-			deliveryDepartment: user.deliveryDepartment,
-			deliveryAddress: user.deliveryAddress,
-			payment_method: user.payment_method,
-			comment: user.comment,
-			nameOrganization: user.nameOrganization,
-			EDRPOY: user.EDRPOY,
-			deliveryContact: user.deliveryContact,
-		})
-	);
-	
-	
-	if (paymentMethod.value != 'Онлайн оплата') {
-		location.assign('succes.html');
-		;
-	}
+    localStorage.setItem(
+        'user',
+        JSON.stringify({
+            userInfo,
+            orderId,
+            user: user.name,
+            email: user.email,
+            tel: user.tel,
+            village: user.village,
+            delivery: user.delivery,
+            deliveryDepartment: user.deliveryDepartment,
+            deliveryAddress: user.deliveryAddress,
+            payment_method: user.payment_method,
+            comment: user.comment,
+            nameOrganization: user.nameOrganization,
+            EDRPOY: user.EDRPOY,
+            deliveryContact: user.deliveryContact,
+        })
+    );
+
+    if (paymentMethod.value != 'Онлайн оплата') {
+        if (versionLang != null) location.replace('succes_ru.html');
+        else location.replace('succes.html');
+    }
 });

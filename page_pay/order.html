@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -177,7 +177,7 @@
                                 class="menu-item menu-item-red menu-item-type-post_type menu-item-object-page nav-item menu-item-1245">
                                 <a title="Як зв'язатися" href="../contacts.html" class="nav-link">Контакти</a>
                             </li>
-                            <div class="cart" tabindex="0">
+                            <div class="cart" style="cursor: default" tabindex="0">
                                 <div class="cart_text">Кошик
                                     <span class="cart_quantity">0</span>
                                 </div>
@@ -214,7 +214,7 @@
                         </div>
                         <div class="contacts_values">
                             <label for="tel">Телефон: *
-                                <input type="tel" id="tel" name="contact_phone" placeholder="38 095 111 22 33" required>
+                                <input type="tel" id="tel" name="contact_phone" placeholder=" 095 111 22 33" required>
                             </label>
 
                             <label for="lastName">Прізвище І.П.: *
@@ -246,9 +246,9 @@
                             <label class="" for="tel">Спосіб доставки:
                                 <select name="select_delivery" id="select_delivery">
                                     <!--Supplement an id here instead of using 'name'-->
+                                    <option value="Адресна доставка">Адресна доставка</option>
                                     <option value="Самовивіз">Самовивіз</option>
                                     <option value="Нова пошта">Нова пошта</option>
-                                    <option value="Адресна доставка">Адресна доставка</option>
                                 </select>
                             </label>
                             <label class="toHideDepartment unvisibled" for="department">Пункт видачі:
@@ -277,6 +277,7 @@
                                 <textarea class="coment" type="coment" id="coment" name="contact_comment"
                                     placeholder="Залиште коментар"></textarea>
                             </label>
+                            <p class="warning" style="color:red">Поля з символом * обов'язкові до заповнення </p>
                             <button type="submit" class="onSubmitBtn">Підтвердити
                                 замовлення</button>
                         </div>
@@ -433,7 +434,6 @@
     <script type="module" src="../js/order.js"></script>
     <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
     <script src="../js/payload.js"></script>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
 

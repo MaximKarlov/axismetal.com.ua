@@ -1,18 +1,27 @@
-import {sendEmail} from '../js/email.js'
+import { sendEmail } from '../js/email.js';
+const body = document.querySelector('body');
 const cartList = document.querySelector('.order_table');
-const orderList = cartList.querySelector('tbody');
+const orderList = cartList.querySelector('#orderList');
 const userList = document.querySelector('.delivery_table');
 const userListInfo = userList.querySelector('tbody');
 const toIndex = document.querySelector('#product_item__btn_bay');
 const numberOrder = document.querySelector('.nomer_zamovlenia');
+const sumPrice = document.querySelector('.sumPrice');
+const cart = document.querySelector('.cart');
+const cartText = cart.querySelector('.cart_text');
+const cartQuantity = cart.querySelector('.cart_quantity');
+const versionLang = document.querySelector('.versionRu');
 
 let cartToLocal = [];
 let userToLocal = [];
 let price = 0;
 
+if (Number(cartQuantity.textContent) === 0) {
+    cart.style.pointerEvents = 'none';
+}
 
 const generateTableRow = (title, priceNumber, priceCount) => {
-	return ` 
+    return ` 
             <tr>
               <td>${title}</td>
               <td>${priceNumber * priceCount} грн </td>
@@ -20,69 +29,18 @@ const generateTableRow = (title, priceNumber, priceCount) => {
       `;
 };
 
-
-
-toIndex.addEventListener('click', e => {
-	e.preventDefault();
-	localStorage.clear();
-	emailjs.init('YOwuZ0YbnNXpFf1ZR');
-
-	const templateParams = {
-		user: {
-			name: userToLocal.user,
-			tel: userToLocal.tel,
-			mail: userToLocal.email,
-			nameOrganization: userToLocal.nameOrganization,
-			EDRPOY: userToLocal.EDRPOY,
-			deliveryContact: userToLocal.deliveryContact,
-		},
-		delivery: {
-			sity: userToLocal.village,
-			service: userToLocal.delivery,
-			department: userToLocal.deliveryDepartment,
-			deliveryAddress: userToLocal.deliveryAddress,
-		},
-
-		payment: {
-			method,
-			comment,
-		},
-
-		cartToLocal: JSON.stringify(
-			cartToLocal.map(el => {
-				return `<br>Назва товару: ${el.title}  Ціна ${el.priceNumber} <br>`;
-			})
-		),
-	};
-
-	console.log(templateParams);
-	emailjs.send('service_vxe1rof', 'template_qksdz3v', templateParams).then(
-		function (response) {
-			console.log('SUCCESS!', response.status, response.text);
-		},
-		function (error) {
-			console.log('FAILED...', error);
-		}
-	);
-	location.assign('../index.html');
+toIndex.addEventListener('click', (e) => {
+    e.preventDefault();
+    //     if (versionLang != null) location.assign('../../ru/index.html');
+    //     else location.assign('../index.html');
 });
 
-const generateSummRow = price => {
-	return ` 
-              <td><b>Разом</b></td>
-              <td><b>${price} грн <b></td>
-            </tr>
-      `;
-};
-
-const generateUserTable = user => {
-	if (user.userInfo === 'FO') {
-		return ` 
-            <tr>
+const generateUserTable = (user) => {
+    if (user.userInfo === 'FO') {
+        return ` 
+		<tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${
-			user.deliveryDepartment || user.deliveryAddress
-		} </td>
+              <td>${user.village}, ${user.deliveryDepartment || user.deliveryAddress} </td>
             </tr>
 			<tr>
               <td></td>
@@ -99,15 +57,13 @@ const generateUserTable = user => {
 			<tr>
               <td>${user.payment_method}</td>
               <td></td>
-            </tr>
+			</tr>
       `;
-	} else {
-		return ` 
+    } else {
+        return ` 
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${
-			user.deliveryDepartment || user.deliveryAddress
-		}</td>
+              <td>${user.village}, ${user.deliveryDepartment || user.deliveryAddress}</td>
             </tr>
 			<tr>
               <td></td>
@@ -138,36 +94,34 @@ const generateUserTable = user => {
               <td></td>
             </tr>
       `;
-	}
+    }
 };
 
 function loadLocaleStorage() {
-	if (localStorage.getItem('cartList')) {
-		cartToLocal = JSON.parse(localStorage.getItem('cartList'));
-		if (cartToLocal) {
-			cartToLocal.map(({ title, priceNumber, priceCount }) => {
-				price += Number(priceNumber * priceCount);
-				orderList.insertAdjacentHTML(
-					'beforeend',
-					generateTableRow(title, priceNumber, priceCount)
-				);
-			});
-		}
-		orderList.insertAdjacentHTML('beforeend', generateSummRow(price));
-	}
-	if (localStorage.getItem('user')) {
-		userToLocal = JSON.parse(localStorage.getItem('user'));
-		if (userToLocal) {
-			userListInfo.insertAdjacentHTML(
-				'beforeend',
-				generateUserTable(userToLocal)
-			);
-       numberOrder.textContent=userToLocal.orderId;
-		}
-	}
+    if (localStorage.getItem('cartList')) {
+        cartToLocal = JSON.parse(localStorage.getItem('cartList'));
+        if (cartToLocal) {
+            cartToLocal.map(({ title, priceNumber, priceCount }) => {
+                price += Number(priceNumber * priceCount);
+                orderList.insertAdjacentHTML('afterend', generateTableRow(title, priceNumber, priceCount));
+            });
+        }
+        sumPrice.textContent = price + ' грн';
+    }
+    if (localStorage.getItem('user')) {
+        userToLocal = JSON.parse(localStorage.getItem('user'));
+        if (userToLocal) {
+            userListInfo.insertAdjacentHTML('beforeend', generateUserTable(userToLocal));
+            numberOrder.textContent = userToLocal.orderId;
+        }
+    }
 
-  sendEmail(userToLocal,cartToLocal);
-	cartToLocal = [];
+    //   sendEmail(userToLocal, cartToLocal);
+    cartToLocal = [];
 }
+
+body.addEventListener('mousedown', (e) => {
+    if (e.target.nodeName === 'A') localStorage.clear();
+});
 
 loadLocaleStorage();
