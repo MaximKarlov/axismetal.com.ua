@@ -280,9 +280,32 @@
                             <p class="warning" style="color:red">Поля з символом * обов'язкові до заповнення </p>
                             <button type="submit" class="onSubmitBtn">Підтвердити
                                 замовлення</button>
+
                         </div>
                     </div>
                 </form>
+
+                <button type="button" onclick="location.href = pay()">Оплатить</button>
+
+                <form method="post" action="https://secure.wayforpay.com/pay" accept-charset="utf-8">
+                    <input name="merchantAccount" value="maximkarlov_github_io">
+                    <input name="merchantAuthType" value="SimpleSignature">
+                    <input name="merchantDomainName" value="www.market.ua">
+                    <input name="merchantSignature" value="e51ce78a47a0d6c8de2a0ddc7dde9f5c">
+                    <input name="orderReference" value="DH783023">
+                    <input name="orderDate" value="1415379863">
+                    <input name="amount" value="1547.36">
+                    <input name="currency" value="UAH">
+                    <input name="productName[]" value="Процессор Intel Core i5-4670 3.4GHz">
+                    <input name="productPrice[]" value="1000">
+                    <input name="productCount[]" value="1">
+                    <input name="clientFirstName" value="Вася">
+                    <input name="clientLastName" value="Пупкин">
+                    <button type="submit">Оплатить</button>
+                </form>
+
+
+
 
                 <div class="order_contacts__data">
                     <div class="order_content">
@@ -428,14 +451,18 @@
         </div>
     </div>
 
-
-
     <script src="../js/simplebar.js"></script>
     <script type="module" src="../js/order.js"></script>
     <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
     <script src="../js/payload.js"></script>
+    <script type="text/javascript" src="../js/2.5.3-crypto-md5-hmac.js"></script>
+    <script id="widget-wfp-script" language="javascript" type="text/javascript"
+        src="https://secure.wayforpay.com/server/pay-widget.js"></script>
+
+    <script type="module" src="../js/wayForPay.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+
 
 
 </body>

@@ -385,28 +385,32 @@
 
 
 
-    <!-- Зробимо підрахунок -->
-    <div class="full-width text-white block-call-form-2 block-call-form-bg-default margin-top-30">
-      <div class="content">
-        <div class="block-call-form-fields text-center margin-top-30">
-          <span class="text-size-27">Зробимо прорахунок вартості в реальному часі та <br>подаруємо знижку на
-            доставку</span>
+      <!-- Произведем подсчет -->
+        <div class="full-width text-white block-call-form-2 block-call-form-bg-default margin-top-30">
+            <div class="content">
+                <div class="block-call-form-fields text-center margin-top-30">
+                    <span class="text-size-27">Произведем просчет стоимости в реальном времени и
+                        <br />подарим скидку на доставку</span>
 
-          <div class="text-size-18 text-thin dw-uform-phrase block-mobile-hidden">Залишіть номер телефону та ім'я прямо
-            зараз</div>
-          <!-- <br><div class="send">Ваша заявка прийнята</div> -->
-          <div class="unsend">Заповніть всі поля</div><br><br>
-          <form class="CKiForm" action="https://axismetal.com.ua/common/tgram.php" method="post" target="send_resp">
-            <input name="name" class="form-field form-field-name" placeholder="Ім'я" type="text" required="">
-            <input name="phone" class="form-field form-field-phone" placeholder="+38 (0__) ___-__-__" type="phone"
-              pattern="+[0-9]{10}" required="">
-            <input class="button-square button-red-solid CKFormTrigger" value="Отримати прорахунок"
-              type="submit"><br><br>
-            <!-- <div class="block-form-conf block-mobile-hidden"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div> -->
-          </form>
+                    <div class="text-size-18 text-thin dw-uform-phrase block-mobile-hidden">
+                        оставьте номер телефона и имя прямо сейчас
+                    </div>
+                    <!-- <br><div class="send">Ваша заявка принята</div> -->
+                    <div class="unsend">Заполните все поля</div>
+                    <br /><br />
+                    <form class="CKiForm" action="https://axismetal.com.ua/common/tgram.php" method="post"
+                        target="send_resp">
+                        <input name="name" class="form-field form-field-name" placeholder="Имя" type="text"
+                            required="" />
+                        <input name="phone" class="form-field form-field-phone" placeholder="+38 (0__) ___-__-__"
+                            type="phone" pattern="+[0-9]{10}" required="" />
+                        <input class="button-square button-red-solid CKFormTrigger" value="Получить просчет"
+                            type="submit" /><br /><br />
+                        <!-- <div class="block-form-conf block-mobile-hidden"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div> -->
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
 
 
@@ -676,36 +680,33 @@
   </div>
 
 
-  <div class="content backdrop">
-    <form class="cartModal">
-      <div class="closeBtn_header">
-        <h2 class="closeBtn_title">Кошик</h2>
-        <button type="button" class="closeBtn">X</button>
-      </div>
-      <div class="cart_content">
-        <div class="sidebar" data-simplebar>
-          <ul class="cart_content__list">
-
-          </ul>
-        </div>
-      </div>
-      <div>
-        <div class="cart_content__bottom">
-          <div class="cart_content__fullprice">
-            <span>Всього:</span>
-            <span class="fullprice">
-              0 грн
-            </span>
-          </div>
-          <div class="modal_button">
-            <a href="../page_pay/order.html" class="product_item__btn modal-btn__ok">Оформити
-              замовлення</a>
-            <button type="button" class="product_item__btn modal-btn__close">Продовжити покупки</button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
+    <div class="content backdrop">
+        <form class="cartModal">
+            <div class="closeBtn_header">
+                <h2 class="closeBtn_title">Корзина</h2>
+                <button type="button" class="closeBtn">X</button>
+            </div>
+            <div class="cart_content">
+                <div class="sidebar" data-simplebar>
+                    <ul class="cart_content__list"></ul>
+                </div>
+            </div>
+            <div>
+                <div class="cart_content__bottom">
+                    <div class="cart_content__fullprice">
+                        <span>Всего:</span>
+                        <span class="fullprice"> 0 грн </span>
+                    </div>
+                    <div class="modal_button">
+                        <a href="../page_pay/order.html" class="product_item__btn modal-btn__ok">Оформить заказ</a>
+                        <button type="button" class="product_item__btn modal-btn__close">
+                            Продолжить покупки
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
   <script src="../../js/simplebar.js"></script>
   <script type="module" src="../../js/modal.js"></script>
