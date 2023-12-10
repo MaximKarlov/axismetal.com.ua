@@ -17,6 +17,60 @@ let cartToLocal = [];
 let price = 0;
 const max = 999999;
 
+const nameProduct = [
+    {
+        id: '1',
+        ukrVer: 'Матриця 400х300mm на напівавтоматичний трейсилер',
+        ruVer: 'Матрица 400х300mm на полуавтоматический трейсилер',
+    },
+    {
+        id: '2',
+        ukrVer: 'Матриця 430х350mm на напівавтоматичний трейсилер',
+        ruVer: 'Матрица 430х350mm на полуавтоматический трейсилер',
+    },
+    { id: '3', ukrVer: 'Матриця 250х200mm на ручний трейсилер', ruVer: 'Матрица 250х200mm на ручной трейсилер' },
+    { id: '4', ukrVer: 'Ніж для трейсилера, круглий', ruVer: 'Нож для трейсилера, круглый' },
+    { id: '5', ukrVer: 'Ніж для трейсилера, прямокутний', ruVer: 'Нож для трейсилера, прямоугольный' },
+    {
+        id: '6',
+        ukrVer: 'Тефлонована паяльна плита на термоформер',
+        ruVer: 'Тефлонированная паяльная плита на термоформер',
+    },
+    {
+        id: '7',
+        ukrVer: "Комплект повздовжньої різки м'якої плівки на термоформер",
+        ruVer: 'Комплект продольной резки мягкой пленки на термоформер',
+    },
+    // { id: '8', ukrVer: '', ruVer: '' },
+    {
+        id: '8',
+        ukrVer: "Комплект поперечної різки м'якої плівки на термоформер",
+        ruVer: 'Комплект поперечной резки мягкой пленки на термоформер',
+    },
+    {
+        id: '9',
+        ukrVer: "Ніж для поперечної різки м'якої плівки на термоформер",
+        ruVer: 'Нож для поперечной резки мягкой пленки на термоформер',
+    },
+    { id: '10', ukrVer: 'Комплект формовки на термоформер', ruVer: 'Комплект формовки на термоформер' },
+    { id: '11', ukrVer: 'Комплект запайки на термоформер ', ruVer: ' Комплект запайки на термоформер' },
+    {
+        id: '12',
+        ukrVer: 'Настільний ручний трейсилер SOLDER MN-1',
+        ruVer: 'Настольный ручной трейсилер SOLDER MN-1',
+    },
+    {
+        id: '13',
+        ukrVer: 'Підлоговий напівавтоматичний трейсилер LIPOVAK KV620',
+        ruVer: 'Напольный полуавтоматический трейсилер LIPOVAK KV620',
+    },
+    {
+        id: '14',
+        ukrVer: 'Матриця 412 х 332 мм для термоформера на 4 лотки',
+        ruVer: 'Матрица 412 х 332 мм для термоформера на 4 лотка',
+    },
+];
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -28,12 +82,19 @@ let userInfo = [];
 let user = {};
 
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
+    let titleRu = [];
+    let titleUa = [];
     if (versionLang != null) {
+        nameProduct.map((el) => {
+            if (el.id === id) {
+                titleRu.push(el.ruVer);
+            }
+        });
         return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
 						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 							<div class="order_cart__item_text">
-								<h3 class="order_cart__item_title">${title}</h3>
+								<h3 class="order_cart__item_title">${titleRu}</h3>
 								<span class="order_cart__item_price">Цена:
 									<span class="order_price">${priceNumber}</span> 
 									грн</span>
@@ -47,11 +108,14 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 				</article>
 			</li>`;
     } else {
+        nameProduct.map((el) => {
+            if (el.id === id) titleUa.push(el.ukrVer);
+        });
         return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
 						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 							<div class="order_cart__item_text">
-								<h3 class="order_cart__item_title">${title}</h3>
+								<h3 class="order_cart__item_title">${titleUa}</h3>
 								<span class="order_cart__item_price">Ціна:
 									<span class="order_price">${priceNumber}</span> 
 									грн</span>
@@ -208,7 +272,8 @@ paymentMethod.addEventListener('change', (e) => {
     if (e.target.value === 'Онлайн оплата') {
         onSubmitBtn.textContent = 'Оплатити онлайн';
         onSubmitBtn.setAttribute('onClick', `location.href=createOrder('${user.name}','${user.tel}')`);
-    } else onSubmitBtn.textContent = 'Підтвердити замовлення';
+    } else if (versionLang != null) onSubmitBtn.textContent = 'Подтвердить заказ';
+    else onSubmitBtn.textContent = 'Підтвердити замовлення';
 });
 
 form.addEventListener('change', (e) => {
