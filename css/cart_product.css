@@ -615,6 +615,7 @@ main {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .mobile-language li {
     margin: 10px;
