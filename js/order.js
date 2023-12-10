@@ -28,7 +28,26 @@ let userInfo = [];
 let user = {};
 
 const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
-    return `<li class="order_cart__item">
+    if (versionLang != null) {
+        return `<li class="order_cart__item">
+				<article class="order_cart__item_article" data-id="${id}">
+						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
+							<div class="order_cart__item_text">
+								<h3 class="order_cart__item_title">${title}</h3>
+								<span class="order_cart__item_price">Цена:
+									<span class="order_price">${priceNumber}</span> 
+									грн</span>
+							</div>
+							<div class="order_cart__item_count">Количество
+									<label for="input_count" class="order_cart__item_label">
+										<input class="order_cart__item_input_count" type="number" name="input_count" min="1" value="${priceCount}"><br><br>					
+									</label>
+							</div>
+							<button  type="button" class="order_cart__item_delete" aria-label="Видалити товар" id="btn_f"></button>
+				</article>
+			</li>`;
+    } else {
+        return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
 						<img class="order_cart__item_img" src=".${img}" alt="${alt}">
 							<div class="order_cart__item_text">
@@ -45,6 +64,7 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
 							<button  type="button" class="order_cart__item_delete" aria-label="Видалити товар" id="btn_f"></button>
 				</article>
 			</li>`;
+    }
 };
 const selectDeliveryLoad = (value) => {
     switch (value) {
