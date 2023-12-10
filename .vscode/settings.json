@@ -1,5 +1,6 @@
 {
-    "liveServer.settings.CustomBrowser": "blisk",
+    "liveServer.settings.CustomBrowser": "chrome",
     "files.autoSave": "onFocusChange",
-    "editor.fontFamily": "Comic Sans MS, Times New Roman, monospace"
+    "editor.fontFamily": "Comic Sans MS, Times New Roman, monospace",
+    "liveServer.settings.port": 5501
 }
