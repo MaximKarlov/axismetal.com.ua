@@ -1718,6 +1718,7 @@ pre code {
 
     .col-sm {
         padding: 0 !important;
+        margin: 0 auto;
     }
 
     .heder-fone li a {
@@ -12811,7 +12812,7 @@ textarea {
     .navbar-expand-md .navbar-toggler {
         display: block !important;
         position: absolute;
-        right: 31px;
+        right: 10px;
         top: 130px;
         margin: -20px auto 0;
         border: 2px solid #000;
@@ -12900,7 +12901,7 @@ textarea {
 
 @media all and (max-width: 575px) {
     .navbar-expand-md .navbar-toggler {
-        top: 25px;
+        top: 35px;
     }
 }
 
