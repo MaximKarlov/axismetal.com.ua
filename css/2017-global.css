@@ -1369,6 +1369,8 @@ ol.ol-round-numbers li:before {
 .margin-5 {
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
+    /* text-transform: lowercase; */
 }
 
 .padding-10 {
