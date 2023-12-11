@@ -1,3 +1,4 @@
+import nameProduct from './name.js';
 const bodyElement = document.querySelector('body');
 const modalWindow = document.querySelector('.backdrop');
 const productBtn = document.querySelectorAll('.product_item__btn.product_item__tocart');
@@ -7,30 +8,77 @@ const cart = document.querySelector('.cart');
 const cartText = document.querySelector('.cart_text');
 const cartQuantity = document.querySelector('.cart_quantity');
 const fullPrice = document.querySelector('.fullprice');
+const versionLang = document.querySelector('.versionRu');
 
 let cartToLocal = [];
 let counter = 1;
 let price = 0;
 
 const generateCartProduct = (id, img, alt, title, priceNumber, count) => {
-    return `<li class="cart_item">
-				<article class="cart_item__article" data-id="${id}">
-						<img class="cart_item__img" src="${img}" alt="${alt}">
-
-							<div class="cart_item__text">
-								<h3 class="cart_item__title">${title}</h3>
-								<span class="cart_item__price">Ціна:
-									<span class="price">${priceNumber}</span> 
+    let titleRu = [];
+    let titleUa = [];
+    if (versionLang != null) {
+        nameProduct.map((el) => {
+            if (el.id === id) {
+                titleRu.push(el.ruVer);
+            }
+        });
+        return `<li class="order_cart__item">
+				<article class="order_cart__item_article" data-id="${id}">
+						<img class="order_cart__item_img" src="${img.slice(2)}" alt="${alt}">
+							<div class="order_cart__item_text">
+								<h3 class="order_cart__item_title">${titleRu}</h3>
+								<span class="order_cart__item_price">Цена:
+									<span class="order_price">${priceNumber}</span> 
 									грн</span>
 							</div>
-							<div class="cart_item__count">Кількість
-									<label for="input_count" class="cart_item__label">
-										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="${count}"><br><br>					
+							<div class="order_cart__item_count">Количество
+									<label for="input_count" class="order_cart__item_label">
+										<input class="order_cart__item_input_count" type="number" name="input_count" min="1" value="${count}"><br><br>					
 									</label>
 							</div>
-							<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
+							<button  type="button" class="order_cart__item_delete" aria-label="Видалити товар" id="btn_f"></button>
 				</article>
 			</li>`;
+    } else {
+        nameProduct.map((el) => {
+            if (el.id === id) titleUa.push(el.ukrVer);
+        });
+        return `<li class="order_cart__item">
+				<article class="order_cart__item_article" data-id="${id}">
+						<img class="order_cart__item_img" src="../${img}" alt="${alt}">
+							<div class="order_cart__item_text">
+								<h3 class="order_cart__item_title">${titleUa}</h3>
+								<span class="order_cart__item_price">Ціна:
+									<span class="order_price">${priceNumber}</span> 
+									грн</span>
+							</div>
+							<div class="order_cart__item_count">Кількість
+									<label for="input_count" class="order_cart__item_label">
+										<input class="order_cart__item_input_count" type="number" name="input_count" min="1" value="${count}"><br><br>					
+									</label>
+							</div>
+							<button  type="button" class="order_cart__item_delete" aria-label="Видалити товар" id="btn_f"></button>
+				</article>
+			</li>`;
+    }
+    // return `<li class="cart_item">
+    // 			<article class="cart_item__article" data-id="${id}">
+    // 					<img class="cart_item__img" src="${img}" alt="${alt}">
+    // 						<div class="cart_item__text">
+    // 							<h3 class="cart_item__title">${title}</h3>
+    // 							<span class="cart_item__price">Ціна:
+    // 								<span class="price">${priceNumber}</span>
+    // 								грн</span>
+    // 						</div>
+    // 						<div class="cart_item__count">Кількість
+    // 								<label for="input_count" class="cart_item__label">
+    // 									<input class="cart_item__input_count" type="number" name="input_count" min="1" value="${count}"><br><br>
+    // 								</label>
+    // 						</div>
+    // 						<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
+    // 			</article>
+    // 		</li>`;
 };
 
 const priceWitchoutSpaces = (str) => {
@@ -141,9 +189,6 @@ productBtn.forEach((el) => {
         modalWindow.classList.add('active');
         bodyElement.classList.add('dont_scroll');
         localStorage.setItem('cartList', JSON.stringify(cartToLocal));
-        // if (Number(cartQuantity.textContent) >= 1) {
-        //     cartText.setAttribute('href', './page_pay/order.html');
-        // }
     });
     counter += 1;
 });
