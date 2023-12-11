@@ -1,4 +1,5 @@
 import { sendEmail } from '../js/email.js';
+import nameProduct from './name.js';
 const body = document.querySelector('body');
 const cartList = document.querySelector('.order_table');
 const orderList = cartList.querySelector('#orderList');
@@ -20,13 +21,32 @@ if (Number(cartQuantity.textContent) === 0) {
     cart.style.pointerEvents = 'none';
 }
 
-const generateTableRow = (title, priceNumber, priceCount) => {
-    return ` 
+const generateTableRow = (id, title, priceNumber, priceCount) => {
+    let titleRu = [];
+    let titleUa = [];
+    if (versionLang != null) {
+        nameProduct.map((el) => {
+            if (el.id === id) {
+                titleRu.push(el.ruVer);
+            }
+        });
+        return ` 
             <tr>
-              <td>${title}</td>
+              <td>${titleRu}</td>
               <td>${priceNumber * priceCount} грн </td>
             </tr>
       `;
+    } else {
+        nameProduct.map((el) => {
+            if (el.id === id) titleUa.push(el.ukrVer);
+        });
+        return ` 
+            <tr>
+              <td>${titleUa}</td>
+              <td>${priceNumber * priceCount} грн </td>
+            </tr>
+      `;
+    }
 };
 
 toIndex.addEventListener('click', (e) => {
@@ -101,9 +121,9 @@ function loadLocaleStorage() {
     if (localStorage.getItem('cartList')) {
         cartToLocal = JSON.parse(localStorage.getItem('cartList'));
         if (cartToLocal) {
-            cartToLocal.map(({ title, priceNumber, priceCount }) => {
+            cartToLocal.map(({ title, priceNumber, priceCount, id }) => {
                 price += Number(priceNumber * priceCount);
-                orderList.insertAdjacentHTML('afterend', generateTableRow(title, priceNumber, priceCount));
+                orderList.insertAdjacentHTML('afterend', generateTableRow(id, title, priceNumber, priceCount));
             });
         }
         sumPrice.textContent = price + ' грн';
