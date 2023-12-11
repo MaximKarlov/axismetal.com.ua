@@ -108,7 +108,6 @@ const deleteItem = (productParent) => {
 };
 
 productBtn.forEach((el) => {
-    el.closest('.product_item').setAttribute('data-id', counter);
     cartToLocal.map(({ id }) => {
         if (el.closest('.product_item').getAttribute('data-id') === id) {
             el.disabled = true;
