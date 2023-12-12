@@ -3,14 +3,12 @@ const SERVICEID = 'service_h23diy8';
 const TEMPLATEID = 'template_novyi_zakaz';
 
 const generateUserTable = (user, userInfo) => {
-	if (userInfo === 'FO') {
-		return ` <table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
+    if (userInfo === 'FO') {
+        return ` <table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
         <tbody>
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${
-			user.deliveryDepartment || user.deliveryAddress
-		} </td>
+              <td>${user.village}, ${user.deliveryDepartment || user.deliveryAddress} </td>
             </tr>
 			<tr>
               <td></td>
@@ -29,14 +27,12 @@ const generateUserTable = (user, userInfo) => {
               <td></td>
             </tr></tbody></table>
       `;
-	} else {
-		return ` <table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
+    } else {
+        return ` <table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
         <tbody>
             <tr>
               <td>${user.delivery}</td>
-              <td>${user.village}, ${
-			user.deliveryDepartment || user.deliveryAddress
-		}</td>
+              <td>${user.village}, ${user.deliveryDepartment || user.deliveryAddress}</td>
             </tr>
 			<tr>
               <td></td>
@@ -67,50 +63,47 @@ const generateUserTable = (user, userInfo) => {
               <td></td>
             </tr></tbody></table>
       `;
-	}
+    }
 };
 
 const sendEmail = (user, cartToLocal) => {
-	console.log('user', user);
-	let orderList = [];
-	emailjs.init(PUBLICKEY);
+    let orderList = [];
+    emailjs.init(PUBLICKEY);
 
-	cartToLocal.map(el => {
-		orderList.push(
-			`<tr><td>${el.title}</td><td>${el.priceCount}</td><td>${
-				el.priceNumber
-			}</td><td>${el.priceNumber * el.priceCount}</td></tr>`
-		);
-	});
+    cartToLocal.map((el) => {
+        orderList.push(
+            `<tr><td>${el.title}</td><td>${el.priceCount}</td><td>${el.priceNumber}</td><td>${
+                el.priceNumber * el.priceCount
+            }</td></tr>`
+        );
+    });
 
-	const orderListTable = `<table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
+    const orderListTable = `<table style="border-collapse: collapse; width: 100%;" border="1"><colgroup><col style="width: 45%;"></colgroup>
 	<tbody>
 	<tr><td>Назва</td><td>Кількість</td><td>Ціна</td><td>Сума</td></tr>
 	${orderList.join('')} 
-  <tr><td>Разом</td><td> </td><td> </td><td>${localStorage.getItem(
-		'priceFull'
-  )}</td></tr>
+  <tr><td>Разом</td><td> </td><td> </td><td>${localStorage.getItem('priceFull')}</td></tr>
   </tbody>
 	</table>`;
 
-	const orderUserTable = generateUserTable(user, user.userInfo);
+    const orderUserTable = generateUserTable(user, user.userInfo);
 
-	const templateParams = {
-		orderId: user.orderId,
-		user: orderUserTable,
-		email: user.email,
-		order: orderListTable,
-		comment: user.comment,
-	};
+    const templateParams = {
+        orderId: user.orderId,
+        user: orderUserTable,
+        email: user.email,
+        order: orderListTable,
+        comment: user.comment,
+    };
 
-	emailjs.send(SERVICEID, TEMPLATEID, templateParams).then(
-		function (response) {
-			console.log('SUCCESS!', response.status, response.text);
-		},
-		function (error) {
-			console.log('FAILED...', error);
-		}
-	);
+    emailjs.send(SERVICEID, TEMPLATEID, templateParams).then(
+        function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+            console.log('FAILED...', error);
+        }
+    );
 };
 
 export { sendEmail };

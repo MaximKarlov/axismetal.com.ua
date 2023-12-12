@@ -62,23 +62,6 @@ const generateCartProduct = (id, img, alt, title, priceNumber, count) => {
 				</article>
 			</li>`;
     }
-    // return `<li class="cart_item">
-    // 			<article class="cart_item__article" data-id="${id}">
-    // 					<img class="cart_item__img" src="${img}" alt="${alt}">
-    // 						<div class="cart_item__text">
-    // 							<h3 class="cart_item__title">${title}</h3>
-    // 							<span class="cart_item__price">Ціна:
-    // 								<span class="price">${priceNumber}</span>
-    // 								грн</span>
-    // 						</div>
-    // 						<div class="cart_item__count">Кількість
-    // 								<label for="input_count" class="cart_item__label">
-    // 									<input class="cart_item__input_count" type="number" name="input_count" min="1" value="${count}"><br><br>
-    // 								</label>
-    // 						</div>
-    // 						<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
-    // 			</article>
-    // 		</li>`;
 };
 
 const priceWitchoutSpaces = (str) => {
@@ -134,12 +117,12 @@ const loadLocaleStorage = () => {
 loadLocaleStorage();
 
 const deleteItem = (productParent) => {
-    let id = productParent.querySelector('.cart_item__article').dataset.id;
+    let id = productParent.querySelector('.order_cart__item_article').dataset.id;
     const element = document.querySelector(`.product_item[data-id="${id}"]`);
     const btnElement = element.querySelector('.product_item__tocart');
     btnElement.disabled = false;
 
-    let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.price').textContent));
+    let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.order_price').textContent));
 
     price = minusFullPrice(currentPrice);
     printFullPrice(price);
@@ -195,9 +178,12 @@ productBtn.forEach((el) => {
 
 if (CartProductList) {
     CartProductList.addEventListener('click', (e) => {
-        if (e.target.classList.contains('cart_item__delete')) deleteItem(e.target.closest('.cart_item'));
+        if (e.target.classList.contains('order_cart__item_delete')) {
+            deleteItem(e.target.closest('.order_cart__item'));
+        }
     });
 }
+
 if (CartProductList) {
     CartProductList.addEventListener('change', (e) => {
         if (e.target.nodeName === 'INPUT') {
