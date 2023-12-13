@@ -51,8 +51,8 @@ const generateTableRow = (id, title, priceNumber, priceCount) => {
 
 toIndex.addEventListener('click', (e) => {
     e.preventDefault();
-    //     if (versionLang != null) location.assign('../../ru/index.html');
-    //     else location.assign('../index.html');
+    if (versionLang != null) location.assign('../../ru/index.html');
+    else location.assign('../index.html');
 });
 
 const generateUserTable = (user) => {
