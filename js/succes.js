@@ -5,7 +5,7 @@ const cartList = document.querySelector('.order_table');
 const orderList = cartList.querySelector('#orderList');
 const userList = document.querySelector('.delivery_table');
 const userListInfo = userList.querySelector('tbody');
-const toIndex = document.querySelector('#product_item__btn_bay');
+// const toIndex = document.querySelector('#product_item__btn_bay');
 const numberOrder = document.querySelector('.nomer_zamovlenia');
 const sumPrice = document.querySelector('.sumPrice');
 const cart = document.querySelector('.cart');
@@ -49,11 +49,11 @@ const generateTableRow = (id, title, priceNumber, priceCount) => {
     }
 };
 
-toIndex.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (versionLang != null) location.assign('../../ru/index.html');
-    else location.assign('../index.html');
-});
+// toIndex.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     if (versionLang != null) location.assign('../../ru/index.html');
+//     else location.assign('../index.html');
+// });
 
 const generateUserTable = (user) => {
     if (user.userInfo === 'FO') {
