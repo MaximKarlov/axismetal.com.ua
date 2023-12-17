@@ -27,7 +27,7 @@ if (Number(detailsCount.value) === 1) btnDecrement.disabled = true;
 const generateCartProduct = (id, img, title, priceNumber, count) => {
     return `<li class="cart_item">
 				<article class="cart_item__article" data-id="${id}">
-						<img class="cart_item__img" src="${img}" alt="${title}">
+						<img class="cart_item__img" src="../${img}" alt="${title}">
 
 							<div class="cart_item__text">
 								<h3 class="cart_item__title">${title}</h3>
@@ -70,8 +70,8 @@ const printFullPrice = () => {
 const deleteItem = (productParent) => {
     let id = productParent.querySelector('.cart_item__article').dataset.id;
     const element = document.querySelector(`.product_item[data-id="${id}"]`);
-    const btnElement = element.querySelector('.product_item__tocart');
-    btnElement.disabled = false;
+    // const btnElement = element.querySelector('.product_item__tocart');
+    // btnElement.disabled = false;
 
     let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.price').textContent));
 
@@ -88,6 +88,28 @@ const deleteItem = (productParent) => {
         bodyElement.classList.remove('dont_scroll');
     }
 };
+
+// const deleteItem = (productParent) => {
+//     let id = productParent.querySelector('.order_cart__item_article').dataset.id;
+//     const element = document.querySelector(`.product_item[data-id="${id}"]`);
+//     const btnElement = element.querySelector('.product_item__tocart');
+//     btnElement.disabled = false;
+
+//     let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.order_price').textContent));
+
+//     price = minusFullPrice(currentPrice);
+//     printFullPrice(price);
+//     productParent.remove();
+//     const search = cartToLocal.filter((el) => el.id !== element.dataset.id);
+//     cartToLocal = search;
+//     localStorage.setItem('cartList', JSON.stringify(search));
+//     printQuantity();
+//     localStorage.setItem('priceFull', price);
+//     if (cartQuantity.textContent < 1) {
+//         modalWindow.classList.remove('active');
+//         bodyElement.classList.remove('dont_scroll');
+//     }
+// };
 
 const priceWitchoutSpaces = (str) => {
     let norm = str.split(' ');

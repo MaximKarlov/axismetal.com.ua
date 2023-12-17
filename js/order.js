@@ -39,7 +39,7 @@ const generateCartProduct = (id, img, alt, title, priceNumber, priceCount) => {
         });
         return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src="${img}" alt="${alt}">
+						<img class="order_cart__item_img" src="../${img}" alt="${alt}">
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${titleRu}</h3>
 								<span class="order_cart__item_price">Цена:
@@ -148,7 +148,7 @@ function loadLocaleStorage() {
             cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
                 price += Number(priceNumber * priceCount);
                 CartProductList.insertAdjacentHTML(
-                    'beforeend',
+                    'afterbegin',
                     generateCartProduct(id, img, alt, title, priceNumber, priceCount)
                 );
             });
@@ -157,16 +157,16 @@ function loadLocaleStorage() {
             localStorage.setItem('priceFull', price);
         }
     }
-    cartToLocal = [];
 }
 
 loadLocaleStorage();
 
 const deleteItem = (productParent) => {
     let id = productParent.querySelector('.order_cart__item_article').dataset.id;
-    const element = document.querySelector(`.product_item[data-id="${id}"]`);
-
-    let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.order_price').textContent));
+    const element = document.querySelector(`.order_cart__item[data-id="${id}"]`);
+    const Count =productParent.querySelector('.order_cart__item_input_count');
+    let currentPrice =
+        parseInt(priceWitchoutSpaces(productParent.querySelector('.order_price').textContent)) * Count.value;
 
     price = minusFullPrice(currentPrice);
     productParent.remove();
@@ -179,11 +179,11 @@ const deleteItem = (productParent) => {
 };
 
 CartProductList.addEventListener('click', (e) => {
-    cartToLocal = [];
     if (e.target.classList.contains('order_cart__item_delete')) deleteItem(e.target.closest('.order_cart__item'));
 
     if (e.target.nodeName === 'INPUT') {
         price = 0;
+        cartToLocal = [];
         const productList = CartProductList.querySelectorAll('.order_cart__item');
         productList.forEach((el) => {
             const Price = el.querySelector('.order_price');
@@ -192,6 +192,7 @@ CartProductList.addEventListener('click', (e) => {
             printFullPrice(price);
             localStorage.setItem('priceFull', price);
         });
+
         productList.forEach((product) => {
             const id = product.querySelector('.order_cart__item_article').dataset.id;
             const priceCount = product.querySelector('.order_cart__item_input_count').value;
@@ -201,10 +202,10 @@ CartProductList.addEventListener('click', (e) => {
 
             const priceNumber = parseInt(priceWitchoutSpaces(product.querySelector('.order_price').textContent));
 
-            let normalImg = img.toString().slice(1);
+            // let normalImg = img.toString().;
             cartToLocal.push({
                 id,
-                img: normalImg,
+                img,
                 alt,
                 title,
                 priceNumber,

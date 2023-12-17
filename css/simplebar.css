@@ -8,7 +8,7 @@
 }
 
 .simplebar-wrapper {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: inherit;
 	height: inherit;
 	max-width: inherit;
@@ -139,17 +139,17 @@
 .simplebar-scrollbar:before {
 	position: absolute;
 	content: '';
-	background: black;
+	background: grey;
 	border-radius: 7px;
 	left: 2px;
 	right: 2px;
-	opacity: 0;
+	opacity: 1;
 	transition: opacity 0.2s linear;
 }
 
 .simplebar-scrollbar.simplebar-visible:before {
 	/* When hovered, remove all transitions from drag handle */
-	opacity: 0.5;
+	opacity: 0.7;
 	transition: opacity 0s linear;
 }
 

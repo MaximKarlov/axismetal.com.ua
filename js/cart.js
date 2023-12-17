@@ -14,6 +14,10 @@ let cartToLocal = [];
 let counter = 1;
 let price = 0;
 
+ if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
+
 const generateCartProduct = (id, img, alt, title, priceNumber, count) => {
     let titleRu = [];
     let titleUa = [];
@@ -25,7 +29,7 @@ const generateCartProduct = (id, img, alt, title, priceNumber, count) => {
         });
         return `<li class="order_cart__item">
 				<article class="order_cart__item_article" data-id="${id}">
-						<img class="order_cart__item_img" src="${img.slice(2)}" alt="${alt}">
+						<img class="order_cart__item_img" src="../${img}" alt="${alt}">
 							<div class="order_cart__item_text">
 								<h3 class="order_cart__item_title">${titleRu}</h3>
 								<span class="order_cart__item_price">Цена:
@@ -100,7 +104,7 @@ const loadLocaleStorage = () => {
                 cartToLocal.map(({ id, img, alt, title, priceNumber, priceCount }) => {
                     price += Number(priceNumber);
                     CartProductList.insertAdjacentHTML(
-                        'beforeend',
+                        'afterbegin',
                         generateCartProduct(id, img, alt, title, priceNumber, priceCount)
                     );
                 });
@@ -163,7 +167,7 @@ productBtn.forEach((el) => {
         const priceCount = 1;
 
         CartProductList.insertAdjacentHTML(
-            'beforeend',
+            'afterbegin',
             generateCartProduct(id, img, alt, title, priceNumber, priceCount)
         );
         cartToLocal.push({ id, img, alt, title, priceNumber, priceCount });
@@ -176,26 +180,41 @@ productBtn.forEach((el) => {
     counter += 1;
 });
 
-if (CartProductList) {
-    CartProductList.addEventListener('click', (e) => {
-        if (e.target.classList.contains('order_cart__item_delete')) {
-            deleteItem(e.target.closest('.order_cart__item'));
-        }
-    });
-}
 
-if (CartProductList) {
-    CartProductList.addEventListener('change', (e) => {
-        if (e.target.nodeName === 'INPUT') {
-            price = 0;
-            const productList = CartProductList.querySelectorAll('.cart_item');
-            productList.forEach((el) => {
-                const Price = el.querySelector('.price');
-                const Count = el.querySelector('.cart_item__input_count');
-                price += Count.value * Number(Price.textContent);
-                printFullPrice(price);
-                localStorage.setItem('priceFull', price);
+CartProductList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('order_cart__item_delete')) deleteItem(e.target.closest('.order_cart__item'));
+
+    if (e.target.nodeName === 'INPUT') {
+        price = 0;
+        cartToLocal = [];
+        const productList = CartProductList.querySelectorAll('.order_cart__item');
+        productList.forEach((el) => {
+            const Price = el.querySelector('.order_price');
+            const Count = el.querySelector('.order_cart__item_input_count');
+            price += Count.value * Number(Price.textContent);
+            printFullPrice(price);
+            localStorage.setItem('priceFull', price);
+        });
+
+        productList.forEach((product) => {
+            const id = product.querySelector('.order_cart__item_article').dataset.id;
+            const priceCount = product.querySelector('.order_cart__item_input_count').value;
+            const img = product.querySelector('.order_cart__item_img').getAttribute('src');
+            const alt = product.querySelector('.order_cart__item_img').getAttribute('alt');
+            const title = product.querySelector('.order_cart__item_title').textContent;
+
+            const priceNumber = parseInt(priceWitchoutSpaces(product.querySelector('.order_price').textContent));
+
+            // let normalImg = img.toString().;
+            cartToLocal.push({
+                id,
+                img,
+                alt,
+                title,
+                priceNumber,
+                priceCount,
             });
-        }
-    });
-}
+            localStorage.setItem('cartList', JSON.stringify(cartToLocal));
+        });
+    }
+});

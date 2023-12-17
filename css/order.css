@@ -409,7 +409,7 @@
       }
       .order_cart__item_text {
             display: flex;
-            width: 65%;
+            width: 53%;
             flex-wrap: wrap;
             justify-content: flex-end;
       }
