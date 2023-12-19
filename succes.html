@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <?php
+        $metaTitle = 'Замовлення оформлено!!!';
+        $metaDescr = 'Замовлення оформлено!!!';
+        $metaKey = '';
+        $metaLang = '../ru/succes_ru.html';
+    ?>
+
+ <?php include("common/head.php")?>
+ <?php include("common/succes.php")?>
+</head>
+
+<body>
+
+<?php include("common/header.php")?>
+
+  <main>
+    <div class="full-width breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+      <div class="content">
+        <div class=""><span class="item_breadcrumbs"><a itemprop="item" href="../index.html"><span
+                class="name_breadcrumbs" itemprop="name">Головна</span></a>
+            <meta itemprop="position" content="0">
+          </span><span> › </span>
+          <meta itemprop="position" content="0">
+          </span><!--noindex-->Замовлення оформлено!<!--/noindex-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="full-width margin-top-30">
+      <h1 class="text-800 content text-size-30 margin-top-30 final_order__text" style="text-align: center">Дякуємо за
+        замовлення!</h1>
+    </div>
+
+    <div class="full-width margin-top-30 table_info">
+      <div>
+        <div class="table_order__details">
+          <table width="100%" class=" margin-top-40 order_table">
+            <tr id="orderList">
+              <td>Ви замовили</td>
+              <td></td>
+            </tr>
+            <td><b>Разом</b></td>
+            <td><b class="sumPrice">0 <b><b>грн</b></td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="table_order__details">
+          <table width="100%" class=" margin-top-40 delivery_table">
+            <tr>
+              <td>Доставка</td>
+              <td></td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="thank_info margin-top-40">
+          <p class="margin-top-30">Номер вашого замовлення: <span class="nomer_zamovlenia">66675</span></p>
+          <!-- <p class="margin-top-60">Очікуйте дзвінка нашого менеджера в найближчий час!</p> -->
+        </div>
+      </div>
+      <a href="../index.html" class="btn margin-top-40 toIndexHTML">На головну</a>
+    </div>
+
+
+
+  </main>
+
+<?php include("common/footer.php")?>
+
+  <script type="module" src="../js/succes.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+
+</body>
+
+</html>

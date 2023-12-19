@@ -411,29 +411,8 @@
     </div>
 
     <!-- Произведем подсчет -->
-    <div class="full-width text-white block-call-form-2 block-call-form-bg-default margin-top-30">
-      <div class="content">
-        <div class="block-call-form-fields text-center margin-top-30">
-          <span class="text-size-27">Произведем просчет стоимости в реальном времени и
-            <br />подарим скидку на доставку</span>
+<?php include("../common/form.php")?>
 
-          <div class="text-size-18 text-thin dw-uform-phrase block-mobile-hidden">
-            оставьте номер телефона и имя прямо сейчас
-          </div>
-          <!-- <br><div class="send">Ваша заявка принята</div> -->
-          <div class="unsend">Заполните все поля</div>
-          <br /><br />
-          <form class="CKiForm" action="https://axismetal.com.ua/common/tgram.php" method="post" target="send_resp">
-            <input name="name" class="form-field form-field-name" placeholder="Имя" type="text" required="" />
-            <input name="phone" class="form-field form-field-phone" placeholder="+38 (0__) ___-__-__" type="phone"
-              pattern="+[0-9]{10}" required="" />
-            <input class="button-square button-red-solid CKFormTrigger" value="Получить просчет"
-              type="submit" /><br /><br />
-            <!-- <div class="block-form-conf block-mobile-hidden"><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div> -->
-          </form>
-        </div>
-      </div>
-    </div>
 
     <div class="content margin-top-30 padding-top-30">
       <p>Вместо четырех лотков 130х110 здесь может быть другое количество любой нестандартной формы и размера, что
@@ -458,129 +437,11 @@
         чертеж через специальную форму на сайте.</p>
     </div>
 
+<?php include("../common/form2.php")?>
+
   </main>
 
-  <footer id="footer" class="margin-top-60">
-    <div class="content">
-      <div class="block-5-items">
-        <div class="block-items-wrapper">
-          <div>
-            <div class="header-logo">
-              <div><img src="../../img/logo.png" /></div>
-            </div>
-            Новости © 1996-2022
-            <br />Axis Metal
-          </div>
-          <div></div>
-
-          <div>
-            <div class="title title-top">
-              <a href="../ruchnij-zvaryuvach-lotkiv.html#1">Оплата и доставка</a>
-            </div>
-            <div class="title">
-              <a href="../umovi-oplati-ta-dostavka.html">Условия оплаты и доставки</a>
-            </div>
-          </div>
-          <div>
-            <div class="title title-top">
-              <a href="../ruchnij-zvaryuvach-lotkiv.html#1">Кто мы</a>
-            </div>
-            <div class="title">
-              <a href="../pro-nas.html">О компании</a>
-            </div>
-            <hr />
-            <div class="title">
-              <a href="../contacts.html">Контакты</a>
-            </div>
-            <hr />
-            <div class="title">
-              <a href="../vakansii.html">Вакансии</a>
-            </div>
-            <hr />
-          </div>
-
-          <div itemscope="" itemtype="http://schema.org/Organization">
-            <span class="text-size-16"><a href="tel:+380 97 918 62 26" class="a-tel">+380 97 918 62
-                26</a></span><br />
-            <span class="text-size-16"><a href="tel:+380 93 573 02 46" class="a-tel">+380 93 573 02
-                46</a></span>
-            <span class="text-size-16">
-              <a href="mailto: axismetal@ukr.net" class="a-tel">
-                axismetal@ukr.net
-              </a></span>
-            <br />
-            <br /><a type="button" data-toggle="modal" data-target="#feedbackFormModal"
-              class="button-square button-square-solid openform" data-form-id="3">Заказать звонок</a>
-            <br />
-            <br />
-            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-              <span itemprop="addressLocality">Украина</span>,
-              <span itemprop="streetAddress">
-                ул. Анатолия Соловьяненко, 68, Козин,
-                Киевская область</span>
-            </div>
-            <!-- <div class="online-pay margin-top-20"><span class="text-small">Мы в социальных сетях:</span>
-<br>
-<a href="#1"><img style="margin: 3px;" src="img/social-fb.png" alt="" class="widht-40"></a>
-<a href="#1"><img style="margin: 3px;" src="img/social-insta.png" alt="" class="widht-40"></a>
-</div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Форма обратной связи в модальном окне -->
-  <div class="modal" id="feedbackFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" style="margin-top: 15px!important;" id="myModalLabel">Форма зворотного зв'язку</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-
-          <!-- Форма обратной связи -->
-          <form id="feedbackForm" action="https://axismetal.com.ua/common/tgram.php" method="post">
-            <div class="form-row">
-              <div class="col-sm-6">
-                <!-- Имя пользователя -->
-                <div class="form-group">
-                  <label for="name" class="control-label">Ім'я</label>
-                  <input id="name" type="text" name="name" class="form-control" value="" placeholder="Введіть ім'я"
-                    required>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <!-- Email пользователя -->
-                <div class="form-group">
-                  <label for="phone" class="control-label">Телефон</label>
-                  <input id="phone" type="tel" name="phone" class="form-control" value=""
-                    placeholder="+38 (0__) ___-__-__" required>
-                </div>
-              </div>
-            </div>
-            <!-- Сообщение пользователя -->
-            <!-- <div class="form-group">
-              <label for="message" class="control-label">Сообщение</label>
-              <textarea id="message"  type="message" name="message" class="form-control" rows="3" placeholder="Сообщение" ></textarea>
-            </div> -->
-
-            <!-- Кнопка для отправки формы  disabled="disabled"-->
-
-            <input class="btn btn-success button-dialogwidget CKFormTrigger" value="Залишити заявку" type="submit"
-              name="submityes">
-
-          </form>
-          <!-- Сообщение об успешной отправки формы -->
-        </div>
-      </div>
-    </div>
-  </div>
-
+<?php include("../common/footer.php") ?>
 
   <div class="content backdrop">
     <form class="cartModal">

@@ -129,7 +129,7 @@ function loadLocaleStorage() {
         }
     }
 
-    sendEmail(userToLocal, cartToLocal);
+    // sendEmail(userToLocal, cartToLocal);
     cartToLocal = [];
 }
 

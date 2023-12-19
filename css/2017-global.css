@@ -2186,6 +2186,7 @@ div:hover > .windows-price-block-windows-item-size > .block-windows-buttons {
 /* TABLES */
 
 table {
+    width:98%;
 	border-collapse: collapse;
 }
 

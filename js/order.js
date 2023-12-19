@@ -18,6 +18,7 @@ let cartToLocal = [];
 let price = 0;
 const max = 999999;
 
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }

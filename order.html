@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <?php
+        $metaTitle = 'Оформлення замовлення';
+        $metaDescr = 'Оформлення замовлення';
+        $metaKey = '';
+        $metaLang = '/ru/order_ru.html';
+    ?>
+
+ <?php include("common/head.php")?>
+ <?php include("common/order.php")?>
+</head>
+
+<body>
+
+<?php include("common/header.php")?>
+
+    <main class="order_content__data">
+        <div class="container">
+            <div class="order">
+                <form class="order_contacts__data">
+                    <div class="contacts">
+                        <h2 class="title_h2">Контактні дані</h2>
+                        <div class="contacts_choise">
+                            <input type="radio" id="fop" name="contact_obj" checked="true">
+                            <label for="fop">Фізична особа</label>
+                            <input type="radio" id="jyrik" name="contact_obj">
+                            <label for="jyrik">Юридична особа</label>
+                        </div>
+                        <div class="contacts_values">
+                            <label for="tel">Телефон: *
+                                <input type="tel" id="tel" name="contact_phone" placeholder=" 095 111 22 33" required>
+                            </label>
+
+                            <label for="lastName">Прізвище І.П.: *
+                                <input type="text" id="lastName" name="contact_lastName" placeholder="Кучма В.В."
+                                    required>
+                            </label>
+                            <label for="email">E-mail : *
+                                <input type="email" id="email" name="contact_email" placeholder="test@mail.com"
+                                    required>
+                            </label>
+                            <label class="toHide" for="organizationName">Назва організації:
+                                <input type="text" id="organizationName" name="contact_nameOrganization">
+                            </label>
+                            <label class="toHide" for="EDRPOY">Код ЄДРПОУ:
+                                <input type="text" id="EDRPOY" name="contact_EDRPOY">
+                            </label>
+                            <label class="toHide" for="deliveryContact">Контактна особа:
+                                <textarea class="coment" type="text" id="deliveryContact" name="contact_deliveryContact"
+                                    placeholder="Контактна особа"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="delivery">
+                        <h2 class="title_h2">Доставка</h2>
+                        <div class="contacts_values">
+                            <label for="tel">Ваше місто:
+                                <input type="tel" id="tel" name="contact_sity">
+                            </label>
+                            <label class="" for="tel">Спосіб доставки:
+                                <select name="select_delivery" id="select_delivery">
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="Адресна доставка">Адресна доставка</option>
+                                    <option value="Самовивіз">Самовивіз</option>
+                                    <option value="Нова пошта">Нова пошта</option>
+                                </select>
+                            </label>
+                            <label class="toHideDepartment unvisibled" for="department">Пункт видачі:
+                                <input type="text" id="department" name="contact_department">
+                            </label>
+                            <label class="toHideDelivery unvisibled" for="deliveryAddress">Адреса доставки:
+                                <input type="text" id="deliveryAddress" name="contact_deliveryAddress">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <h2 class="title_h2">Оплата</h2>
+                        <div class="contacts_values">
+                            <label for="select">Спосіб оплати:
+                                <select name="payment_method">
+                                    <!--Supplement an id here instead of using 'name'-->
+                                    <option value="Оплата На Карту">Оплата на карту ПриватБанку</option>
+                                    <option value="Наложений платіж">Наложений платіж</option>
+                                    <option value="Безготівка + ПДВ">Безготівкова оплата з ПДВ(+20%)</option>
+                                    <option value="Безготівка - ПДВ">Безготівкова оплата без ПДВ</option>
+                                    <option value="Онлайн оплата">Онлайн оплата</option>
+                                </select>
+                                <!-- <input type="tel" id="tel" name="contact"> -->
+                            </label>
+                            <label for="coment">Коментар:
+                                <textarea class="coment" type="coment" id="coment" name="contact_comment"
+                                    placeholder="Залиште коментар"></textarea>
+                            </label>
+                            <p class="warning" style="color:red">Поля з символом * обов'язкові до заповнення </p>
+                            <button type="submit" class="onSubmitBtn">Підтвердити
+                                замовлення</button>
+
+                        </div>
+                    </div>
+                </form>
+
+                <div class="order_contacts__data">
+                    <div class="order_content">
+                        <div class="order_sidebar" data-simplebar>
+                            <ul class="order_content__list">
+
+                            </ul>
+                        </div>
+                        <div class="order_content__bottom">
+                            <div class="order_cart__content_fullprice">
+                                <span>Всього:</span>
+                                <span class="order_fullprice">
+                                    0 грн
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<?php include("common/footer.php")?>
+
+</body>
+
+</html>

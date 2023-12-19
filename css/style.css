@@ -1708,7 +1708,7 @@ pre code {
 	}
 
 	.mod-phope {
-		display: block !important;
+		display: none;
 	}
 
 	.mod-phope ul {
