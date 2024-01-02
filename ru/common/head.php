@@ -24,9 +24,10 @@
 	<script type='text/javascript' src='../../js/cf7-grid-layout-public_ver=3.2.0.js'></script>
 	<script type='text/javascript' src='../../js/forms.min_ver=4.7.7.js'></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="module" src="../../js/modal.js"></script>
+	<script type="module" src="../../../js/modal.js"></script>
     <script src="https://pay.fondy.eu/static_common/v1/checkout/ipsp.js"></script>
-    <script src="../../js/payload.js"></script>
+    <script src="../../../js/payload.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+
 

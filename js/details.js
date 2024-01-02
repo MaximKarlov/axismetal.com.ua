@@ -1,3 +1,4 @@
+const cart = document.querySelector('.cart');
 const cartQuantity = document.querySelector('.cart_quantity');
 const CartProductList = document.querySelector('.cart_content__list');
 const bodyElement = document.querySelector('body');
@@ -17,6 +18,8 @@ let cartToLocal = [];
 let counter = 1;
 
 let price = 0;
+
+
 
 if (productStock.textContent === 'немає в наявності') {
     productStock.classList.add('disabled');
@@ -49,6 +52,9 @@ const printQuantity = () => {
     let length = CartProductList.children.length;
     cartQuantity.textContent = length;
     length > 0 ? cart.classList.add('active') : cart.classList.remove('active');
+    if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
 };
 
 const normalPrice = (str) => {
@@ -89,27 +95,6 @@ const deleteItem = (productParent) => {
     }
 };
 
-// const deleteItem = (productParent) => {
-//     let id = productParent.querySelector('.order_cart__item_article').dataset.id;
-//     const element = document.querySelector(`.product_item[data-id="${id}"]`);
-//     const btnElement = element.querySelector('.product_item__tocart');
-//     btnElement.disabled = false;
-
-//     let currentPrice = parseInt(priceWitchoutSpaces(productParent.querySelector('.order_price').textContent));
-
-//     price = minusFullPrice(currentPrice);
-//     printFullPrice(price);
-//     productParent.remove();
-//     const search = cartToLocal.filter((el) => el.id !== element.dataset.id);
-//     cartToLocal = search;
-//     localStorage.setItem('cartList', JSON.stringify(search));
-//     printQuantity();
-//     localStorage.setItem('priceFull', price);
-//     if (cartQuantity.textContent < 1) {
-//         modalWindow.classList.remove('active');
-//         bodyElement.classList.remove('dont_scroll');
-//     }
-// };
 
 const priceWitchoutSpaces = (str) => {
     let norm = str.split(' ');
@@ -137,34 +122,12 @@ const loadLocaleStorage = () => {
         printFullPrice();
         cartQuantity.textContent = Number(cartToLocal.length);
     }
+    if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
 };
 loadLocaleStorage();
 
-// 	productId,
-// 	productImg,
-// 	productName,
-// 	productPrice,
-// 	productCount
-// ) => {
-// 	return `<li class="cart_item">
-// 				<article class="cart_item__article" data-id="${productId}">
-// 						<img class="cart_item__img" src="${productImg}" alt="${productName}">
-
-// 							<div class="cart_item__text">
-// 								<h3 class="cart_item__title">${productName}</h3>
-// 								<span class="cart_item__price">Ціна:
-// 									<span class="price">${productPrice}</span>
-// 									грн</span>
-// 							</div>
-// 							<div class="cart_item__count">Кількість
-// 									<label for="input_count" class="cart_item__label">
-// 										<input class="cart_item__input_count" type="number" name="input_count" min="1" value="${productCount}"><br><br>
-// 									</label>
-// 							</div>
-// 							<button  type="button" class="cart_item__delete" aria-label="Видалити товар" id="btn_f"></button>
-// 				</article>
-// 			</li>`;
-// };
 
 btnIncrement.addEventListener('click', (e) => {
     e.preventDefault();
@@ -202,6 +165,9 @@ btnBay.addEventListener('click', (e) => {
 
     localStorage.setItem('cartList', JSON.stringify(cartToLocal));
     cartQuantity.textContent = Number(cartToLocal.length);
+    if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
     CartProductList.insertAdjacentHTML(
         'beforeend',
         generateCartProduct(product_Id, product_Img, product_Name, product_Price, product_Count)

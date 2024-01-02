@@ -1,4 +1,5 @@
 import nameProduct from './name.js';
+const cart = document.querySelector('.cart');
 const fopBtn = document.querySelector('#fop');
 const jyrikBtn = document.querySelector('#jyrik');
 const toHide = document.querySelectorAll('.toHide');
@@ -18,6 +19,9 @@ let cartToLocal = [];
 let price = 0;
 const max = 999999;
 
+    if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -177,6 +181,9 @@ const deleteItem = (productParent) => {
     printQuantity();
     printFullPrice();
     localStorage.setItem('priceFull', price);
+        if (Number(cartQuantity.textContent) === 0) {
+        cart.style.pointerEvents = 'none';
+    } else cart.style.pointerEvents = 'auto';
 };
 
 CartProductList.addEventListener('click', (e) => {
